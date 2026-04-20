@@ -29,7 +29,7 @@ FORM_MAP = {
 }
 
 def load_portfolio():
-    for pat in ["SYNGENTA_PORTFOLIO*.xlsx", "portfolio*.xlsx"]:
+    for pat in ["SYNGENTA_PORTFOLIO.xlsx", "portfolio.xlsx"]:
         found = glob.glob(pat)
         if found:
             f = found[0]; print(f"Portföy: {f}")
