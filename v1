@@ -1,259 +1,288 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Syngenta Türkiye — 2026 Geçici Tavsiye Alan Ürünlerimiz</title>
-<meta name="description" content="T.C. Tarım ve Orman Bakanlığı BKU Veri Tabanı'nda 2026 yılı için geçici tavsiye almış Syngenta bitki koruma ürünleri listesi.">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; }
-</style>
-</head>
-<body>
-<div id="root"></div>
-<script type="text/babel">
-const { useState } = React;
+"""
+BKU Geçici Tavsiye Canlı Veri Çekici
+=====================================
+BKU DataTable API'sinden geçici tavsiyeleri çeker,
+Syngenta portföyüyle eşleştirir, detay sayfalarından PHI/Doz alır.
 
-const LOGO = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgo8c3ZnCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4wIgogICB3aWR0aD0iODE0Ljk2MDYzIgogICBoZWlnaHQ9IjI2OC41ODI2NyIKICAgaWQ9InN2ZzM2MzMiPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMzNjM1Ij48Y2xpcFBhdGgKICAgaWQ9ImNscDYiPgo8cGF0aAogICBkPSJNIDAsODQyLjA0IEwgNTk0Ljk2LDg0Mi4wNCBMIDU5NC45NiwwIEwgMCwwIEwgMCw4NDIuMDQgeiAiCiAgIGlkPSJwYXRoMzc5OTgiIC8+Cgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGgKICAgaWQ9ImNscDUiPgo8cGF0aAogICBkPSJNIC0wLjEzOCw4MzguOTQgTCA1OTUuMTQsODM4Ljk0IEwgNTk1LjE0LC0yLjk0NSBMIC0wLjEzOCwtMi45NDUgTCAtMC4xMzgsODM4Ljk0IHogIgogICBpZD0icGF0aDM3OTkzIiAvPgoKPC9jbGlwUGF0aD4KPGNsaXBQYXRoCiAgIGlkPSJjbHA0Ij4KPHBhdGgKICAgZD0iTSAwLDAgTCAxMTEuMDgsMCBMIDExMS4wOCw1NS4zNTcgTCAwLDU1LjM1NyBMIDAsMCB6ICIKICAgaWQ9InBhdGgyNTA1MCIgLz4KCjwvY2xpcFBhdGg+CgoKCgoKCgoKCgo8L2RlZnM+CiAgPGcKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM0OS4wNDU0LC00MzAuNTI3NjQpIgogICAgIGlkPSJsYXllcjEiPgogICAgPGcKICAgICAgIGlkPSJnNDg3MDAiPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDIwNTQuNDQyOSw1NTAuMTc4NTcgTCAyMDI3LjkwNjQsNTUwLjE3ODU3IEwgMjAyNy45MDY0LDU5NC4wMTg4MSBDIDIwMjcuOTA2NCw2MDYuNTE3MTIgMjAzNC41MDY0LDYwOC44NDA3NyAyMDQzLjAzMDksNjA4Ljg0MDc3IEMgMjA0NS45ODcyLDYwOC44NDA3NyAyMDQ5LjE0OTIsNjA4LjQyMTM5IDIwNTIuMzgwNCw2MDcuOTgxNDQgTCAyMDU0LjQ0MjksNjI3LjYyOTQ1IEMgMjA0Ny40OTk3LDYyOC44NjY5IDIwMzguMjE4NCw2MjkuOTE4NzIgMjAzMi4xNjg5LDYyOS45MTg3MiBDIDIwMTMuOTUwNyw2MjkuOTE4NzIgMTk5Ny43MjYxLDYyMy41Mzg5NyAxOTk3LjcyNjEsNjAxLjE0MTA3IEwgMTk5Ny43MjYxLDU1MC4xNzg1NyBMIDE5ODIuMzk1NCw1NTAuMTc4NTcgTCAxOTgyLjM5NTQsNTMwLjgwNTUxIEwgMTk5Ny43MjYxLDUzMC44MDU1MSBMIDE5OTcuNzI2MSw1MDkuNDU5NDMgTCAyMDI3LjkwNjQsNTAwLjkwNzIyIEwgMjAyNy45MDY0LDUzMC44MDU1MSBMIDIwNTQuNDQyOSw1MzAuODA1NTEgTCAyMDU0LjQ0MjksNTUwLjE3ODU3IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MjkwIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE5NzMuMTgzNCw2MjcuOTA0NDUgTCAxOTQzLjAwMzEsNjI3LjkwNDQ1IEwgMTk0My4wMDMxLDU2NS41NjQyMiBDIDE5NDMuMDAzMSw1NTYuMzg2NDUgMTkzOS4xNTM3LDU1MS4zMTI5IDE5MjguNzcyNCw1NTEuMzEyOSBDIDE5MjAuOTM1NCw1NTEuMzEyOSAxOTE1LjkxNjYsNTU1LjA4MDI1IDE5MTAuMjc5Niw1NTkuNTc2MzUgTCAxOTEwLjI3OTYsNjI3LjkwNDQ1IEwgMTg4MC4wMzA2LDYyNy45MDQ0NSBMIDE4ODAuMDMwNiw1MzAuODA1NTEgTCAxOTA5LjM4NTksNTMwLjgwNTUxIEwgMTkwOS4zODU5LDUzOS4zNTc3MiBDIDE5MTkuMjE2Niw1MzIuNzQ0MjEgMTkzMC40OTExLDUyOC41NDM3NCAxOTQyLjcyODEsNTI4LjU0Mzc0IEMgMTk2MS45Nzc3LDUyOC41NDM3NCAxOTczLjE4MzQsNTQwLjQ5MjA0IDE5NzMuMTgzNCw1NTguNzE2OTcgTCAxOTczLjE4MzQsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MjkyIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE4MTcuODE0NCw0NDguMTcxMDggQyAxODAyLjQ4MzYsNDc0LjA0NzU5IDE4MDkuMTUxOCw0OTcuNDgzNjIgMTc5NC4xNjQ4LDUxMi40MjI0NiBDIDE3ODIuMjAyOCw1MjQuNDMyNjMgMTc3MS4wNjU4LDUyNC4wMjcwMSAxNzU4LjAwMzgsNTI0LjAyNzAxIEMgMTc1My4zOTc1LDUyNC4wMjcwMSAxNzQ0LjU5ODEsNTI0LjQzMjYzIDE3NDAuODg1NSw1MjcuMTEzNzkgQyAxNzM4Ljc1NDgsNTIwLjI4MDI4IDE3MzcuNzkyMyw1MTIuNzU5MzMgMTczNy43OTIzLDUwNS41ODIwOCBDIDE3MzcuNzkyMyw0OTMuMjY5NCAxNzQwLjU0MTgsNDgyLjMxNzkyIDE3NDkuNDEwNiw0NzMuNDcwMTQgQyAxNzY2LjM5MTMsNDU2LjUxMDE2IDE3OTcuMTIxMSw0NTEuMTI3MjMgMTgxNy44MTQ0LDQ0OC4xNzEwOCIKICAgICAgICAgc3R5bGU9ImZpbGw6IzAxOTkzNDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgICAgaWQ9InBhdGg0ODI5NCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgZD0iTSAxNjU0LjEyNjUsNjI3LjkwNDQ1IEwgMTYyMy45NDYzLDYyNy45MDQ0NSBMIDE2MjMuOTQ2Myw1NjUuNTY0MjIgQyAxNjIzLjk0NjMsNTU2LjM4NjQ1IDE2MjAuMDk2Miw1NTEuMzEyOSAxNjA5LjcxNTUsNTUxLjMxMjkgQyAxNjAxLjk0NzMsNTUxLjMxMjkgMTU5Ni44NTk3LDU1NS4wODAyNSAxNTkxLjIyMjgsNTU5LjU3NjM1IEwgMTU5MS4yMjI4LDYyNy45MDQ0NSBMIDE1NjEuMDQyNSw2MjcuOTA0NDUgTCAxNTYxLjA0MjUsNTMwLjgwNTUxIEwgMTU5MC4zOTc4LDUzMC44MDU1MSBMIDE1OTAuMzk3OCw1MzkuMzU3NzIgQyAxNjAwLjIyODUsNTMyLjc0NDIxIDE2MTEuNTAzLDUyOC41NDM3NCAxNjIzLjY3MTMsNTI4LjU0Mzc0IEMgMTY0Mi45MjA4LDUyOC41NDM3NCAxNjU0LjEyNjUsNTQwLjQ5MjA0IDE2NTQuMTI2NSw1NTguNzE2OTcgTCAxNjU0LjEyNjUsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4Mjk2IiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE1NTYuMjMsNTMwLjgwNTUxIEwgMTUwNy44MzIsNjQ4LjQyNTUzIEMgMTUwMC40MDcsNjY2LjQ4NTUxIDE0ODUuNDg4Nyw2NzkuNzQ2ODkgMTQ2NS4xMzk3LDY3OS43NDY4OSBDIDE0NTQuOTY1Miw2NzkuNzQ2ODkgMTQ0OS41MzM5LDY3OC40MjAwNyAxNDQyLjkzNDUsNjc2LjkwNzYyIEwgMTQ0Ny4xOTY0LDY1Ny41Mjc3NCBDIDE0NTIuNTU5LDY1OC43MjM5NCAxNDU2LjYxNTIsNjU5LjIzOTUxIDE0NjAuMjU4NCw2NTkuMjM5NTEgQyAxNDcyLjQyNjcsNjU5LjIzOTUxIDE0NzguODg5Miw2NDguOTIwNTMgMTQ4NC44MDE3LDYzNC43NTE3IEwgMTQ4Ny42MTk5LDYyNy45MDQ0NSBMIDE0NTAuMDE1Miw1MzAuODA1NTEgTCAxNDgyLjQ2NDIsNTMwLjgwNTUxIEwgMTUwMC4xMzE5LDU3OC45MzU2IEMgMTUwMi4yNjMyLDU4NC43Mzc5MSAxNTAzLjUwMDcsNTkwLjY5ODI4IDE1MDQuNDYzMiw1OTQuODc4MTMgQyAxNTA1LjU2MzIsNTkwLjY2MzkxIDE1MDcuNjk0NSw1ODMuNjcyMzMgMTUwOS44MjU3LDU3OC4wODMxNiBMIDE1MjguMDQzNSw1MzAuODA1NTEgTCAxNTU2LjIzLDUzMC44MDU1MSIKICAgICAgICAgc3R5bGU9ImZpbGw6IzAxMDA2NjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgICAgaWQ9InBhdGg0ODI5OCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgZD0iTSAxNDQ5LjYwMjcsNTk2Ljg3MTg0IEMgMTQ0OS42MDI3LDYxOC4wMTE2NyAxNDMwLjA3ODcsNjI5LjYyMzEgMTQwNi45MTA0LDYyOS42MjMxIEMgMTM5MS43ODU5LDYyOS42MjMxIDEzNzkuNjE3Nyw2MjcuMTAwMDcgMTM2Ni43NjE5LDYyMS45NDQwMiBMIDEzNzUuMDExOSw2MDIuMjk2MDIgQyAxMzgyLjY0MjcsNjA1LjM3NTg2IDEzOTMuNjQyMiw2MDguODQwNzcgMTQwMi42NDg0LDYwOC44NDA3NyBDIDE0MDkuNjYwNCw2MDguODQwNzcgMTQxOS40MjI0LDYwNy45ODE0NCAxNDE5LjQyMjQsNTk5LjQ0Mjk5IEMgMTQxOS40MjI0LDU5NS40NDg3NiAxNDE2Ljk0OCw1OTMuMzkzMTggMTQxMi4yNzI5LDU5Mi4wMzg4NiBDIDE0MDYuNDk3OSw1OTAuMzMzOTYgMTM5Ny42Mjk3LDU4OC44MDA4OCAxMzkxLjc4NTksNTg3LjE5OTA2IEMgMTM3OS40ODAyLDU4My44MDI5NiAxMzY5LjMwNTcsNTc3LjM0MDY1IDEzNjkuMzA1Nyw1NTkuMjg3NiBDIDEzNjkuMzA1Nyw1MzkuMjY4MzQgMTM4Ni4zNTUyLDUyNi44MjUwMyAxNDA5LjcyOTIsNTI2LjgyNTAzIEMgMTQyNS4xOTc0LDUyNi44MjUwMyAxNDM0Ljk1OTQsNTI4Ljg1MzExIDE0NDMuNjIyLDUzMS4zODMwMSBMIDE0MzUuOTIxOSw1NTEuMDMxMDIgQyAxNDMyLjE0MDcsNTQ5LjI4NDgyIDE0MjEuNDE2Miw1NDYuNzU0OTIgMTQxMy43MTY3LDU0Ni43NTQ5MiBDIDE0MDUuMzk3OSw1NDYuNzU0OTIgMTM5OS43NjA5LDU0OS45MjQxOSAxMzk5Ljc2MDksNTU1LjAxODM3IEMgMTM5OS43NjA5LDU1Ny41NDE0IDE0MDEuMzQyMiw1NjAuNzE3NTUgMTQwNS43NDE3LDU2Mi4xNDA2MiBDIDE0MTAuNDg1NCw1NjMuNjUzMDggMTQxNy45NzkyLDU2NS4wMjgwMyAxNDI0LjIzNDksNTY2LjQwMjk4IEMgMTQzNy4xNTk0LDU2OS4yMjg0NSAxNDQ5LjYwMjcsNTc2LjYxMTk1IDE0NDkuNjAyNyw1OTYuODcxODQiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMTAwNjY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiCiAgICAgICAgIGlkPSJwYXRoNDgzMDAiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGQ9Ik0gMjExNy4wMDI5LDYwMi4wMDAzOSBMIDIxMTcuMDAyOSw1ODQuMDU3MjggQyAyMTAzLjA0NzIsNTgzLjgyMzU4IDIwODkuOTE2NCw1ODUuMjMyOTEgMjA4OS45MTY0LDU5OC41NzY3OSBDIDIwODkuOTE2NCw2MDYuODQwMTkgMjA5Ni45MjksNjA5LjQxMTM0IDIxMDIuMjIyMiw2MDkuNDExMzQgQyAyMTA4LjQ3ODUsNjA5LjQxMTM0IDIxMTMuMjkxLDYwNi4yNjk2MiAyMTE3LjAwMjksNjAyLjAwMDM5IHogTSAyMTQ2LjI4OTUsNjI3LjkwNDQ1IEwgMjExNy44Mjc5LDYyNy45MDQ0NSBMIDIxMTcuODI3OSw2MjAuMjMyMTkgQyAyMTEwLjQ3MjIsNjI2Ljc3MDEzIDIxMDAuODQ3Nyw2MjkuOTE4NzIgMjA5MC4yNjAyLDYyOS45MTg3MiBDIDIwNzIuMTgsNjI5LjkxODcyIDIwNTkuODA1NSw2MjEuMTY3MiAyMDU5LjgwNTUsNjAyLjg1OTcxIEMgMjA1OS44MDU1LDU3MC42NzIxNSAyMDkxLjkxMDIsNTY1LjY2NzM1IDIxMTcuMDAyOSw1NjUuNTY0MjIgTCAyMTE3LjAwMjksNTYyLjk3OTMyIEMgMjExNy4wMDI5LDU1NC45OTc3NSAyMTEzLjk3ODUsNTQ5LjMxMjMyIDIwOTkuNjc5LDU0OS4zMTIzMiBDIDIwODkuOTg1Miw1NDkuMzEyMzIgMjA3OC45ODU3LDU1NC4xMTA5MiAyMDcxLjc2NzUsNTU4LjQzNTE1IEwgMjA2NC4zNDI0LDU0MC40OTIwNCBDIDIwNzcuMTk4Miw1MzMuNTI3OTEgMjA5My4wNzg5LDUyOC41NDM3NCAyMTA4LjEzNDcsNTI4LjU0Mzc0IEMgMjEzMS4zMDI0LDUyOC41NDM3NCAyMTQ2LjI4OTUsNTM5LjYwNTIyIDIxNDYuMjg5NSw1NTkuMDA1NzIgTCAyMTQ2LjI4OTUsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MzAyIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE4MzUuNDEzMyw1NjYuNDAyOTggQyAxODM1Ljk2MzMsNTU1LjY5OSAxODMwLjYwMTQsNTQ5LjAzMDUgMTgyMC4wODMxLDU0OS4wMzA1IEMgMTgwOS45MDgxLDU0OS4wMzA1IDE4MDMuODU4Niw1NTYuNTAzMzIgMTgwMi4xMzk4LDU2Ni40MDI5OCBMIDE4MzUuNDEzMyw1NjYuNDAyOTggeiBNIDE4NjYuNDg3NCw1NzUuODA3NjMgQyAxODY2LjQ4NzQsNTc5LjAwNDM1IDE4NjYuNDE4Niw1ODIuMzM4NjMgMTg2Ni4yMTI0LDU4NS43NjkxMSBMIDE4MDEuODY0OCw1ODUuNzY5MTEgQyAxODAyLjEzOTgsNTk5Ljg5Njc0IDE4MDkuMTUxOCw2MDguMjcwMTQgMTgyOS43NzY0LDYwOC4yNzAxNCBDIDE4MzguODUwOCw2MDguMjcwMTQgMTg0OS44NTAzLDYwNC4xMzE1NCAxODU0LjUyNTQsNjAwLjg1OTE5IEwgMTg2Mi40OTk4LDYxOC44MDIyNCBDIDE4NDkuMjMxNiw2MjYuMDIwNzUgMTgzNC45MzIxLDYyOS45MTg3MiAxODE4LjkxNDQsNjI5LjkxODcyIEMgMTc4OC43MzQxLDYyOS45MTg3MiAxNzY5Ljk2NTgsNjEwLjQ3Njk3IDE3NjkuOTY1OCw1NzkuNDk5MzYgQyAxNzY5Ljk2NTgsNTQ4LjAxMjk5IDE3OTQuNTc3Myw1MjguNTQzNzQgMTgyMS4xODI2LDUyOC41NDM3NCBDIDE4NTQuMzg3OSw1MjguNTQzNzQgMTg2Ni40ODc0LDU0Ny45MDI5OSAxODY2LjQ4NzQsNTc1LjgwNzYzIgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MzEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE3MzguNzU0OCw2NDMuODY3NjEgQyAxNzM4Ljc1NDgsNjM1Ljk0MTAzIDE3MzIuNDI5OCw2MzMuMDM5ODggMTcyNS45Njc4LDYzMy4wMzk4OCBMIDE2OTkuNTAwMSw2MzMuMDM5ODggQyAxNjk1LjQ0MzgsNjM1LjMzNjAzIDE2ODkuMjU2Myw2NDAuNDAyNyAxNjg5LjI1NjMsNjQ3LjAwMjQ1IEMgMTY4OS4yNTYzLDY1NS41MjAyOCAxNzAwLjczNyw2NjEuMjMzMjEgMTcxNC4yODAzLDY2MS4yMzMyMSBDIDE3MjguMzczNSw2NjEuMjMzMjEgMTczOC43NTQ4LDY1NC43NzA5NiAxNzM4Ljc1NDgsNjQzLjg2NzYxIHogTSAxNzMwLjc3OTgsNTYwLjQyMTkyIEMgMTczMC43Nzk4LDU1Mi4yODkwOSAxNzI2LjMxMTYsNTQ1LjYxMzcyIDE3MTYuMjc0LDU0NS42MTM3MiBDIDE3MDcuMTMwOCw1NDUuNjEzNzIgMTcwMS40OTMzLDU1My4zNjg0MiAxNzAxLjQ5MzMsNTYwLjQyMTkyIEMgMTcwMS40OTMzLDU2OC41NzUzOCAxNzA2LjU4MDgsNTc1LjIzMDEzIDE3MTUuNzI0LDU3NS4yMzAxMyBDIDE3MjUuNzYxNiw1NzUuMjMwMTMgMTczMC43Nzk4LDU2OC41MzQxMyAxNzMwLjc3OTgsNTYwLjQyMTkyIHogTSAxNzY5LjAwMzMsNjM5Ljg4MDI1IEMgMTc2OS4wMDMzLDY2OC4yMDQyMiAxNzQwLjc0OCw2ODEuMzE0MzUgMTcxMi45MDU4LDY4MS40NjU2IEMgMTY4OC4zNjI1LDY4MS41NzU2IDE2NjQuNzgyMyw2NzQuNTI4OTcgMTY2NC43ODIzLDY1MC45ODI5MyBDIDE2NjQuNzgyMyw2MzkuOTc2NTEgMTY3NC40NzU1LDYzMi42MTM2MiAxNjgwLjM4OCw2MjguNzcwNjUgQyAxNjc3LjE1NjgsNjI2LjkwMDcgMTY3NC4xMzE4LDYyNS40MjI2OCAxNjcxLjU4ODYsNjIyLjUxNDY1IEMgMTY2OC45MDczLDYxOS40MzQ3NSAxNjY2LjcwNzMsNjE0LjkzMTc3IDE2NjYuNzA3Myw2MDcuNDAzOTQgQyAxNjY2LjcwNzMsNTk3LjkzMDU0IDE2NzUuMDk0Myw1ODkuMTQ0NjQgMTY4NS4yNjkzLDU4My40OTM1OCBDIDE2NzkuNjMxOCw1ODAuNTMwNTYgMTY3Mi4xMzg2LDU3NS43NzMyNiAxNjcyLjEzODYsNTU5Ljg1MTMgQyAxNjcyLjEzODYsNTM5LjE1ODM0IDE2OTEuOCw1MjguMjQ4MTEgMTcxNy40NDI4LDUyOC4yNDgxMSBDIDE3MzkuMjM2MSw1MjguMjQ4MTEgMTc2MC4xMzUxLDUzMy40NTkxNiAxNzYwLjEzNTEsNTU5LjAwNTcyIEMgMTc2MC4xMzUxLDU4My40MDQyMSAxNzM3LjI0MjMsNTkyLjMwMDExIDE3MTQuMDA1Myw1OTIuMzAwMTEgQyAxNzA5LjY3NDYsNTkyLjMwMDExIDE3MDUuODI0NSw1OTEuNjQwMTYgMTcwMi4wNDMzLDU5MC44OTc2NiBDIDE2OTkuNTY4Myw1OTIuMjE3NjEgMTY5NC42MTg4LDU5NS40ODMxNCAxNjk0LjYxODgsNTk5LjE1NDI0IEMgMTY5NC42MTg4LDYwNi42MTMzNyAxNzA0Ljc5MzMsNjA3LjcwNjQ0IDE3MDkuNDY4Myw2MDcuNzA2NDQgTCAxNzMzLjM5MjMsNjA3LjcwNjQ0IEMgMTc1NS41Mjg4LDYwNy43MDY0NCAxNzY5LjAwMzMsNjE4LjQ1ODU1IDE3NjkuMDAzMyw2MzkuODgwMjUiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMTAwNjY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiCiAgICAgICAgIGlkPSJwYXRoNDgzMTIiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K";
+Kullanım:
+    pip install requests beautifulsoup4 pandas openpyxl
+    python bku_live_scraper.py
 
-const data = [
-  {bitki:"ANASON",zararli:"Anason yaprak lekesi (Cercospora malkoffii)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"-",doz:"60 ml/da",gecerlilik:"31.07.2026",grup:"Fungisit"},
-  {bitki:"ANASON",zararli:"Anason yaprak lekesi (Cercospora malkoffii)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"-",doz:"66 ml/100 kg tohuma",gecerlilik:"31.07.2026",grup:"Fungisit"},
-  {bitki:"ARPA",zararli:"Buğdaygil tripsleri (Haplothrips tritici)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"28 gün",doz:"25 ml/da",gecerlilik:"31.05.2026",grup:"İnsektisit"},
-  {bitki:"AVOKADO",zararli:"İncir Teke Böceği (Batocera rufomaculata)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"7 gün",doz:"20 ml/100 L su",gecerlilik:"15.07.2026",grup:"İnsektisit"},
-  {bitki:"AVOKADO",zararli:"İncir Teke Böceği (Batocera rufomaculata)",form:"ZC",urun:"AMPLİGO 150 ZC",aktif:"100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",phi:"14 gün",doz:"50 ml/100 L su",gecerlilik:"15.07.2026",grup:"İnsektisit"},
-  {bitki:"AHUDUDU / BÖĞÜRTLEN",zararli:"Turunçgil unlubiti (Planococcus citri)",form:"EW",urun:"PORKAN / PLOCAFİR",aktif:"700 g/l Mineral Yağ",phi:"-",doz:"1000 ml/100 L su",gecerlilik:"16.05.2026",grup:"İnsektisit"},
-  {bitki:"BİBER",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"BUĞDAY",zararli:"Buğdaygil tripsleri (Haplothrips tritici)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"28 gün",doz:"25 ml/da",gecerlilik:"31.05.2026",grup:"İnsektisit"},
-  {bitki:"ÇAVDAR",zararli:"Buğdaygil tripsleri (Haplothrips tritici)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"28 gün",doz:"25 ml/da",gecerlilik:"31.05.2026",grup:"İnsektisit"},
-  {bitki:"DEREOTU",zararli:"Beyaz Pas / Alternaria / Septorya / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"DEREOTU",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"DOMATES",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"ENGİNAR",zararli:"Toprak kökenli patojenler (Pythium, Rhizoctonia, Sclerotium)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"31.05.2026",grup:"Fungisit"},
-  {bitki:"ERİK",zararli:"Erik Koşnili (Sphaerolecanium prunastri)",form:"EW",urun:"PORKAN / PLOCAFİR",aktif:"700 g/l Mineral Yağ",phi:"-",doz:"1500 ml/100 L su",gecerlilik:"29.06.2026",grup:"İnsektisit"},
-  {bitki:"FESLEĞEN",zararli:"Külleme / Alternaria / Septorya / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"FESLEĞEN",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"GÜL",zararli:"Karaleke (Diplocarpon rosae)",form:"SC",urun:"QUADRIS MAXX",aktif:"200 g/l Azoxystrobin + 125 g/l Difenoconazole",phi:"14 gün",doz:"100 ml/100 L su",gecerlilik:"30.07.2026",grup:"Fungisit"},
-  {bitki:"GÜL",zararli:"Gül Pası (Phragmidium mucronatum)",form:"SC",urun:"QUADRIS MAXX",aktif:"200 g/l Azoxystrobin + 125 g/l Difenoconazole",phi:"14 gün",doz:"100 ml/100 L su",gecerlilik:"30.07.2026",grup:"Fungisit"},
-  {bitki:"GÜL",zararli:"Kurşuni Küf (Botrytis cinerea)",form:"WG",urun:"SWITCH 62.5 WG",aktif:"%37,5 Cyprodinil + %25 Fludioxonil",phi:"14 gün",doz:"80 g/100 L su",gecerlilik:"30.07.2026",grup:"Fungisit"},
-  {bitki:"HAŞHAŞ",zararli:"Mildiyö (Peronospora arborescens)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"35 gün",doz:"40-105 ml/da",gecerlilik:"15.07.2026",grup:"Fungisit"},
-  {bitki:"HIYAR",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"ISPANAK",zararli:"Külleme (Erysiphe spp.)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"ISPANAK",zararli:"Beyaz Pas (Albugo candida)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"7 gün",doz:"75 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"ISPANAK",zararli:"Pamuk yaprakkurdu (Spodoptera littoralis)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"7 gün",doz:"15 ml/da",gecerlilik:"30.04.2026",grup:"İnsektisit"},
-  {bitki:"KABAK",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"KANOLA",zararli:"Yaprakbiti (Brevicoryne brassicae)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"70 ml/da",gecerlilik:"28.06.2026",grup:"İnsektisit"},
-  {bitki:"KANOLA",zararli:"Lahana yaprakgüvesi (Plutella xylostella)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"100 ml/da",gecerlilik:"12.07.2026",grup:"İnsektisit"},
-  {bitki:"KARPUZ",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"KAVUN",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"KİMYON",zararli:"Alternaria yaprak lekesi",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"35 gün",doz:"112,5 ml/da",gecerlilik:"29.07.2026",grup:"Fungisit"},
-  {bitki:"KİMYON",zararli:"Kök Çürüklüğü (Macrophomina, Fusarium)",form:"FS",urun:"CELEST MAX 100 FS",aktif:"100 g/l Fludioxonil",phi:"Tohum ilacı",doz:"10 ml/100 kg tohuma",gecerlilik:"29.07.2026",grup:"Fungisit"},
-  {bitki:"LAHANA",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"MARUL",zararli:"Külleme / Alternaria / Septorya",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"MARUL",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"MAYDANOZ",zararli:"Alternaria / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"MAYDANOZ",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"NANE",zararli:"Beyaz Pas (Albugo candida)",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"NANE",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"PATATES",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"PATATES",zararli:"Telkurtları (Agriotes spp.)",form:"FS",urun:"FORTENZA 600 FS",aktif:"600 g/l Cyantraniliprole",phi:"28 gün",doz:"22,5 ml/100 kg tohum",gecerlilik:"30.06.2026",grup:"İnsektisit"},
-  {bitki:"PATLICAN",zararli:"Danaburnu (Gryllotalpa gryllotalpa)",form:"CS",urun:"KARATE ZEON",aktif:"50 g/l Lambda-cyhalothrin",phi:"21 gün",doz:"40 ml/da",gecerlilik:"29.07.2026",grup:"İnsektisit"},
-  {bitki:"ROKA",zararli:"Alternaria / Septorya / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"ROKA",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"SEMİZOTU",zararli:"Külleme / Beyaz Pas / Alternaria / Septorya / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"TERE",zararli:"Alternaria / Mildiyö",form:"SC",urun:"QUADRIS",aktif:"250 g/l Azoxystrobin",phi:"14 gün",doz:"45 ml/da",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"TERE",zararli:"Toprak kökenli patojenler",form:"ES",urun:"APRIN XL 350 ES",aktif:"350 g/l Metalaxyl-m",phi:"Tohum ilacı",doz:"50 ml/100 kg tohum",gecerlilik:"30.04.2026",grup:"Fungisit"},
-  {bitki:"YABAN MERSİNİ",zararli:"Turunçgil unlubiti (Planococcus citri)",form:"EW",urun:"PORKAN / PLOCAFİR",aktif:"700 g/l Mineral Yağ",phi:"-",doz:"1000 ml/100 L su",gecerlilik:"16.05.2026",grup:"İnsektisit"},
-  {bitki:"YULAF",zararli:"Buğdaygil tripsleri (Haplothrips tritici)",form:"EC",urun:"NİNJA 5 EC",aktif:"50 g/l Lambda-cyhalothrin",phi:"28 gün",doz:"25 ml/da",gecerlilik:"31.05.2026",grup:"İnsektisit"},
-];
+API Endpoint: https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/DataTableGetir
+CORS: Açık (Access-Control-Allow-Origin: *)
+Method: GET
+Format: jQuery DataTables server-side processing
+"""
 
-const cropsByBitki = {};
-data.forEach(d => {
-  if (!cropsByBitki[d.bitki]) cropsByBitki[d.bitki] = [];
-  cropsByBitki[d.bitki].push(d);
-});
-const allCrops = Object.keys(cropsByBitki).sort((a,b) => a.localeCompare(b,'tr'));
+import requests
+import pandas as pd
+from bs4 import BeautifulSoup
+from datetime import datetime
+import time
+import json
 
-const urunRenk = {
-  "QUADRIS":"#2E7D32","KARATE ZEON":"#1565C0","NİNJA 5 EC":"#0277BD",
-  "AMPLİGO 150 ZC":"#C62828","APRIN XL 350 ES":"#558B2F","PORKAN / PLOCAFİR":"#827717",
-  "QUADRIS MAXX":"#6A1B9A","SWITCH 62.5 WG":"#E65100","FORTENZA 600 FS":"#AD1457",
-  "CELEST MAX 100 FS":"#00695C"
-};
+# ============================================================
+# 1. BKU API'DEN LİSTE VERİSİNİ ÇEK
+# ============================================================
 
-export default function App() {
-  const [search, setSearch] = useState("");
-  const [closedCrops, setClosedCrops] = useState({});
-  const toggleCrop = (crop) => setClosedCrops(prev => ({...prev, [crop]: !prev[crop]}));
+def fetch_bku_liste(max_records=2000):
+    """BKU DataTable API'sinden tüm geçici tavsiyeleri çeker."""
+    
+    url = "https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/DataTableGetir"
+    
+    params = {
+        "draw": 1,
+        "start": 0,
+        "length": max_records,  # Tek seferde tüm kayıtlar
+        "search[value]": "",
+        "search[regex]": "false",
+        "param1": "[]",
+        "order[0][column]": 6,   # verilisTarihi'ne göre sırala
+        "order[0][dir]": "desc",
+        # Sütun tanımları (DataTables formatı)
+        "columns[0][data]": "bitkiAdi",
+        "columns[1][data]": "zararliAdi",
+        "columns[2][data]": "durumu",
+        "columns[3][data]": "aktifMaddeAdi",
+        "columns[4][data]": "formulasyonAdi",
+        "columns[5][data]": "ruhsatGrubu",
+        "columns[6][data]": "verilisTarihi",
+        "columns[7][data]": "gecerlilikSuresi",
+        "columns[8][data]": "id",
+    }
+    
+    headers = {
+        "Accept": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+    
+    print("BKU API çağrılıyor...")
+    resp = requests.get(url, params=params, headers=headers, timeout=30)
+    resp.raise_for_status()
+    
+    data = resp.json()
+    records = data.get("data", [])
+    total = data.get("recordsTotal", 0)
+    
+    print(f"  Toplam kayıt: {total}")
+    print(f"  Çekilen kayıt: {len(records)}")
+    
+    return records
 
-  const filteredCrops = allCrops.filter(c => {
-    if (!search) return true;
-    const s = search.toLowerCase();
-    const items = cropsByBitki[c];
-    return c.toLowerCase().includes(s) || items.some(i => i.zararli.toLowerCase().includes(s) || i.urun.toLowerCase().includes(s));
-  });
 
-  return (
-    <div style={{fontFamily:"Arial, sans-serif", background:"#f5f7f2", minHeight:"100vh", color:"#222"}}>
+# ============================================================
+# 2. GEÇERLİ OLANLARI FİLTRELE
+# ============================================================
 
-      {/* HEADER */}
-      <div style={{background:"#fff", borderBottom:"3px solid #019934", padding:"16px 24px"}}>
-        <div style={{maxWidth:900, margin:"0 auto", display:"flex", alignItems:"center", justifyContent:"space-between", flexWrap:"wrap", gap:12}}>
-          <img src={LOGO} alt="Syngenta" style={{height:36}} />
-          <span style={{fontSize:12, color:"#666"}}>syngenta.com.tr</span>
-        </div>
-      </div>
+def filter_valid(records):
+    """Bugün itibariyle geçerli olan kayıtları filtreler."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    valid = [r for r in records if r.get("gecerlilikSuresi", "") >= today]
+    print(f"  Bugün ({today}) geçerli: {len(valid)} kayıt")
+    return valid
 
-      {/* HERO */}
-      <div style={{background:"linear-gradient(135deg, #01662e 0%, #019934 60%, #2fb95a 100%)", color:"#fff", padding:"40px 24px 36px"}}>
-        <div style={{maxWidth:900, margin:"0 auto"}}>
-          <p style={{fontSize:13, letterSpacing:1.5, textTransform:"uppercase", margin:"0 0 8px", opacity:0.8}}>Bitki Koruma Ürünleri</p>
-          <h1 style={{fontSize:"clamp(24px, 4.5vw, 38px)", margin:"0 0 12px", fontWeight:700, lineHeight:1.2}}>
-            2026 Geçici Tavsiye Alan Ürünlerimiz
-          </h1>
-          <p style={{fontSize:15, opacity:0.9, maxWidth:640, lineHeight:1.6, margin:0}}>
-            T.C. Tarım ve Orman Bakanlığı BKU Veri Tabanı'nda 2026 yılı için geçici tavsiye almış Syngenta ürünleri. Kültür bitkisine göre arama yaparak size uygun çözümü bulabilirsiniz.
-          </p>
-        </div>
-      </div>
 
-      {/* DISCLAIMER */}
-      <div style={{background:"#FFF8E1", borderBottom:"1px solid #FFD54F", padding:"10px 24px"}}>
-        <div style={{maxWidth:900, margin:"0 auto", fontSize:12, color:"#5D4037"}}>
-          ⚠️ Geçici tavsiyeler belirli süreler ve koşullar dahilinde geçerlidir. Uygulama öncesi güncel durumu <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#E65100", fontWeight:600}}>BKU Veri Tabanı</a>'ndan doğrulayınız.
-        </div>
-      </div>
+# ============================================================
+# 3. SYNGENTA PORTFÖY EŞLEŞTİRMESİ
+# ============================================================
 
-      {/* MAIN */}
-      <div style={{maxWidth:900, margin:"0 auto", padding:"28px 24px"}}>
-
-        {/* SEARCH */}
-        <div style={{marginBottom:24}}>
-          <input
-            type="text" placeholder="Kültür bitkisi, zararlı veya ürün adı yazın..."
-            value={search} onChange={e => setSearch(e.target.value)}
-            style={{width:"100%", padding:"12px 16px", borderRadius:6, border:"1.5px solid #C8E6C9", fontSize:14, fontFamily:"Arial", boxSizing:"border-box", outline:"none", background:"#fff"}}
-          />
-        </div>
-
-        {/* CROP CARDS */}
-        <div style={{display:"flex", flexDirection:"column", gap:2}}>
-          {filteredCrops.map(crop => {
-            const items = cropsByBitki[crop].filter(i => {
-              if (!search) return true;
-              const s = search.toLowerCase();
-              return crop.toLowerCase().includes(s) || i.zararli.toLowerCase().includes(s) || i.urun.toLowerCase().includes(s);
-            });
-            const isOpen = !closedCrops[crop];
-            return (
-              <div key={crop}>
-                {/* Crop Header */}
-                <button
-                  onClick={() => toggleCrop(crop)}
-                  style={{
-                    width:"100%", display:"flex", alignItems:"center", justifyContent:"space-between",
-                    padding:"14px 18px", background: isOpen ? "#019934" : "#fff",
-                    color: isOpen ? "#fff" : "#222", border:"1px solid #e0e0e0",
-                    borderRadius: isOpen ? "6px 6px 0 0" : 6, cursor:"pointer",
-                    fontFamily:"Arial", fontSize:15, fontWeight:600, textAlign:"left",
-                    transition:"all 0.15s"
-                  }}>
-                  <span style={{display:"flex", alignItems:"center", gap:10}}>
-                    <span style={{fontSize:18}}>🌱</span>
-                    {crop}
-                    <span style={{
-                      fontSize:11, fontWeight:400, padding:"2px 8px", borderRadius:10,
-                      background: isOpen ? "rgba(255,255,255,0.25)" : "#E8F5E9",
-                      color: isOpen ? "#fff" : "#2E7D32"
-                    }}>
-                      {items.length} tavsiye
-                    </span>
-                  </span>
-                  <span style={{fontSize:12, transition:"transform 0.2s", transform: isOpen ? "rotate(180deg)" : "none"}}>▼</span>
-                </button>
-
-                {/* Crop Detail */}
-                {isOpen && (
-                  <div style={{border:"1px solid #e0e0e0", borderTop:"none", borderRadius:"0 0 6px 6px", background:"#fff", overflow:"hidden"}}>
-                    {items.map((item, idx) => (
-                      <div key={idx} style={{
-                        padding:"16px 18px", borderBottom: idx < items.length - 1 ? "1px solid #f0f0f0" : "none",
-                        display:"grid", gridTemplateColumns:"1fr", gap:10
-                      }}>
-                        {/* Row 1: Hastalık + Ürün */}
-                        <div style={{display:"flex", alignItems:"flex-start", justifyContent:"space-between", flexWrap:"wrap", gap:8}}>
-                          <div>
-                            <div style={{fontSize:11, color:"#888", textTransform:"uppercase", letterSpacing:0.5, marginBottom:2}}>{item.grup}</div>
-                            <div style={{fontSize:15, fontWeight:600, color:"#333"}}>{item.zararli}</div>
-                          </div>
-                          <div style={{
-                            background: urunRenk[item.urun] || "#333", color:"#fff",
-                            padding:"5px 12px", borderRadius:4, fontSize:13, fontWeight:700, whiteSpace:"nowrap"
-                          }}>
-                            {item.urun}
-                          </div>
-                        </div>
-
-                        {/* Row 2: Details grid */}
-                        <div style={{display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(130px, 1fr))", gap:8}}>
-                          <div style={{background:"#f8f9f6", padding:"8px 10px", borderRadius:4}}>
-                            <div style={{fontSize:10, color:"#888", textTransform:"uppercase"}}>Formülasyon</div>
-                            <div style={{fontSize:13, fontWeight:600}}>{item.form}</div>
-                          </div>
-                          <div style={{background:"#f8f9f6", padding:"8px 10px", borderRadius:4}}>
-                            <div style={{fontSize:10, color:"#888", textTransform:"uppercase"}}>Aktif Madde</div>
-                            <div style={{fontSize:12, fontWeight:500}}>{item.aktif}</div>
-                          </div>
-                          <div style={{background:"#f8f9f6", padding:"8px 10px", borderRadius:4}}>
-                            <div style={{fontSize:10, color:"#888", textTransform:"uppercase"}}>Doz</div>
-                            <div style={{fontSize:13, fontWeight:600, color:"#019934"}}>{item.doz}</div>
-                          </div>
-                          <div style={{background:"#f8f9f6", padding:"8px 10px", borderRadius:4}}>
-                            <div style={{fontSize:10, color:"#888", textTransform:"uppercase"}}>PHI</div>
-                            <div style={{fontSize:13, fontWeight:700, color: item.phi === "Tohum ilacı" ? "#E65100" : item.phi === "-" ? "#999" : "#1565C0"}}>{item.phi}</div>
-                          </div>
-                          <div style={{background:"#f8f9f6", padding:"8px 10px", borderRadius:4}}>
-                            <div style={{fontSize:10, color:"#888", textTransform:"uppercase"}}>Geçerlilik</div>
-                            <div style={{fontSize:13, fontWeight:500}}>{item.gecerlilik}</div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        {filteredCrops.length === 0 && (
-          <div style={{textAlign:"center", padding:40, color:"#999"}}>
-            Aramanızla eşleşen kültür bitkisi bulunamadı.
-          </div>
-        )}
-      </div>
-
-      {/* FOOTER */}
-      <div style={{borderTop:"3px solid #019934", background:"#fff", padding:"24px", marginTop:40}}>
-        <div style={{maxWidth:900, margin:"0 auto", textAlign:"center"}}>
-          <img src={LOGO} alt="Syngenta" style={{height:28, marginBottom:12}} />
-          <p style={{fontSize:12, color:"#888", margin:"0 0 6px"}}>
-            Bu sayfa yalnızca bilgilendirme amaçlıdır. Resmi ve güncel bilgiler için{" "}
-            <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#019934"}}>BKU Veri Tabanı</a>'nı ziyaret ediniz.
-          </p>
-          <p style={{fontSize:11, color:"#aaa", margin:0}}>© 2026 Syngenta Tarım Sanayi ve Ticaret A.Ş.</p>
-        </div>
-      </div>
-    </div>
-  );
+# Syngenta ürün lookup: (aktif_madde, formülasyon_kısa) -> ürün adı
+SYNGENTA_LOOKUP = {
+    ("250 g/l Azoxystrobin", "SC"): "QUADRIS",
+    ("250 g/l Azoxystrobin ", "SC"): "QUADRIS",  # trailing space variant
+    ("50 g/l Lambda-cyhalothrin", "CS"): "KARATE ZEON",
+    ("50 g/l Lambda-cyhalothrin", "EC"): "NİNJA 5 EC",
+    ("100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin", "ZC"): "AMPLİGO 150 ZC",
+    ("350 g/l Metalaxyl-m", "ES"): "APRIN XL 350 ES",
+    ("700 g/l Mineral Yağ", "EW"): "PORKAN / PLOCAFİR",
+    ("200 g/l Azoxystrobin + 125 g/l Difenoconazole", "SC"): "QUADRIS MAXX",
+    ("%37,5 Cyprodinil + %25 Fludioxonil", "WG"): "SWITCH 62.5 WG",
+    ("600 g/l Cyantraniliprole", "FS"): "FORTENZA 600 FS",
+    ("601 g/l Cyantraniliprole", "FS"): "FORTENZA 600 FS",
+    ("100 g/l Fludioxonil", "FS"): "CELEST MAX 100 FS",
+    ("125 g/l Azoxystrobin + 125 g/l Difenoconazole", "SC"): "AMISTAR GOLD",
+    ("50 g/l Lambda-cyhalothrin", "CS "): "KARATE ZEON",  # trailing space
 }
 
+FORM_MAP = {
+    "EC (Emülsiye Olabilen Konsantre)": "EC",
+    "SC (Akıcı Konsantre/Süspansiyon Konsantre)": "SC",
+    "CS (Kapsül Süspansiyon)": "CS",
+    "EW (Emülsiyon, Suda Yağ)": "EW",
+    "FS (Tohum İlaçlaması İçin Akıcı Konsantre)": "FS",
+    "WG (Suda Dağılabilen Granül)": "WG",
+    "WP (Islanabilir Toz)": "WP",
+    "ES (Emülsiyon Tohum İlacı)": "ES",
+    "SE (Suspo-Emülsiyon)": "SE",
+    "ZC (CS ve SC Formülasyonlarının Karışımı)": "ZC",
+    "OD (Yağda Dağılabilen)": "OD",
+    "SL (Suda Çözünen Konsantre)": "SL",
+}
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-</script>
-</body>
-</html>
+def match_syngenta(records):
+    """Syngenta portföyüyle eşleşen kayıtları bulur."""
+    matched = []
+    for r in records:
+        aktif = (r.get("aktifMaddeAdi") or "").strip()
+        form_long = (r.get("formulasyonAdi") or "").strip()
+        form_short = FORM_MAP.get(form_long, form_long[:2] if form_long else "")
+        
+        key = (aktif, form_short)
+        urun = SYNGENTA_LOOKUP.get(key)
+        
+        if not urun:
+            # Try with trailing space
+            key2 = (aktif + " ", form_short)
+            urun = SYNGENTA_LOOKUP.get(key2)
+        
+        if urun:
+            r["syngenta_urun"] = urun
+            r["form_short"] = form_short
+            matched.append(r)
+    
+    print(f"  Syngenta eşleşme: {len(matched)} kayıt")
+    return matched
+
+
+# ============================================================
+# 4. DETAY SAYFALARINDAN PHI / DOZ / MRL ÇEK
+# ============================================================
+
+def scrape_detail(record_id, session=None):
+    """Tek bir detay sayfasından PHI, Doz, MRL, Açıklama çeker."""
+    url = f"https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/Details/{record_id}"
+    
+    if session is None:
+        session = requests.Session()
+    
+    try:
+        resp = session.get(url, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        
+        def get_field(label):
+            dt = soup.find("dt", string=lambda t: t and label in t if t else False)
+            if dt:
+                dd = dt.find_next_sibling("dd")
+                return dd.get_text(strip=True) if dd else "-"
+            # Alternative: look for text containing the label
+            for dt in soup.find_all("dt"):
+                if dt.get_text(strip=True) and label.lower() in dt.get_text(strip=True).lower():
+                    dd = dt.find_next_sibling("dd")
+                    return dd.get_text(strip=True) if dd else "-"
+            return "-"
+        
+        return {
+            "phi": get_field("Son İlaçlama"),
+            "doz": get_field("Dozu"),
+            "mrl": get_field("MRL"),
+            "aciklama": get_field("Açıklama"),
+            "uygulama_zamani": get_field("Uygulama"),
+        }
+    except Exception as e:
+        print(f"    HATA (id={record_id}): {e}")
+        return {"phi": "HATA", "doz": "-", "mrl": "-", "aciklama": "-", "uygulama_zamani": "-"}
+
+
+def scrape_all_details(matched_records):
+    """Tüm eşleşen kayıtlar için detay sayfalarını çeker."""
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0 (compatible; SyngentaBot/1.0)"})
+    
+    for i, r in enumerate(matched_records):
+        rid = r.get("id")
+        if not rid:
+            continue
+        
+        print(f"  [{i+1}/{len(matched_records)}] Detay: {r['bitkiAdi']} - {r['aktifMaddeAdi'][:35]}...")
+        details = scrape_detail(rid, session)
+        r.update(details)
+        
+        time.sleep(0.5)  # Rate limiting — siteye nazik ol
+    
+    return matched_records
+
+
+# ============================================================
+# 5. EXCEL + JSON ÇIKTISI
+# ============================================================
+
+def save_output(matched_records):
+    """Excel ve JSON olarak kaydeder."""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+    
+    # DataFrame oluştur
+    rows = []
+    for r in matched_records:
+        rows.append({
+            "Syngenta Ürün": r.get("syngenta_urun", ""),
+            "Formülasyon": r.get("form_short", ""),
+            "Aktif Madde": r.get("aktifMaddeAdi", ""),
+            "Bitki": r.get("bitkiAdi", ""),
+            "Zararlı / Hastalık": r.get("zararliAdi", ""),
+            "PHI (BKU)": r.get("phi", "-"),
+            "Doz (BKU)": r.get("doz", "-"),
+            "MRL": r.get("mrl", "-"),
+            "Ruhsat Grubu": r.get("ruhsatGrubu", ""),
+            "Tavsiye Tarihi": r.get("verilisTarihi", ""),
+            "Geçerlilik": r.get("gecerlilikSuresi", ""),
+            "Durum": r.get("durumu", ""),
+            "Açıklama": r.get("aciklama", ""),
+            "BKU ID": r.get("id", ""),
+        })
+    
+    df = pd.DataFrame(rows)
+    
+    # Excel
+    excel_file = f"syngenta_gecici_tavsiye_LIVE_{timestamp}.xlsx"
+    df.to_excel(excel_file, index=False, sheet_name="Syngenta Eşleşmeler")
+    print(f"\n  Excel: {excel_file}")
+    
+    # JSON (landing page için)
+    json_file = f"syngenta_gecici_tavsiye_LIVE_{timestamp}.json"
+    with open(json_file, "w", encoding="utf-8") as f:
+        json.dump(rows, f, ensure_ascii=False, indent=2)
+    print(f"  JSON:  {json_file}")
+    
+    # Landing page data.js (doğrudan import edilebilir)
+    js_file = "data.js"
+    with open(js_file, "w", encoding="utf-8") as f:
+        f.write(f"// Otomatik oluşturuldu: {timestamp}\n")
+        f.write(f"// Kaynak: BKU API + Syngenta Portföy Eşleştirme\n")
+        f.write(f"const BKU_DATA = {json.dumps(rows, ensure_ascii=False, indent=2)};\n")
+    print(f"  JS:    {js_file}")
+    
+    return df
+
+
+# ============================================================
+# ANA AKIŞ
+# ============================================================
+
+if __name__ == "__main__":
+    print("=" * 60)
+    print("BKU Geçici Tavsiye — Syngenta Canlı Eşleştirme")
+    print("=" * 60)
+    print()
+    
+    # 1. API'den liste çek
+    records = fetch_bku_liste()
+    
+    # 2. Geçerli olanları filtrele
+    valid = filter_valid(records)
+    
+    # 3. Syngenta eşleştir
+    matched = match_syngenta(valid)
+    
+    # 4. Detay sayfalarından PHI/Doz/MRL çek
+    print("\nDetay sayfaları çekiliyor...")
+    matched = scrape_all_details(matched)
+    
+    # 5. Kaydet
+    print("\nÇıktılar kaydediliyor...")
+    df = save_output(matched)
+    
+    print(f"\n{'=' * 60}")
+    print(f"TAMAMLANDI: {len(matched)} Syngenta eşleşmesi bulundu")
+    print(f"{'=' * 60}")
+    print(df[["Syngenta Ürün", "Bitki", "PHI (BKU)", "Doz (BKU)"]].to_string())
