@@ -1,26 +1,14 @@
 """
-BKU Gecici Tavsiye - Syngenta Canli Eslestirme
+BKU Gecici Tavsiye - Syngenta Canli Eslestirme v3
+Timeout arttirildi + retry eklendi
 """
 import requests, pandas as pd, json, time, glob, sys
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 from datetime import datetime
 
 FORM_MAP = {
-    "EC (Emulsiye Olabilen Konsantre)": "EC",
-    "SC (Akici Konsantre/Susansiyon Konsantre)": "SC",
-    "CS (Kapsul Susansiyon)": "CS",
-    "EW (Emulsiyon, Suda Yag)": "EW",
-    "FS (Tohum Ilaclamasi Icin Akici Konsantre)": "FS",
-    "WG (Suda Dagilabilen Granul)": "WG",
-    "WP (Islanabilir Toz)": "WP",
-    "ES (Emulsiyon Tohum Ilaci)": "ES",
-    "ZC (CS ve SC Formulasyonlarinin Karisimi)": "ZC",
-    "OD (Yagda Dagilabilen)": "OD",
-    "SL (Suda Cozunen Konsantre)": "SL",
-}
-
-# Turkish character variants for form matching
-FORM_MAP_TR = {
     "EC (Em\u00fclsiye Olabilen Konsantre)": "EC",
     "SC (Ak\u0131c\u0131 Konsantre/S\u00fcspansiyon Konsantre)": "SC",
     "CS (Kaps\u00fcl S\u00fcspansiyon)": "CS",
@@ -33,7 +21,22 @@ FORM_MAP_TR = {
     "OD (Ya\u011fda Da\u011f\u0131labilen)": "OD",
     "SL (Suda \u00c7\u00f6z\u00fcnen Konsantre)": "SL",
 }
-FORM_MAP.update(FORM_MAP_TR)
+
+def create_session():
+    """Retry + uzun timeout ile session olustur."""
+    s = requests.Session()
+    retry = Retry(total=5, backoff_factor=3, status_forcelist=[500, 502, 503, 504])
+    adapter = HTTPAdapter(max_retries=retry)
+    s.mount("https://", adapter)
+    s.mount("http://", adapter)
+    s.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.8",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": "https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks",
+    })
+    return s
 
 def load_portfolio():
     for pat in ["SYNGENTA_PORTFOLIO*.xlsx", "portfolio*.xlsx", "*.xlsx"]:
@@ -55,131 +58,65 @@ def load_portfolio():
     print("HATA: Portfolyo dosyasi bulunamadi!")
     return {}
 
-def fetch_bku():
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/javascript, */*; q=0.01",
-        "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.8",
-        "X-Requested-With": "XMLHttpRequest",
-        "Referer": "https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks",
-    })
-
-    # Step 1: Visit main page to get cookies
-    print("BKU ana sayfa yukleniyor (cookie icin)...")
+def fetch_bku(session):
+    # Once ana sayfayi ziyaret et (cookie icin)
+    print("BKU ana sayfa yukleniyor...")
     try:
-        main = session.get(
+        session.get(
             "https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks",
-            timeout=30
+            timeout=120
         )
-        print(f"  Ana sayfa status: {main.status_code}")
         print(f"  Cookies: {list(session.cookies.keys())}")
     except Exception as e:
-        print(f"  Ana sayfa hatasi: {e}")
+        print(f"  Ana sayfa hatasi (devam ediliyor): {e}")
 
-    # Step 2: Call DataTable API
     url = "https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/DataTableGetir"
     params = {
-        "draw": "1",
-        "start": "0",
-        "length": "2000",
-        "search[value]": "",
-        "search[regex]": "false",
-        "param1": "[]",
-        "order[0][column]": "6",
-        "order[0][dir]": "desc",
+        "draw": "1", "start": "0", "length": "2000",
+        "search[value]": "", "search[regex]": "false", "param1": "[]",
+        "order[0][column]": "6", "order[0][dir]": "desc",
         "columns[0][data]": "bitkiAdi",
-        "columns[0][name]": "",
-        "columns[0][searchable]": "true",
-        "columns[0][orderable]": "true",
-        "columns[0][search][value]": "",
-        "columns[0][search][regex]": "false",
         "columns[1][data]": "zararliAdi",
-        "columns[1][name]": "",
-        "columns[1][searchable]": "true",
-        "columns[1][orderable]": "true",
-        "columns[1][search][value]": "",
-        "columns[1][search][regex]": "false",
         "columns[2][data]": "durumu",
-        "columns[2][name]": "",
-        "columns[2][searchable]": "true",
-        "columns[2][orderable]": "true",
-        "columns[2][search][value]": "",
-        "columns[2][search][regex]": "false",
         "columns[3][data]": "aktifMaddeAdi",
-        "columns[3][name]": "",
-        "columns[3][searchable]": "true",
-        "columns[3][orderable]": "true",
-        "columns[3][search][value]": "",
-        "columns[3][search][regex]": "false",
         "columns[4][data]": "formulasyonAdi",
-        "columns[4][name]": "",
-        "columns[4][searchable]": "true",
-        "columns[4][orderable]": "true",
-        "columns[4][search][value]": "",
-        "columns[4][search][regex]": "false",
         "columns[5][data]": "ruhsatGrubu",
-        "columns[5][name]": "",
-        "columns[5][searchable]": "true",
-        "columns[5][orderable]": "true",
-        "columns[5][search][value]": "",
-        "columns[5][search][regex]": "false",
         "columns[6][data]": "verilisTarihi",
-        "columns[6][name]": "",
-        "columns[6][searchable]": "true",
-        "columns[6][orderable]": "true",
-        "columns[6][search][value]": "",
-        "columns[6][search][regex]": "false",
         "columns[7][data]": "gecerlilikSuresi",
-        "columns[7][name]": "",
-        "columns[7][searchable]": "true",
-        "columns[7][orderable]": "true",
-        "columns[7][search][value]": "",
-        "columns[7][search][regex]": "false",
         "columns[8][data]": "id",
-        "columns[8][name]": "",
-        "columns[8][searchable]": "true",
-        "columns[8][orderable]": "false",
-        "columns[8][search][value]": "",
-        "columns[8][search][regex]": "false",
     }
+    # Her sutun icin searchable/orderable parametreleri
+    for i in range(9):
+        params[f"columns[{i}][name]"] = ""
+        params[f"columns[{i}][searchable]"] = "true"
+        params[f"columns[{i}][orderable]"] = "true" if i < 8 else "false"
+        params[f"columns[{i}][search][value]"] = ""
+        params[f"columns[{i}][search][regex]"] = "false"
 
-    print("BKU API cagriliyor...")
-    resp = session.get(url, params=params, timeout=30)
+    print("BKU API cagriliyor (timeout=120s, 5 retry)...")
+    resp = session.get(url, params=params, timeout=120)
     print(f"  Status: {resp.status_code}")
-    print(f"  Content-Type: {resp.headers.get('Content-Type', 'bilinmiyor')}")
-    print(f"  Yanit boyut: {len(resp.text)} karakter")
-    print(f"  Yanit ilk 300 kar: {resp.text[:300]}")
-
-    if resp.status_code != 200:
-        print(f"HATA: API {resp.status_code} dondu")
-        sys.exit(1)
+    print(f"  Content-Type: {resp.headers.get('Content-Type', '?')}")
+    print(f"  Boyut: {len(resp.text)} karakter")
+    print(f"  Ilk 200 kar: {resp.text[:200]}")
 
     try:
         data = resp.json()
     except Exception as e:
-        print(f"\nJSON parse hatasi: {e}")
-        print(f"Yanit HTML mi? {'<html' in resp.text.lower()}")
-        print(f"Yanit ilk 500 kar:\n{resp.text[:500]}")
+        print(f"JSON hatasi: {e}")
+        print(f"HTML mi? {'<html' in resp.text.lower()}")
         sys.exit(1)
 
     records = data.get("data", [])
-    total = data.get("recordsTotal", 0)
-    print(f"  Toplam: {total} | Cekilen: {len(records)}")
-    
-    if len(records) > 0:
-        print(f"  Ornek kayit: {json.dumps(records[0], ensure_ascii=False)[:200]}")
-    
+    print(f"  Toplam: {data.get('recordsTotal', 0)} | Cekilen: {len(records)}")
     return records
 
 def get_form_short(form_long):
     if not form_long:
         return ""
-    # Try direct lookup
     fs = FORM_MAP.get(form_long)
     if fs:
         return fs
-    # Try extracting first 2-3 chars before parenthesis
     fl = form_long.strip()
     if " (" in fl:
         return fl.split(" (")[0].strip()
@@ -202,20 +139,16 @@ def match_records(records, lookup):
     print(f"  Syngenta eslesme: {len(matched)}")
     return matched
 
-def scrape_details(matched):
-    s = requests.Session()
-    s.headers.update({
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-    })
+def scrape_details(matched, session):
     for i, r in enumerate(matched):
         rid = r.get("id")
         if not rid:
             continue
         print(f"  [{i+1}/{len(matched)}] {r.get('bitkiAdi','')} - {r.get('syngenta_urun','')}")
         try:
-            resp = s.get(
+            resp = session.get(
                 f"https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/Details/{rid}",
-                timeout=15
+                timeout=60
             )
             soup = BeautifulSoup(resp.text, "html.parser")
             def gf(label):
@@ -232,7 +165,7 @@ def scrape_details(matched):
         except Exception as e:
             print(f"    HATA: {e}")
             r["phi"] = "-"; r["doz"] = "-"; r["mrl"] = "-"; r["aciklama"] = "-"
-        time.sleep(0.5)
+        time.sleep(1)
     return matched
 
 def save(matched):
@@ -261,15 +194,16 @@ def save(matched):
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("BKU - Syngenta Eslestirme")
+    print("BKU - Syngenta Eslestirme v3")
     print("=" * 50)
     lookup = load_portfolio()
     if not lookup:
         sys.exit(1)
-    recs = fetch_bku()
+    session = create_session()
+    recs = fetch_bku(session)
     m = match_records(recs, lookup)
     print("\nDetaylar cekiliyor...")
-    m = scrape_details(m)
+    m = scrape_details(m, session)
     print("\nKaydediliyor...")
     save(m)
     print(f"\nTAMAMLANDI: {len(m)} eslesme")
