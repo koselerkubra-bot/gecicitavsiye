@@ -2,32 +2,25 @@ name: BKU Geçici Tavsiye Güncelle
 
 on:
   schedule:
-    - cron: '0 5 * * 1'  # Her Pazartesi 08:00 Türkiye saati (UTC+3)
-  workflow_dispatch:       # Manuel tetikleme butonu
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Python kur
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
       - name: Bağımlılıkları yükle
         run: pip install requests beautifulsoup4 pandas openpyxl
-      
       - name: BKU verisi çek
         run: python bku_live_scraper.py
-      
       - name: Değişiklikleri commit et
         run: |
           git config user.name "BKU Bot"
           git config user.email "bot@syngenta.com"
           git add data.js syngenta_bku_live.xlsx || true
-          git commit -m "🌱 BKU data update $(date +%Y-%m-%d)" || echo "No changes"
-          git push
+          git diff --cached --quiet || git commit -m "BKU update $(date +%Y-%m-%d)"
+          git push || true
