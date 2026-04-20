@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "BKU Bot"
           git config user.email "bot@syngenta.com"
-          git add *.xlsx *.json data.js
+          git add data.js syngenta_bku_live.xlsx || true
           git commit -m "🌱 BKU data update $(date +%Y-%m-%d)" || echo "No changes"
           git push
