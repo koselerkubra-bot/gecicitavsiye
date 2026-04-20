@@ -36,7 +36,7 @@ FORM_MAP_TR = {
 FORM_MAP.update(FORM_MAP_TR)
 
 def load_portfolio():
-    for pat in ["SYNGENTA_PORTFOLIO*.xlsx", "portfolio*.xlsx", "*.xlsx"]:
+    for pat in ["SYNGENTA_PORTFOLIO.xlsx"]:
         found = glob.glob(pat)
         if found:
             f = found[0]
