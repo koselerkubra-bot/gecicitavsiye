@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Syngenta Türkiye — 2026 Geçici Tavsiye Alan Ürünlerimiz</title>
-<meta name="description" content="T.C. Tarım ve Orman Bakanlığı BKU Veri Tabanında 2026 yılı için geçici tavsiye almış Syngenta bitki koruma ürünleri listesi.">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
@@ -12,8 +11,6 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; }
-table { border-collapse: collapse; }
-th { position: sticky; top: 0; z-index: 2; }
 </style>
 </head>
 <body>
@@ -23,27 +20,19 @@ const { useState, useMemo } = React;
 const LOGO = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgo8c3ZnCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4wIgogICB3aWR0aD0iODE0Ljk2MDYzIgogICBoZWlnaHQ9IjI2OC41ODI2NyIKICAgaWQ9InN2ZzM2MzMiPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMzNjM1Ij48Y2xpcFBhdGgKICAgaWQ9ImNscDYiPgo8cGF0aAogICBkPSJNIDAsODQyLjA0IEwgNTk0Ljk2LDg0Mi4wNCBMIDU5NC45NiwwIEwgMCwwIEwgMCw4NDIuMDQgeiAiCiAgIGlkPSJwYXRoMzc5OTgiIC8+Cgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGgKICAgaWQ9ImNscDUiPgo8cGF0aAogICBkPSJNIC0wLjEzOCw4MzguOTQgTCA1OTUuMTQsODM4Ljk0IEwgNTk1LjE0LC0yLjk0NSBMIC0wLjEzOCwtMi45NDUgTCAtMC4xMzgsODM4Ljk0IHogIgogICBpZD0icGF0aDM3OTkzIiAvPgoKPC9jbGlwUGF0aD4KPGNsaXBQYXRoCiAgIGlkPSJjbHA0Ij4KPHBhdGgKICAgZD0iTSAwLDAgTCAxMTEuMDgsMCBMIDExMS4wOCw1NS4zNTcgTCAwLDU1LjM1NyBMIDAsMCB6ICIKICAgaWQ9InBhdGgyNTA1MCIgLz4KCjwvY2xpcFBhdGg+CgoKCgoKCgoKCgo8L2RlZnM+CiAgPGcKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM0OS4wNDU0LC00MzAuNTI3NjQpIgogICAgIGlkPSJsYXllcjEiPgogICAgPGcKICAgICAgIGlkPSJnNDg3MDAiPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDIwNTQuNDQyOSw1NTAuMTc4NTcgTCAyMDI3LjkwNjQsNTUwLjE3ODU3IEwgMjAyNy45MDY0LDU5NC4wMTg4MSBDIDIwMjcuOTA2NCw2MDYuNTE3MTIgMjAzNC41MDY0LDYwOC44NDA3NyAyMDQzLjAzMDksNjA4Ljg0MDc3IEMgMjA0NS45ODcyLDYwOC44NDA3NyAyMDQ5LjE0OTIsNjA4LjQyMTM5IDIwNTIuMzgwNCw2MDcuOTgxNDQgTCAyMDU0LjQ0MjksNjI3LjYyOTQ1IEMgMjA0Ny40OTk3LDYyOC44NjY5IDIwMzguMjE4NCw2MjkuOTE4NzIgMjAzMi4xNjg5LDYyOS45MTg3MiBDIDIwMTMuOTUwNyw2MjkuOTE4NzIgMTk5Ny43MjYxLDYyMy41Mzg5NyAxOTk3LjcyNjEsNjAxLjE0MTA3IEwgMTk5Ny43MjYxLDU1MC4xNzg1NyBMIDE5ODIuMzk1NCw1NTAuMTc4NTcgTCAxOTgyLjM5NTQsNTMwLjgwNTUxIEwgMTk5Ny43MjYxLDUzMC44MDU1MSBMIDE5OTcuNzI2MSw1MDkuNDU5NDMgTCAyMDI3LjkwNjQsNTAwLjkwNzIyIEwgMjAyNy45MDY0LDUzMC44MDU1MSBMIDIwNTQuNDQyOSw1MzAuODA1NTEgTCAyMDU0LjQ0MjksNTUwLjE3ODU3IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MjkwIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE5NzMuMTgzNCw2MjcuOTA0NDUgTCAxOTQzLjAwMzEsNjI3LjkwNDQ1IEwgMTk0My4wMDMxLDU2NS41NjQyMiBDIDE5NDMuMDAzMSw1NTYuMzg2NDUgMTkzOS4xNTM3LDU1MS4zMTI5IDE5MjguNzcyNCw1NTEuMzEyOSBDIDE5MjAuOTM1NCw1NTEuMzEyOSAxOTE1LjkxNjYsNTU1LjA4MDI1IDE5MTAuMjc5Niw1NTkuNTc2MzUgTCAxOTEwLjI3OTYsNjI3LjkwNDQ1IEwgMTg4MC4wMzA2LDYyNy45MDQ0NSBMIDE4ODAuMDMwNiw1MzAuODA1NTEgTCAxOTA5LjM4NTksNTMwLjgwNTUxIEwgMTkwOS4zODU5LDUzOS4zNTc3MiBDIDE5MTkuMjE2Niw1MzIuNzQ0MjEgMTkzMC40OTExLDUyOC41NDM3NCAxOTQyLjcyODEsNTI4LjU0Mzc0IEMgMTk2MS45Nzc3LDUyOC41NDM3NCAxOTczLjE4MzQsNTQwLjQ5MjA0IDE5NzMuMTgzNCw1NTguNzE2OTcgTCAxOTczLjE4MzQsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MjkyIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE4MTcuODE0NCw0NDguMTcxMDggQyAxODAyLjQ4MzYsNDc0LjA0NzU5IDE4MDkuMTUxOCw0OTcuNDgzNjIgMTc5NC4xNjQ4LDUxMi40MjI0NiBDIDE3ODIuMjAyOCw1MjQuNDMyNjMgMTc3MS4wNjU4LDUyNC4wMjcwMSAxNzU4LjAwMzgsNTI0LjAyNzAxIEMgMTc1My4zOTc1LDUyNC4wMjcwMSAxNzQ0LjU5ODEsNTI0LjQzMjYzIDE3NDAuODg1NSw1MjcuMTEzNzkgQyAxNzM4Ljc1NDgsNTIwLjI4MDI4IDE3MzcuNzkyMyw1MTIuNzU5MzMgMTczNy43OTIzLDUwNS41ODIwOCBDIDE3MzcuNzkyMyw0OTMuMjY5NCAxNzQwLjU0MTgsNDgyLjMxNzkyIDE3NDkuNDEwNiw0NzMuNDcwMTQgQyAxNzY2LjM5MTMsNDU2LjUxMDE2IDE3OTcuMTIxMSw0NTEuMTI3MjMgMTgxNy44MTQ0LDQ0OC4xNzEwOCIKICAgICAgICAgc3R5bGU9ImZpbGw6IzAxOTkzNDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgICAgaWQ9InBhdGg0ODI5NCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgZD0iTSAxNjU0LjEyNjUsNjI3LjkwNDQ1IEwgMTYyMy45NDYzLDYyNy45MDQ0NSBMIDE2MjMuOTQ2Myw1NjUuNTY0MjIgQyAxNjIzLjk0NjMsNTU2LjM4NjQ1IDE2MjAuMDk2Miw1NTEuMzEyOSAxNjA5LjcxNTUsNTUxLjMxMjkgQyAxNjAxLjk0NzMsNTUxLjMxMjkgMTU5Ni44NTk3LDU1NS4wODAyNSAxNTkxLjIyMjgsNTU5LjU3NjM1IEwgMTU5MS4yMjI4LDYyNy45MDQ0NSBMIDE1NjEuMDQyNSw2MjcuOTA0NDUgTCAxNTYxLjA0MjUsNTMwLjgwNTUxIEwgMTU5MC4zOTc4LDUzMC44MDU1MSBMIDE1OTAuMzk3OCw1MzkuMzU3NzIgQyAxNjAwLjIyODUsNTMyLjc0NDIxIDE2MTEuNTAzLDUyOC41NDM3NCAxNjIzLjY3MTMsNTI4LjU0Mzc0IEMgMTY0Mi45MjA4LDUyOC41NDM3NCAxNjU0LjEyNjUsNTQwLjQ5MjA0IDE2NTQuMTI2NSw1NTguNzE2OTcgTCAxNjU0LjEyNjUsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4Mjk2IiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE1NTYuMjMsNTMwLjgwNTUxIEwgMTUwNy44MzIsNjQ4LjQyNTUzIEMgMTUwMC40MDcsNjY2LjQ4NTUxIDE0ODUuNDg4Nyw2NzkuNzQ2ODkgMTQ2NS4xMzk3LDY3OS43NDY4OSBDIDE0NTQuOTY1Miw2NzkuNzQ2ODkgMTQ0OS41MzM5LDY3OC40MjAwNyAxNDQyLjkzNDUsNjc2LjkwNzYyIEwgMTQ0Ny4xOTY0LDY1Ny41Mjc3NCBDIDE0NTIuNTU5LDY1OC43MjM5NCAxNDU2LjYxNTIsNjU5LjIzOTUxIDE0NjAuMjU4NCw2NTkuMjM5NTEgQyAxNDcyLjQyNjcsNjU5LjIzOTUxIDE0NzguODg5Miw2NDguOTIwNTMgMTQ4NC44MDE3LDYzNC43NTE3IEwgMTQ4Ny42MTk5LDYyNy45MDQ0NSBMIDE0NTAuMDE1Miw1MzAuODA1NTEgTCAxNDgyLjQ2NDIsNTMwLjgwNTUxIEwgMTUwMC4xMzE5LDU3OC45MzU2IEMgMTUwMi4yNjMyLDU4NC43Mzc5MSAxNTAzLjUwMDcsNTkwLjY5ODI4IDE1MDQuNDYzMiw1OTQuODc4MTMgQyAxNTA1LjU2MzIsNTkwLjY2MzkxIDE1MDcuNjk0NSw1ODMuNjcyMzMgMTUwOS44MjU3LDU3OC4wODMxNiBMIDE1MjguMDQzNSw1MzAuODA1NTEgTCAxNTU2LjIzLDUzMC44MDU1MSIKICAgICAgICAgc3R5bGU9ImZpbGw6IzAxMDA2NjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgICAgaWQ9InBhdGg0ODI5OCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgZD0iTSAxNDQ5LjYwMjcsNTk2Ljg3MTg0IEMgMTQ0OS42MDI3LDYxOC4wMTE2NyAxNDMwLjA3ODcsNjI5LjYyMzEgMTQwNi45MTA0LDYyOS42MjMxIEMgMTM5MS43ODU5LDYyOS42MjMxIDEzNzkuNjE3Nyw2MjcuMTAwMDcgMTM2Ni43NjE5LDYyMS45NDQwMiBMIDEzNzUuMDExOSw2MDIuMjk2MDIgQyAxMzgyLjY0MjcsNjA1LjM3NTg2IDEzOTMuNjQyMiw2MDguODQwNzcgMTQwMi42NDg0LDYwOC44NDA3NyBDIDE0MDkuNjYwNCw2MDguODQwNzcgMTQxOS40MjI0LDYwNy45ODE0NCAxNDE5LjQyMjQsNTk5LjQ0Mjk5IEMgMTQxOS40MjI0LDU5NS40NDg3NiAxNDE2Ljk0OCw1OTMuMzkzMTggMTQxMi4yNzI5LDU5Mi4wMzg4NiBDIDE0MDYuNDk3OSw1OTAuMzMzOTYgMTM5Ny42Mjk3LDU4OC44MDA4OCAxMzkxLjc4NTksNTg3LjE5OTA2IEMgMTM3OS40ODAyLDU4My44MDI5NiAxMzY5LjMwNTcsNTc3LjM0MDY1IDEzNjkuMzA1Nyw1NTkuMjg3NiBDIDEzNjkuMzA1Nyw1MzkuMjY4MzQgMTM4Ni4zNTUyLDUyNi44MjUwMyAxNDA5LjcyOTIsNTI2LjgyNTAzIEMgMTQyNS4xOTc0LDUyNi44MjUwMyAxNDM0Ljk1OTQsNTI4Ljg1MzExIDE0NDMuNjIyLDUzMS4zODMwMSBMIDE0MzUuOTIxOSw1NTEuMDMxMDIgQyAxNDMyLjE0MDcsNTQ5LjI4NDgyIDE0MjEuNDE2Miw1NDYuNzU0OTIgMTQxMy43MTY3LDU0Ni43NTQ5MiBDIDE0MDUuMzk3OSw1NDYuNzU0OTIgMTM5OS43NjA5LDU0OS45MjQxOSAxMzk5Ljc2MDksNTU1LjAxODM3IEMgMTM5OS43NjA5LDU1Ny41NDE0IDE0MDEuMzQyMiw1NjAuNzE3NTUgMTQwNS43NDE3LDU2Mi4xNDA2MiBDIDE0MTAuNDg1NCw1NjMuNjUzMDggMTQxNy45NzkyLDU2NS4wMjgwMyAxNDI0LjIzNDksNTY2LjQwMjk4IEMgMTQzNy4xNTk0LDU2OS4yMjg0NSAxNDQ5LjYwMjcsNTc2LjYxMTk1IDE0NDkuNjAyNyw1OTYuODcxODQiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMTAwNjY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiCiAgICAgICAgIGlkPSJwYXRoNDgzMDAiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGQ9Ik0gMjExNy4wMDI5LDYwMi4wMDAzOSBMIDIxMTcuMDAyOSw1ODQuMDU3MjggQyAyMTAzLjA0NzIsNTgzLjgyMzU4IDIwODkuOTE2NCw1ODUuMjMyOTEgMjA4OS45MTY0LDU5OC41NzY3OSBDIDIwODkuOTE2NCw2MDYuODQwMTkgMjA5Ni45MjksNjA5LjQxMTM0IDIxMDIuMjIyMiw2MDkuNDExMzQgQyAyMTA4LjQ3ODUsNjA5LjQxMTM0IDIxMTMuMjkxLDYwNi4yNjk2MiAyMTE3LjAwMjksNjAyLjAwMDM5IHogTSAyMTQ2LjI4OTUsNjI3LjkwNDQ1IEwgMjExNy44Mjc5LDYyNy45MDQ0NSBMIDIxMTcuODI3OSw2MjAuMjMyMTkgQyAyMTEwLjQ3MjIsNjI2Ljc3MDEzIDIxMDAuODQ3Nyw2MjkuOTE4NzIgMjA5MC4yNjAyLDYyOS45MTg3MiBDIDIwNzIuMTgsNjI5LjkxODcyIDIwNTkuODA1NSw2MjEuMTY3MiAyMDU5LjgwNTUsNjAyLjg1OTcxIEMgMjA1OS44MDU1LDU3MC42NzIxNSAyMDkxLjkxMDIsNTY1LjY2NzM1IDIxMTcuMDAyOSw1NjUuNTY0MjIgTCAyMTE3LjAwMjksNTYyLjk3OTMyIEMgMjExNy4wMDI5LDU1NC45OTc3NSAyMTEzLjk3ODUsNTQ5LjMxMjMyIDIwOTkuNjc5LDU0OS4zMTIzMiBDIDIwODkuOTg1Miw1NDkuMzEyMzIgMjA3OC45ODU3LDU1NC4xMTA5MiAyMDcxLjc2NzUsNTU4LjQzNTE1IEwgMjA2NC4zNDI0LDU0MC40OTIwNCBDIDIwNzcuMTk4Miw1MzMuNTI3OTEgMjA5My4wNzg5LDUyOC41NDM3NCAyMTA4LjEzNDcsNTI4LjU0Mzc0IEMgMjEzMS4zMDI0LDUyOC41NDM3NCAyMTQ2LjI4OTUsNTM5LjYwNTIyIDIxNDYuMjg5NSw1NTkuMDA1NzIgTCAyMTQ2LjI4OTUsNjI3LjkwNDQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MzAyIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE4MzUuNDEzMyw1NjYuNDAyOTggQyAxODM1Ljk2MzMsNTU1LjY5OSAxODMwLjYwMTQsNTQ5LjAzMDUgMTgyMC4wODMxLDU0OS4wMzA1IEMgMTgwOS45MDgxLDU0OS4wMzA1IDE4MDMuODU4Niw1NTYuNTAzMzIgMTgwMi4xMzk4LDU2Ni40MDI5OCBMIDE4MzUuNDEzMyw1NjYuNDAyOTggeiBNIDE4NjYuNDg3NCw1NzUuODA3NjMgQyAxODY2LjQ4NzQsNTc5LjAwNDM1IDE4NjYuNDE4Niw1ODIuMzM4NjMgMTg2Ni4yMTI0LDU4NS43NjkxMSBMIDE4MDEuODY0OCw1ODUuNzY5MTEgQyAxODAyLjEzOTgsNTk5Ljg5Njc0IDE4MDkuMTUxOCw2MDguMjcwMTQgMTgyOS43NzY0LDYwOC4yNzAxNCBDIDE4MzguODUwOCw2MDguMjcwMTQgMTg0OS44NTAzLDYwNC4xMzE1NCAxODU0LjUyNTQsNjAwLjg1OTE5IEwgMTg2Mi40OTk4LDYxOC44MDIyNCBDIDE4NDkuMjMxNiw2MjYuMDIwNzUgMTgzNC45MzIxLDYyOS45MTg3MiAxODE4LjkxNDQsNjI5LjkxODcyIEMgMTc4OC43MzQxLDYyOS45MTg3MiAxNzY5Ljk2NTgsNjEwLjQ3Njk3IDE3NjkuOTY1OCw1NzkuNDk5MzYgQyAxNzY5Ljk2NTgsNTQ4LjAxMjk5IDE3OTQuNTc3Myw1MjguNTQzNzQgMTgyMS4xODI2LDUyOC41NDM3NCBDIDE4NTQuMzg3OSw1MjguNTQzNzQgMTg2Ni40ODc0LDU0Ny45MDI5OSAxODY2LjQ4NzQsNTc1LjgwNzYzIgogICAgICAgICBzdHlsZT0iZmlsbDojMDEwMDY2O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgICBpZD0icGF0aDQ4MzEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJNIDE3MzguNzU0OCw2NDMuODY3NjEgQyAxNzM4Ljc1NDgsNjM1Ljk0MTAzIDE3MzIuNDI5OCw2MzMuMDM5ODggMTcyNS45Njc4LDYzMy4wMzk4OCBMIDE2OTkuNTAwMSw2MzMuMDM5ODggQyAxNjk1LjQ0MzgsNjM1LjMzNjAzIDE2ODkuMjU2Myw2NDAuNDAyNyAxNjg5LjI1NjMsNjQ3LjAwMjQ1IEMgMTY4OS4yNTYzLDY1NS41MjAyOCAxNzAwLjczNyw2NjEuMjMzMjEgMTcxNC4yODAzLDY2MS4yMzMyMSBDIDE3MjguMzczNSw2NjEuMjMzMjEgMTczOC43NTQ4LDY1NC43NzA5NiAxNzM4Ljc1NDgsNjQzLjg2NzYxIHogTSAxNzMwLjc3OTgsNTYwLjQyMTkyIEMgMTczMC43Nzk4LDU1Mi4yODkwOSAxNzI2LjMxMTYsNTQ1LjYxMzcyIDE3MTYuMjc0LDU0NS42MTM3MiBDIDE3MDcuMTMwOCw1NDUuNjEzNzIgMTcwMS40OTMzLDU1My4zNjg0MiAxNzAxLjQ5MzMsNTYwLjQyMTkyIEMgMTcwMS40OTMzLDU2OC41NzUzOCAxNzA2LjU4MDgsNTc1LjIzMDEzIDE3MTUuNzI0LDU3NS4yMzAxMyBDIDE3MjUuNzYxNiw1NzUuMjMwMTMgMTczMC43Nzk4LDU2OC41MzQxMyAxNzMwLjc3OTgsNTYwLjQyMTkyIHogTSAxNzY5LjAwMzMsNjM5Ljg4MDI1IEMgMTc2OS4wMDMzLDY2OC4yMDQyMiAxNzQwLjc0OCw2ODEuMzE0MzUgMTcxMi45MDU4LDY4MS40NjU2IEMgMTY4OC4zNjI1LDY4MS41NzU2IDE2NjQuNzgyMyw2NzQuNTI4OTcgMTY2NC43ODIzLDY1MC45ODI5MyBDIDE2NjQuNzgyMyw2MzkuOTc2NTEgMTY3NC40NzU1LDYzMi42MTM2MiAxNjgwLjM4OCw2MjguNzcwNjUgQyAxNjc3LjE1NjgsNjI2LjkwMDcgMTY3NC4xMzE4LDYyNS40MjI2OCAxNjcxLjU4ODYsNjIyLjUxNDY1IEMgMTY2OC45MDczLDYxOS40MzQ3NSAxNjY2LjcwNzMsNjE0LjkzMTc3IDE2NjYuNzA3Myw2MDcuNDAzOTQgQyAxNjY2LjcwNzMsNTk3LjkzMDU0IDE2NzUuMDk0Myw1ODkuMTQ0NjQgMTY4NS4yNjkzLDU4My40OTM1OCBDIDE2NzkuNjMxOCw1ODAuNTMwNTYgMTY3Mi4xMzg2LDU3NS43NzMyNiAxNjcyLjEzODYsNTU5Ljg1MTMgQyAxNjcyLjEzODYsNTM5LjE1ODM0IDE2OTEuOCw1MjguMjQ4MTEgMTcxNy40NDI4LDUyOC4yNDgxMSBDIDE3MzkuMjM2MSw1MjguMjQ4MTEgMTc2MC4xMzUxLDUzMy40NTkxNiAxNzYwLjEzNTEsNTU5LjAwNTcyIEMgMTc2MC4xMzUxLDU4My40MDQyMSAxNzM3LjI0MjMsNTkyLjMwMDExIDE3MTQuMDA1Myw1OTIuMzAwMTEgQyAxNzA5LjY3NDYsNTkyLjMwMDExIDE3MDUuODI0NSw1OTEuNjQwMTYgMTcwMi4wNDMzLDU5MC44OTc2NiBDIDE2OTkuNTY4Myw1OTIuMjE3NjEgMTY5NC42MTg4LDU5NS40ODMxNCAxNjk0LjYxODgsNTk5LjE1NDI0IEMgMTY5NC42MTg4LDYwNi42MTMzNyAxNzA0Ljc5MzMsNjA3LjcwNjQ0IDE3MDkuNDY4Myw2MDcuNzA2NDQgTCAxNzMzLjM5MjMsNjA3LjcwNjQ0IEMgMTc1NS41Mjg4LDYwNy43MDY0NCAxNzY5LjAwMzMsNjE4LjQ1ODU1IDE3NjkuMDAzMyw2MzkuODgwMjUiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMTAwNjY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiCiAgICAgICAgIGlkPSJwYXRoNDgzMTIiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K";
 
 const urunRenk = {
-  "QUADRIS":"#2E7D32","QUADRİS":"#2E7D32",
-  "KARATE ZEON":"#1565C0",
+  "QUADRIS":"#2E7D32","QUADRİS":"#2E7D32","KARATE ZEON":"#1565C0",
   "NİNJA 5 EC":"#0277BD","NINJA 5 EC":"#0277BD",
   "AMPLİGO 150 ZC":"#C62828","AMPLIGO 150 ZC":"#C62828",
-  "APRIN XL 350 ES":"#558B2F",
-  "PORKAN / PLOCAFİR":"#827717","PORKAN / PLOCAFIR":"#827717",
+  "APRIN XL 350 ES":"#558B2F","PORKAN / PLOCAFİR":"#827717",
   "QUADRIS MAXX":"#6A1B9A","QUADRİS MAXX":"#6A1B9A",
-  "SWITCH 62.5 WG":"#E65100",
-  "FORTENZA 600 FS":"#AD1457",
-  "CELEST MAX 100 FS":"#00695C",
-  "AMISTAR GOLD":"#33691E",
-  "AGRIMEC EC":"#4E342E",
+  "SWITCH 62.5 WG":"#E65100","FORTENZA 600 FS":"#AD1457",
+  "CELEST MAX 100 FS":"#00695C","AMISTAR GOLD":"#33691E",
 };
 
-function isValid(gecerlilik) {
-  if (!gecerlilik) return true;
-  const parts = gecerlilik.split("-");
-  if (parts.length === 3) {
-    const d = new Date(parts[0], parts[1]-1, parts[2]);
-    return d >= new Date(new Date().toDateString());
-  }
+function isValid(g) {
+  if (!g) return true;
+  const p = g.split("-");
+  if (p.length===3) return new Date(p[0],p[1]-1,p[2]) >= new Date(new Date().toDateString());
   return true;
 }
 
@@ -51,7 +40,7 @@ const rawData = (typeof BKU_DATA !== 'undefined') ? BKU_DATA : [];
 const data = rawData.filter(d => isValid(d.gecerlilik));
 
 // ============================================================
-// TAB 1: LİSTE (BKU formatı — Excel'deki tüm kolonlar)
+// TAB 1: LİSTE
 // ============================================================
 function ListView({ search }) {
   const [sortCol, setSortCol] = useState("bitki");
@@ -66,178 +55,126 @@ function ListView({ search }) {
   const sorted = [...filtered].sort((a,b) => {
     const va = (a[sortCol]||"").toString().toLowerCase();
     const vb = (b[sortCol]||"").toString().toLowerCase();
-    return sortDir === "asc" ? va.localeCompare(vb,'tr') : vb.localeCompare(va,'tr');
+    return sortDir==="asc" ? va.localeCompare(vb,'tr') : vb.localeCompare(va,'tr');
   });
 
   const handleSort = (col) => {
-    if (sortCol === col) setSortDir(d => d==="asc"?"desc":"asc");
+    if (sortCol===col) setSortDir(d => d==="asc"?"desc":"asc");
     else { setSortCol(col); setSortDir("asc"); }
   };
 
   const cols = [
-    {key:"urun", label:"Ürün", w:140},
-    {key:"form", label:"Form.", w:50},
-    {key:"aktif", label:"Aktif Madde", w:220},
-    {key:"bitki", label:"Bitki", w:120},
-    {key:"zararli", label:"Zararlı / Hastalık", w:220},
-    {key:"phi", label:"Son İlaçlama ile Hasat Arası Süre", w:100},
-    {key:"doz", label:"Doz", w:140},
-    {key:"mrl", label:"MRL", w:120},
-    {key:"grup", label:"Ruhsat Grubu", w:90},
-    {key:"gecerlilik", label:"Geçerlilik", w:90},
-    {key:"aciklama", label:"Açıklama", w:200},
+    {key:"urun", label:"Ürün"},
+    {key:"form", label:"Form."},
+    {key:"aktif", label:"Aktif Madde"},
+    {key:"bitki", label:"Bitki"},
+    {key:"zararli", label:"Zararlı / Hastalık"},
+    {key:"phi", label:"Son İlaçlama ile Hasat Arası Süre"},
+    {key:"doz", label:"Doz"},
+    {key:"mrl", label:"MRL"},
+    {key:"grup", label:"Ruhsat Grubu"},
+    {key:"gecerlilik", label:"Geçerlilik"},
+    {key:"aciklama", label:"Açıklama"},
   ];
+
+  const thStyle = {padding:"10px 8px", textAlign:"left", fontWeight:700, fontSize:11, background:"#1a3a0a", color:"#fff", cursor:"pointer", userSelect:"none", borderBottom:"2px solid #019934", whiteSpace:"nowrap", position:"sticky", top:0, zIndex:2};
 
   return (
     <div>
-      <div style={{fontSize:13, color:"#666", marginBottom:10}}>
-        {sorted.length} kayıt gösteriliyor {search && `("${search}" filtresi)`}
-      </div>
-      <div style={{overflowX:"auto", borderRadius:6, border:"1px solid #ddd"}}>
-        <table style={{width:"100%", fontSize:12, whiteSpace:"nowrap"}}>
+      <div style={{fontSize:13, color:"#666", marginBottom:10}}>{sorted.length} kayıt gösteriliyor</div>
+      <div style={{overflowX:"auto", borderRadius:6, border:"1px solid #ddd", maxHeight:"75vh", overflowY:"auto"}}>
+        <table style={{width:"max-content", minWidth:"100%", fontSize:12, borderCollapse:"collapse"}}>
           <thead>
             <tr>
               {cols.map(c => (
-                <th key={c.key} onClick={() => handleSort(c.key)}
-                  style={{
-                    padding:"10px 8px", textAlign:"left", fontWeight:700, fontSize:11,
-                    background:"#1a3a0a", color:"#fff", cursor:"pointer", userSelect:"none",
-                    borderBottom:"2px solid #019934", minWidth:c.w
-                  }}>
-                  {c.label}
-                  {sortCol===c.key && <span style={{marginLeft:4}}>{sortDir==="asc"?"▲":"▼"}</span>}
+                <th key={c.key} onClick={() => handleSort(c.key)} style={thStyle}>
+                  {c.label} {sortCol===c.key && (sortDir==="asc"?"▲":"▼")}
                 </th>
               ))}
             </tr>
           </thead>
           <tbody>
             {sorted.map((d, i) => (
-              <tr key={i}
-                style={{background: i%2===0 ? "#fff" : "#f8faf6", borderBottom:"1px solid #eee"}}
-                onMouseEnter={e => e.currentTarget.style.background="#EDF7ED"}
-                onMouseLeave={e => e.currentTarget.style.background=i%2===0?"#fff":"#f8faf6"}>
-                <td style={{padding:"8px", fontWeight:600}}>
-                  <span style={{
-                    background:urunRenk[d.urun]||"#555", color:"#fff",
-                    padding:"2px 8px", borderRadius:3, fontSize:11, fontWeight:700, display:"inline-block"
-                  }}>{d.urun}</span>
+              <tr key={i} style={{background:i%2===0?"#fff":"#f8faf6", borderBottom:"1px solid #eee"}}
+                  onMouseEnter={e => e.currentTarget.style.background="#EDF7ED"}
+                  onMouseLeave={e => e.currentTarget.style.background=i%2===0?"#fff":"#f8faf6"}>
+                <td style={{padding:"8px",whiteSpace:"nowrap"}}>
+                  <span style={{background:urunRenk[d.urun]||"#555",color:"#fff",padding:"2px 8px",borderRadius:3,fontSize:11,fontWeight:700}}>{d.urun}</span>
                 </td>
-                <td style={{padding:"8px", fontWeight:600, color:"#333"}}>{d.form||"-"}</td>
-                <td style={{padding:"8px", fontSize:11, color:"#444"}}>{d.aktif||"-"}</td>
-                <td style={{padding:"8px", fontWeight:600}}>{d.bitki||"-"}</td>
-                <td style={{padding:"8px", whiteSpace:"normal", minWidth:200}}>{d.zararli||"-"}</td>
-                <td style={{padding:"8px", fontWeight:700, color:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#aaa":"#1565C0"}}>{d.phi||"-"}</td>
-                <td style={{padding:"8px", color:"#019934", fontWeight:500}}>{d.doz||"-"}</td>
-                <td style={{padding:"8px", fontSize:11}}>{d.mrl||"-"}</td>
-                <td style={{padding:"8px", fontSize:11, color:"#666"}}>{d.grup||"-"}</td>
-                <td style={{padding:"8px", fontSize:11}}>{d.gecerlilik||"-"}</td>
-                <td style={{padding:"8px", fontSize:11, color:"#666", whiteSpace:"normal", minWidth:160}}>{(d.aciklama && d.aciklama!=="-") ? d.aciklama : ""}</td>
+                <td style={{padding:"8px",fontWeight:600}}>{d.form||"-"}</td>
+                <td style={{padding:"8px",fontSize:11,whiteSpace:"nowrap"}}>{d.aktif||"-"}</td>
+                <td style={{padding:"8px",fontWeight:600,whiteSpace:"nowrap"}}>{d.bitki||"-"}</td>
+                <td style={{padding:"8px",minWidth:180}}>{d.zararli||"-"}</td>
+                <td style={{padding:"8px",fontWeight:700,whiteSpace:"nowrap",color:(d.phi||"").includes("Tohum")?"#E65100":(!d.phi||d.phi==="-")?"#aaa":"#1565C0"}}>{d.phi||"-"}</td>
+                <td style={{padding:"8px",color:"#019934",fontWeight:500,whiteSpace:"nowrap"}}>{d.doz||"-"}</td>
+                <td style={{padding:"8px",fontSize:11,whiteSpace:"nowrap"}}>{d.mrl||"-"}</td>
+                <td style={{padding:"8px",fontSize:11,color:"#666",whiteSpace:"nowrap"}}>{d.grup||"-"}</td>
+                <td style={{padding:"8px",fontSize:11,whiteSpace:"nowrap"}}>{d.gecerlilik||"-"}</td>
+                <td style={{padding:"8px",fontSize:11,color:"#666",maxWidth:250}}>{(d.aciklama&&d.aciklama!=="-")?d.aciklama:""}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      {sorted.length === 0 && (
-        <div style={{textAlign:"center", padding:40, color:"#999"}}>Aramanızla eşleşen kayıt bulunamadı.</div>
-      )}
+      {sorted.length===0 && <div style={{textAlign:"center",padding:40,color:"#999"}}>Kayıt bulunamadı.</div>}
     </div>
   );
 }
 
 // ============================================================
-// TAB 2: CROP GÖRÜNÜMÜ
+// TAB 2: CROP
 // ============================================================
 function CropView({ search }) {
-  const [selectedCrop, setSelectedCrop] = useState(null);
-
+  const [sel, setSel] = useState(null);
   const crops = useMemo(() => {
-    const map = {};
-    data.forEach(d => {
-      const b = d.bitki || "DİĞER";
-      if (!map[b]) map[b] = [];
-      map[b].push(d);
-    });
-    return map;
+    const m = {};
+    data.forEach(d => { const b=d.bitki||"?"; if(!m[b])m[b]=[]; m[b].push(d); });
+    return m;
   }, []);
-
-  const allCropNames = Object.keys(crops).sort((a,b) => a.localeCompare(b,'tr'));
-
-  const filteredCropNames = allCropNames.filter(c => {
-    if (!search) return true;
-    const s = search.toLowerCase();
-    return c.toLowerCase().includes(s) || crops[c].some(d =>
-      (d.zararli||"").toLowerCase().includes(s) || (d.urun||"").toLowerCase().includes(s)
-    );
+  const names = Object.keys(crops).sort((a,b)=>a.localeCompare(b,'tr'));
+  const fnames = names.filter(c => {
+    if(!search) return true;
+    const s=search.toLowerCase();
+    return c.toLowerCase().includes(s)||crops[c].some(d=>(d.zararli||"").toLowerCase().includes(s)||(d.urun||"").toLowerCase().includes(s));
   });
-
-  const activeCrop = selectedCrop && crops[selectedCrop] ? selectedCrop : null;
 
   return (
     <div>
-      <div style={{fontSize:13, color:"#666", marginBottom:12}}>
-        {filteredCropNames.length} kültür bitkisi {search && `("${search}" filtresi)`}
-      </div>
-      <div style={{display:"flex", flexWrap:"wrap", gap:8, marginBottom:20}}>
-        {filteredCropNames.map(c => {
-          const sel = activeCrop === c;
-          return (
-            <button key={c} onClick={() => setSelectedCrop(sel ? null : c)}
-              style={{
-                padding:"7px 14px", borderRadius:20, fontSize:13, fontWeight:600,
-                border: sel ? "2px solid #019934" : "1.5px solid #ccc",
-                background: sel ? "#019934" : "#fff",
-                color: sel ? "#fff" : "#333",
-                cursor:"pointer", transition:"all 0.15s",
-                display:"flex", alignItems:"center", gap:5
-              }}>
-              🌱 {c}
-              <span style={{
-                fontSize:10, fontWeight:400, padding:"1px 6px", borderRadius:10,
-                background: sel ? "rgba(255,255,255,0.3)" : "#E8F5E9",
-                color: sel ? "#fff" : "#2E7D32"
-              }}>{crops[c].length}</span>
-            </button>
-          );
+      <div style={{fontSize:13,color:"#666",marginBottom:12}}>{fnames.length} kültür bitkisi</div>
+      <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:20}}>
+        {fnames.map(c => {
+          const on=sel===c;
+          return <button key={c} onClick={()=>setSel(on?null:c)} style={{
+            padding:"7px 14px",borderRadius:20,fontSize:13,fontWeight:600,
+            border:on?"2px solid #019934":"1.5px solid #ccc",
+            background:on?"#019934":"#fff",color:on?"#fff":"#333",
+            cursor:"pointer",display:"flex",alignItems:"center",gap:5
+          }}>🌱 {c} <span style={{fontSize:10,padding:"1px 6px",borderRadius:10,background:on?"rgba(255,255,255,0.3)":"#E8F5E9",color:on?"#fff":"#2E7D32"}}>{crops[c].length}</span></button>;
         })}
       </div>
-
-      {!activeCrop && filteredCropNames.length > 0 && (
-        <div style={{textAlign:"center", padding:24, color:"#999", fontSize:14}}>
-          ☝️ Yukarıdan bir kültür bitkisi seçin
-        </div>
-      )}
-
-      {activeCrop && (
-        <div style={{border:"2px solid #019934", borderRadius:8, overflow:"hidden"}}>
-          <div style={{background:"#019934", color:"#fff", padding:"12px 18px", fontSize:16, fontWeight:700, display:"flex", alignItems:"center", gap:8}}>
-            🌱 {activeCrop}
-            <span style={{fontSize:12, fontWeight:400, opacity:0.8}}>— {crops[activeCrop].length} geçici tavsiye</span>
-          </div>
-
-          {/* Crop içi tablo */}
+      {!sel && fnames.length>0 && <div style={{textAlign:"center",padding:24,color:"#999"}}>☝️ Yukarıdan bir kültür bitkisi seçin</div>}
+      {sel && crops[sel] && (
+        <div style={{border:"2px solid #019934",borderRadius:8,overflow:"hidden"}}>
+          <div style={{background:"#019934",color:"#fff",padding:"12px 18px",fontSize:16,fontWeight:700}}>🌱 {sel} — {crops[sel].length} geçici tavsiye</div>
           <div style={{overflowX:"auto"}}>
-            <table style={{width:"100%", fontSize:12}}>
-              <thead>
-                <tr style={{background:"#E8F5E9"}}>
-                  {["Zararlı / Hastalık","Ürün","Form.","Aktif Madde","Son İlaçlama ile Hasat Arası Süre","Doz","MRL","Geçerlilik","Açıklama"].map(h => (
-                    <th key={h} style={{padding:"10px 8px", textAlign:"left", fontWeight:700, fontSize:11, color:"#1a3a0a", borderBottom:"2px solid #A5D6A7", whiteSpace:"nowrap"}}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
+            <table style={{width:"max-content",minWidth:"100%",fontSize:12,borderCollapse:"collapse"}}>
+              <thead><tr style={{background:"#E8F5E9"}}>
+                {["Zararlı / Hastalık","Ürün","Form.","Aktif Madde","Son İlaçlama ile Hasat Arası Süre","Doz","MRL","Geçerlilik","Açıklama"].map(h=>
+                  <th key={h} style={{padding:"10px 8px",textAlign:"left",fontWeight:700,fontSize:11,color:"#1a3a0a",borderBottom:"2px solid #A5D6A7",whiteSpace:"nowrap"}}>{h}</th>
+                )}
+              </tr></thead>
               <tbody>
-                {crops[activeCrop].map((d, i) => (
-                  <tr key={i} style={{background: i%2===0 ? "#fff" : "#fafdf7", borderBottom:"1px solid #eee"}}>
-                    <td style={{padding:"9px 8px", fontWeight:600, whiteSpace:"normal", minWidth:200}}>{d.zararli||"-"}</td>
-                    <td style={{padding:"9px 8px"}}>
-                      <span style={{background:urunRenk[d.urun]||"#555", color:"#fff", padding:"2px 8px", borderRadius:3, fontSize:11, fontWeight:700, display:"inline-block", whiteSpace:"nowrap"}}>{d.urun}</span>
-                    </td>
-                    <td style={{padding:"9px 8px", fontWeight:600}}>{d.form||"-"}</td>
-                    <td style={{padding:"9px 8px", fontSize:11}}>{d.aktif||"-"}</td>
-                    <td style={{padding:"9px 8px", fontWeight:700, color:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#aaa":"#1565C0"}}>{d.phi||"-"}</td>
-                    <td style={{padding:"9px 8px", color:"#019934", fontWeight:500}}>{d.doz||"-"}</td>
-                    <td style={{padding:"9px 8px", fontSize:11}}>{d.mrl||"-"}</td>
-                    <td style={{padding:"9px 8px", fontSize:11, whiteSpace:"nowrap"}}>{d.gecerlilik||"-"}</td>
-                    <td style={{padding:"9px 8px", fontSize:11, color:"#666", whiteSpace:"normal", minWidth:140}}>{(d.aciklama && d.aciklama!=="-") ? d.aciklama : ""}</td>
+                {crops[sel].map((d,i)=>(
+                  <tr key={i} style={{background:i%2===0?"#fff":"#fafdf7",borderBottom:"1px solid #eee"}}>
+                    <td style={{padding:"9px 8px",fontWeight:600,minWidth:200}}>{d.zararli||"-"}</td>
+                    <td style={{padding:"9px 8px"}}><span style={{background:urunRenk[d.urun]||"#555",color:"#fff",padding:"2px 8px",borderRadius:3,fontSize:11,fontWeight:700,whiteSpace:"nowrap"}}>{d.urun}</span></td>
+                    <td style={{padding:"9px 8px",fontWeight:600}}>{d.form||"-"}</td>
+                    <td style={{padding:"9px 8px",fontSize:11,whiteSpace:"nowrap"}}>{d.aktif||"-"}</td>
+                    <td style={{padding:"9px 8px",fontWeight:700,whiteSpace:"nowrap",color:(d.phi||"").includes("Tohum")?"#E65100":(!d.phi||d.phi==="-")?"#aaa":"#1565C0"}}>{d.phi||"-"}</td>
+                    <td style={{padding:"9px 8px",color:"#019934",fontWeight:500,whiteSpace:"nowrap"}}>{d.doz||"-"}</td>
+                    <td style={{padding:"9px 8px",fontSize:11,whiteSpace:"nowrap"}}>{d.mrl||"-"}</td>
+                    <td style={{padding:"9px 8px",fontSize:11,whiteSpace:"nowrap"}}>{d.gecerlilik||"-"}</td>
+                    <td style={{padding:"9px 8px",fontSize:11,color:"#666",maxWidth:200}}>{(d.aciklama&&d.aciklama!=="-")?d.aciklama:""}</td>
                   </tr>
                 ))}
               </tbody>
@@ -245,10 +182,7 @@ function CropView({ search }) {
           </div>
         </div>
       )}
-
-      {filteredCropNames.length === 0 && (
-        <div style={{textAlign:"center", padding:40, color:"#999"}}>Aramanızla eşleşen kültür bitkisi bulunamadı.</div>
-      )}
+      {fnames.length===0 && <div style={{textAlign:"center",padding:40,color:"#999"}}>Kültür bitkisi bulunamadı.</div>}
     </div>
   );
 }
@@ -259,109 +193,64 @@ function CropView({ search }) {
 function App() {
   const [tab, setTab] = useState("liste");
   const [search, setSearch] = useState("");
-
-  const stats = useMemo(() => ({
-    total: data.length,
-    crops: [...new Set(data.map(d=>d.bitki))].length,
-    products: [...new Set(data.map(d=>d.urun))].length,
-  }), []);
+  const stats = useMemo(()=>({
+    total:data.length,
+    crops:[...new Set(data.map(d=>d.bitki))].length,
+    products:[...new Set(data.map(d=>d.urun))].length,
+  }),[]);
 
   return (
-    <div style={{fontFamily:"Arial, sans-serif", background:"#f5f7f2", minHeight:"100vh", color:"#222"}}>
-
-      {/* HEADER */}
-      <div style={{background:"#fff", borderBottom:"3px solid #019934", padding:"14px 24px"}}>
-        <div style={{maxWidth:1200, margin:"0 auto", display:"flex", alignItems:"center", justifyContent:"space-between", flexWrap:"wrap", gap:12}}>
+    <div style={{fontFamily:"Arial, sans-serif",background:"#f5f7f2",minHeight:"100vh",color:"#222"}}>
+      <div style={{background:"#fff",borderBottom:"3px solid #019934",padding:"14px 24px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
           <img src={LOGO} alt="Syngenta" style={{height:34}} />
-          <span style={{fontSize:12, color:"#666"}}>syngenta.com.tr</span>
+          <span style={{fontSize:12,color:"#666"}}>syngenta.com.tr</span>
         </div>
       </div>
-
-      {/* HERO */}
-      <div style={{background:"linear-gradient(135deg, #01662e 0%, #019934 60%, #2fb95a 100%)", color:"#fff", padding:"32px 24px 28px"}}>
-        <div style={{maxWidth:1200, margin:"0 auto"}}>
-          <p style={{fontSize:12, letterSpacing:1.5, textTransform:"uppercase", margin:"0 0 6px", opacity:0.8}}>Bitki Koruma Ürünleri</p>
-          <h1 style={{fontSize:"clamp(22px, 4vw, 32px)", margin:"0 0 10px", fontWeight:700, lineHeight:1.2}}>
-            2026 Geçici Tavsiye Alan Ürünlerimiz
-          </h1>
-          <p style={{fontSize:14, opacity:0.85, maxWidth:600, lineHeight:1.5, margin:"0 0 14px"}}>
-            T.C. Tarım ve Orman Bakanlığı BKU Veri Tabanı'nda 2026 yılı için geçici tavsiye almış Syngenta ürünleri.
-          </p>
-          <div style={{display:"flex", gap:14, flexWrap:"wrap"}}>
-            {[
-              {n:stats.total, l:"Geçici Tavsiye"},
-              {n:stats.products, l:"Syngenta Ürün"},
-              {n:stats.crops, l:"Kültür Bitkisi"},
-            ].map((s,i) => (
-              <div key={i} style={{background:"rgba(255,255,255,0.15)", borderRadius:6, padding:"8px 14px"}}>
-                <div style={{fontSize:22, fontWeight:800}}>{s.n}</div>
-                <div style={{fontSize:11, opacity:0.8}}>{s.l}</div>
+      <div style={{background:"linear-gradient(135deg, #01662e 0%, #019934 60%, #2fb95a 100%)",color:"#fff",padding:"32px 24px 28px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto"}}>
+          <p style={{fontSize:12,letterSpacing:1.5,textTransform:"uppercase",margin:"0 0 6px",opacity:0.8}}>Bitki Koruma Ürünleri</p>
+          <h1 style={{fontSize:"clamp(22px, 4vw, 32px)",margin:"0 0 10px",fontWeight:700}}>2026 Geçici Tavsiye Alan Ürünlerimiz</h1>
+          <p style={{fontSize:14,opacity:0.85,maxWidth:600,lineHeight:1.5,margin:"0 0 14px"}}>T.C. Tarım ve Orman Bakanlığı BKU Veri Tabanı'nda 2026 yılı için geçici tavsiye almış Syngenta ürünleri.</p>
+          <div style={{display:"flex",gap:14,flexWrap:"wrap"}}>
+            {[{n:stats.total,l:"Geçici Tavsiye"},{n:stats.products,l:"Syngenta Ürün"},{n:stats.crops,l:"Kültür Bitkisi"}].map((s,i)=>
+              <div key={i} style={{background:"rgba(255,255,255,0.15)",borderRadius:6,padding:"8px 14px"}}>
+                <div style={{fontSize:22,fontWeight:800}}>{s.n}</div><div style={{fontSize:11,opacity:0.8}}>{s.l}</div>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
-
-      {/* DISCLAIMER */}
-      <div style={{background:"#FFF8E1", borderBottom:"1px solid #FFD54F", padding:"8px 24px"}}>
-        <div style={{maxWidth:1200, margin:"0 auto", fontSize:12, color:"#5D4037"}}>
-          ⚠️ Geçici tavsiyeler belirli süreler dahilinde geçerlidir. Güncel durum için{" "}
-          <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#E65100", fontWeight:600}}>BKU Veri Tabanı</a>'nı ziyaret ediniz.
+      <div style={{background:"#FFF8E1",borderBottom:"1px solid #FFD54F",padding:"8px 24px"}}>
+        <div style={{maxWidth:1400,margin:"0 auto",fontSize:12,color:"#5D4037"}}>
+          ⚠️ Geçici tavsiyeler belirli süreler dahilinde geçerlidir. Güncel durum için <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#E65100",fontWeight:600}}>BKU Veri Tabanı</a>'nı ziyaret ediniz.
         </div>
       </div>
-
-      {/* MAIN */}
-      <div style={{maxWidth:1200, margin:"0 auto", padding:"20px 24px"}}>
-
-        {data.length === 0 ? (
-          <div style={{textAlign:"center", padding:60, color:"#999"}}>
-            <div style={{fontSize:48, marginBottom:16}}>⏳</div>
-            <p>Veri yükleniyor veya henüz data.js dosyası oluşturulmamış.</p>
-          </div>
+      <div style={{maxWidth:1400,margin:"0 auto",padding:"20px 24px"}}>
+        {data.length===0 ? (
+          <div style={{textAlign:"center",padding:60,color:"#999"}}><div style={{fontSize:48,marginBottom:16}}>⏳</div><p>Veri yükleniyor...</p></div>
         ) : (<>
-
-          {/* TABS + SEARCH */}
-          <div style={{display:"flex", flexWrap:"wrap", gap:12, alignItems:"center", marginBottom:18}}>
-            <div style={{display:"flex", background:"#e8e8e8", borderRadius:6, overflow:"hidden"}}>
-              {[{id:"liste", label:"📋 Liste"},{id:"crop", label:"🌱 Kültür Bitkisine Göre"}].map(t => (
-                <button key={t.id} onClick={() => { setTab(t.id); setSearch(""); }}
-                  style={{
-                    padding:"9px 18px", fontSize:13, fontWeight:600, border:"none", cursor:"pointer",
-                    background: tab===t.id ? "#019934" : "transparent",
-                    color: tab===t.id ? "#fff" : "#555",
-                    transition:"all 0.15s"
-                  }}>
-                  {t.label}
-                </button>
-              ))}
+          <div style={{display:"flex",flexWrap:"wrap",gap:12,alignItems:"center",marginBottom:18}}>
+            <div style={{display:"flex",background:"#e8e8e8",borderRadius:6,overflow:"hidden"}}>
+              {[{id:"liste",label:"📋 Liste"},{id:"crop",label:"🌱 Kültür Bitkisine Göre"}].map(t=>
+                <button key={t.id} onClick={()=>{setTab(t.id);setSearch("");}} style={{padding:"9px 18px",fontSize:13,fontWeight:600,border:"none",cursor:"pointer",background:tab===t.id?"#019934":"transparent",color:tab===t.id?"#fff":"#555"}}>{t.label}</button>
+              )}
             </div>
-            <input
-              type="text"
-              placeholder="Ara... (bitki, zararlı, ürün, aktif madde)"
-              value={search} onChange={e => setSearch(e.target.value)}
-              style={{flex:"1 1 240px", padding:"9px 14px", borderRadius:6, border:"1.5px solid #C8E6C9", fontSize:13, fontFamily:"Arial", outline:"none", background:"#fff", minWidth:200}}
-            />
+            <input type="text" placeholder="Ara... (bitki, zararlı, ürün, aktif madde)" value={search} onChange={e=>setSearch(e.target.value)}
+              style={{flex:"1 1 240px",padding:"9px 14px",borderRadius:6,border:"1.5px solid #C8E6C9",fontSize:13,fontFamily:"Arial",outline:"none",background:"#fff",minWidth:200}} />
           </div>
-
-          {tab === "liste" ? <ListView search={search} /> : <CropView search={search} />}
-
+          {tab==="liste" ? <ListView search={search} /> : <CropView search={search} />}
         </>)}
       </div>
-
-      {/* FOOTER */}
-      <div style={{borderTop:"3px solid #019934", background:"#fff", padding:"18px 24px", marginTop:40}}>
-        <div style={{maxWidth:1200, margin:"0 auto", textAlign:"center"}}>
-          <img src={LOGO} alt="Syngenta" style={{height:24, marginBottom:8}} />
-          <p style={{fontSize:11, color:"#888", margin:"0 0 4px"}}>
-            Kaynak: <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#019934"}}>BKU Veri Tabanı</a> | Bu sayfa yalnızca bilgilendirme amaçlıdır.
-          </p>
-          <p style={{fontSize:10, color:"#aaa", margin:0}}>© 2026 Syngenta Tarım Sanayi ve Ticaret A.Ş.</p>
+      <div style={{borderTop:"3px solid #019934",background:"#fff",padding:"18px 24px",marginTop:40}}>
+        <div style={{maxWidth:1400,margin:"0 auto",textAlign:"center"}}>
+          <img src={LOGO} alt="Syngenta" style={{height:24,marginBottom:8}} />
+          <p style={{fontSize:11,color:"#888"}}>Kaynak: <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#019934"}}>BKU Veri Tabanı</a> | © 2026 Syngenta Tarım Sanayi ve Ticaret A.Ş.</p>
         </div>
       </div>
     </div>
   );
 }
-
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 </script>
 </body>
