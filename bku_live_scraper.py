@@ -261,6 +261,7 @@ def save(matched):
             "aktif": r.get("aktifMaddeAdi", ""),
             "bitki": r.get("bitkiAdi", ""),
             "zararli": r.get("zararliAdi", ""),
+            "zararliLat": r.get("zararliLatinceAdi", ""),
             "phi": r.get("phi", "-"),
             "doz": r.get("doz", "-"),
             "mrl": r.get("mrl", "-"),
