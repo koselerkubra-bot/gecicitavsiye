@@ -278,7 +278,7 @@ function CropView({ search }) {
                   {l:"Son İlaçlama ile Hasat Arası Süre",v:d.phi,c:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#aaa":"#010066",b:true},
                   {l:"Doz",v:d.doz,c:"#2E7D32"},
                   {l:"MRL",v:d.mrl},
-                  {l:"Geçerlilik Süresi Bitiş Tarihi",v:d.Geçerlilik Süresi Bitiş Tarihi},
+                  {l:"Geçerlilik Süresi Bitiş Tarihi",v:d["Geçerlilik Süresi Bitiş Tarihi"]},
                 ].map((f,fi)=>(
                   <div key={fi} style={{background:"#f4f6f1",padding:"8px 12px",borderRadius:6}}>
                     <div style={{fontSize:10,color:"#999",textTransform:"uppercase",letterSpacing:0.5,marginBottom:2}}>{f.l}</div>
