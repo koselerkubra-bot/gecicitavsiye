@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-04-22 10:07
+// Son guncelleme: 2026-04-22 14:45
 // Toplam: 64 eslesme
 const BKU_DATA = [
   {
@@ -69,7 +69,7 @@ const BKU_DATA = [
     "mrl": "0.01",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
-    "aciklama": "Fitotoksisite riski bulunmaktadır, dormant dönemde kullanılmalıdır.Bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidir."
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS MAXX",
