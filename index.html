@@ -135,11 +135,11 @@ function ZararliName({d}) {
 }
 
 // ============================================================
-// TAB 1: LISTE (kartlar — scroll yok)
+// TAB 1: LISTE — default: en yeni BKU kaydı en üstte
 // ============================================================
 function ListView({ search }) {
-  const [sortCol, setSortCol] = useState("bitki");
-  const [sortDir, setSortDir] = useState("asc");
+  const [sortCol, setSortCol] = useState("verilisTarihi");
+  const [sortDir, setSortDir] = useState("desc");
 
   const filtered = data.filter(d => {
     if (!search) return true;
@@ -169,14 +169,15 @@ function ListView({ search }) {
 
       {/* Header */}
       <div style={{display:"flex",gap:8,padding:"10px 16px",background:"#1a3a0a",color:"#fff",borderRadius:"8px 8px 0 0",fontSize:11,fontWeight:700,letterSpacing:0.3}}>
-        <SortHeader col="bitki" flex="1.2">Bitki</SortHeader>
-        <SortHeader col="zararli" flex="2">Zararlı / Hastalık</SortHeader>
-        <SortHeader col="urun" flex="1.2">Ürün</SortHeader>
-        <div style={{flex:"0.7"}}>Grup</div>
-        <SortHeader col="phi" flex="0.9">PHI</SortHeader>
-        <SortHeader col="doz" flex="1.1">Doz</SortHeader>
-        <SortHeader col="mrl" flex="0.7">MRL</SortHeader>
-        <SortHeader col="gecerlilik" flex="0.8">Geçerlilik Süresi Bitiş Tarihi</SortHeader>
+        <SortHeader col="bitki" flex="1.1">Bitki</SortHeader>
+        <SortHeader col="zararli" flex="1.8">Zararlı / Hastalık</SortHeader>
+        <SortHeader col="urun" flex="1.1">Ürün</SortHeader>
+        <div style={{flex:"0.6"}}>Grup</div>
+        <SortHeader col="phi" flex="0.7">PHI</SortHeader>
+        <SortHeader col="doz" flex="1">Doz</SortHeader>
+        <SortHeader col="mrl" flex="0.6">MRL</SortHeader>
+        <SortHeader col="iller" flex="1.3">Geçerli Olduğu İller</SortHeader>
+        <SortHeader col="gecerlilik" flex="0.7">Geçerlilik Bitiş</SortHeader>
       </div>
 
       {/* Rows */}
@@ -188,17 +189,23 @@ function ListView({ search }) {
         }}
           onMouseEnter={e=>e.currentTarget.style.background="#EDF7ED"}
           onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"#fff":"#f9faf7"}>
-          <div style={{flex:"1.2",fontWeight:600,color:"#1a1a1a"}}>{d.bitki}</div>
-          <div style={{flex:"2",color:"#444",lineHeight:1.4}}>
+          <div style={{flex:"1.1",fontWeight:600,color:"#1a1a1a"}}>{d.bitki}</div>
+          <div style={{flex:"1.8",color:"#444",lineHeight:1.4}}>
             <div><ZararliName d={d}/></div>
             <div style={{fontSize:11,color:"#999",marginTop:2}}>{d.aktif}</div>
           </div>
-          <div style={{flex:"1.2"}}><UrunBadge urun={d.urun} grup={d.grup}/></div>
-          <div style={{flex:"0.7"}}><GrupBadge urun={d.urun} grup={d.grup}/></div>
-          <div style={{flex:"0.9",fontWeight:700,color:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#bbb":"#010066"}}>{d.phi||"-"}</div>
-          <div style={{flex:"1.1",color:"#2E7D32",fontWeight:500,fontSize:12}}>{d.doz||"-"}</div>
-          <div style={{flex:"0.7",fontSize:12,color:"#666"}}>{d.mrl||"-"}</div>
-          <div style={{flex:"0.8",fontSize:12,color:"#666"}}>{d.gecerlilik||"-"}</div>
+          <div style={{flex:"1.1"}}><UrunBadge urun={d.urun} grup={d.grup}/></div>
+          <div style={{flex:"0.6"}}><GrupBadge urun={d.urun} grup={d.grup}/></div>
+          <div style={{flex:"0.7",fontWeight:700,color:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#bbb":"#010066"}}>{d.phi||"-"}</div>
+          <div style={{flex:"1",color:"#2E7D32",fontWeight:500,fontSize:12}}>{d.doz||"-"}</div>
+          <div style={{flex:"0.6",fontSize:12,color:"#666"}}>{d.mrl||"-"}</div>
+          <div style={{flex:"1.3",fontSize:11,color:"#555",lineHeight:1.4}}>
+            {(d.iller && d.iller !== "-" && d.iller !== "Tüm Türkiye" && d.iller !== "Tum Turkiye")
+              ? <span style={{background:"#E8EAF6",padding:"2px 8px",borderRadius:4,display:"inline-block"}}>{d.iller}</span>
+              : <span style={{color:"#aaa"}}>Tüm Türkiye</span>
+            }
+          </div>
+          <div style={{flex:"0.7",fontSize:12,color:"#666"}}>{d.gecerlilik||"-"}</div>
         </div>
       ))}
       {sorted.length>0 && <div style={{height:4,background:"#1a3a0a",borderRadius:"0 0 8px 8px"}}/>}
@@ -278,6 +285,7 @@ function CropView({ search }) {
                   {l:"Son İlaçlama ile Hasat Arası Süre",v:d.phi,c:(d.phi||"").includes("Tohum")?"#E65100":d.phi==="-"?"#aaa":"#010066",b:true},
                   {l:"Doz",v:d.doz,c:"#2E7D32"},
                   {l:"MRL",v:d.mrl},
+                  {l:"Geçerli Olduğu İller",v:d.iller||"Tüm Türkiye"},
                   {l:"Geçerlilik Süresi Bitiş Tarihi",v:d.gecerlilik},
                 ].map((f,fi)=>(
                   <div key={fi} style={{background:"#f4f6f1",padding:"8px 12px",borderRadius:6}}>
@@ -315,7 +323,7 @@ function App() {
     <div style={{fontFamily:"'Noto Sans',Arial,sans-serif",background:"#f4f6f1",minHeight:"100vh"}}>
       {/* Header */}
       <div style={{background:"#fff",borderBottom:"3px solid #019934",padding:"12px 24px"}}>
-        <div style={{maxWidth:1140,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+        <div style={{maxWidth:1200,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
           <img src={LOGO} alt="Syngenta" style={{height:32}} />
           <span style={{fontSize:11,color:"#999",letterSpacing:0.5}}>syngenta.com.tr</span>
         </div>
@@ -323,7 +331,7 @@ function App() {
 
       {/* Hero */}
       <div style={{background:"linear-gradient(135deg,#01662e 0%,#019934 50%,#22a94e 100%)",color:"#fff",padding:"36px 24px 30px"}}>
-        <div style={{maxWidth:1140,margin:"0 auto"}}>
+        <div style={{maxWidth:1200,margin:"0 auto"}}>
           <p style={{fontSize:11,letterSpacing:2,textTransform:"uppercase",margin:"0 0 8px",opacity:0.7,fontWeight:600}}>Bitki Koruma Ürünleri</p>
           <h1 style={{fontSize:"clamp(22px,3.5vw,30px)",margin:"0 0 8px",fontWeight:800,lineHeight:1.25}}>
             2026 Geçici Tavsiye Alan Ürünlerimiz
@@ -344,14 +352,14 @@ function App() {
 
       {/* Disclaimer */}
       <div style={{background:"#FFF8E1",borderBottom:"1px solid #FFD54F",padding:"8px 24px"}}>
-        <div style={{maxWidth:1140,margin:"0 auto",fontSize:12,color:"#5D4037"}}>
+        <div style={{maxWidth:1200,margin:"0 auto",fontSize:12,color:"#5D4037"}}>
           ⚠️ Geçici tavsiyeler belirli süreler dahilinde geçerlidir. Güncel durum için{" "}
           <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#E65100",fontWeight:600,textDecoration:"none"}}>BKU Veri Tabanı</a>'nı ziyaret ediniz.
         </div>
       </div>
 
       {/* Main */}
-      <div style={{maxWidth:1140,margin:"0 auto",padding:"24px 24px"}}>
+      <div style={{maxWidth:1200,margin:"0 auto",padding:"24px 24px"}}>
         {data.length===0 ? (
           <div style={{textAlign:"center",padding:60,color:"#aaa"}}>
             <div style={{fontSize:48,marginBottom:16}}>⏳</div>
@@ -382,7 +390,7 @@ function App() {
 
       {/* Footer */}
       <div style={{borderTop:"3px solid #019934",background:"#fff",padding:"20px 24px",marginTop:48}}>
-        <div style={{maxWidth:1140,margin:"0 auto",textAlign:"center"}}>
+        <div style={{maxWidth:1200,margin:"0 auto",textAlign:"center"}}>
           <img src={LOGO} alt="Syngenta" style={{height:22,marginBottom:8}} />
           <p style={{fontSize:11,color:"#999",margin:"0 0 4px"}}>
             Kaynak: <a href="https://bku.tarimorman.gov.tr/BKUGeciciTavsiyeAlanlar/GeciciTavsiyeIndeks" style={{color:"#019934",textDecoration:"none"}}>BKU Veri Tabanı</a> | Bu sayfa yalnızca bilgilendirme amaçlıdır.
