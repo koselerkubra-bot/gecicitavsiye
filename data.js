@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-04-28 11:29
+// Son guncelleme: 2026-04-29 09:07
 // Toplam: 71 eslesme
 const BKU_DATA = [
   {
@@ -13,10 +13,7 @@ const BKU_DATA = [
     "mrl": "Chlorantraniliprole:1 Lambda-cyhalothrin:0.3",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Muğla, Kocaeli, İstanbul, Trabzon, Sakarya, Antalya, Diyarbakır, Rize",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir.",
-    "bku_id": 4356
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "AMPLİGO 150 ZC",
@@ -30,10 +27,7 @@ const BKU_DATA = [
     "mrl": "Chlorantraniliprole:0.03 Lambda-cyhalothrin:0.01",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Muğla, Kocaeli, İstanbul, Trabzon, Sakarya, Antalya, Diyarbakır, Rize",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir.",
-    "bku_id": 4358
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "IMPERATOR 25 EC",
@@ -47,10 +41,7 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Antalya, Diyarbakır, İstanbul, Kocaeli, Muğla, Rize, Sakarya, Trabzon",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir.",
-    "bku_id": 4370
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "NİNJA 5 EC",
@@ -64,10 +55,7 @@ const BKU_DATA = [
     "mrl": "0.5",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-31",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4293
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -81,10 +69,7 @@ const BKU_DATA = [
     "mrl": "0.05",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-31",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4294
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -98,10 +83,7 @@ const BKU_DATA = [
     "mrl": "0.05",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-31",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4295
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -115,10 +97,7 @@ const BKU_DATA = [
     "mrl": "0.3",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-31",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4296
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -132,10 +111,7 @@ const BKU_DATA = [
     "mrl": "0.08",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Muğla, Kocaeli, İstanbul, Trabzon, Sakarya, Antalya, Diyarbakır, Rize",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir.",
-    "bku_id": 4354
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "NİNJA 5 EC",
@@ -149,10 +125,7 @@ const BKU_DATA = [
     "mrl": "0.08",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Muğla, Kocaeli, İstanbul, Trabzon, Sakarya, Antalya, Diyarbakır, Rize",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir.",
-    "bku_id": 4355
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "NİNJA 5 EC",
@@ -166,10 +139,7 @@ const BKU_DATA = [
     "mrl": "0.01",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Muğla, Kocaeli, İstanbul, Trabzon, Sakarya, Antalya, Diyarbakır, Rize",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir.",
-    "bku_id": 4357
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "KARATE ZEON",
@@ -183,10 +153,7 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Antalya, Diyarbakır, İstanbul, Kocaeli, Muğla, Rize, Sakarya, Trabzon",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir.",
-    "bku_id": 4368
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -200,10 +167,7 @@ const BKU_DATA = [
     "mrl": "0.01",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
-    "verilisTarihi": "2026-04-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4306
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -217,10 +181,7 @@ const BKU_DATA = [
     "mrl": "0,06",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4112
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -234,10 +195,7 @@ const BKU_DATA = [
     "mrl": "0,3",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4100
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -251,10 +209,7 @@ const BKU_DATA = [
     "mrl": "0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4102
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -268,10 +223,7 @@ const BKU_DATA = [
     "mrl": "0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4104
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -285,10 +237,7 @@ const BKU_DATA = [
     "mrl": "0,01*",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4106
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -302,10 +251,7 @@ const BKU_DATA = [
     "mrl": "0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4108
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -319,10 +265,7 @@ const BKU_DATA = [
     "mrl": "0,06",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4110
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -336,10 +279,7 @@ const BKU_DATA = [
     "mrl": "0,007",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4092
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -353,10 +293,7 @@ const BKU_DATA = [
     "mrl": "0,1",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4094
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -370,10 +307,7 @@ const BKU_DATA = [
     "mrl": "0,005",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4098
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -387,10 +321,7 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4061
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -404,10 +335,7 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4062
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -421,10 +349,7 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4082
+    "aciklama": "-"
   },
   {
     "urun": "CELEST MAX 100 FS",
@@ -438,10 +363,7 @@ const BKU_DATA = [
     "mrl": "0.05* mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-29",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4081
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS MAXX",
@@ -455,10 +377,7 @@ const BKU_DATA = [
     "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-30",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4091
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS MAXX",
@@ -472,10 +391,7 @@ const BKU_DATA = [
     "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-30",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4097
+    "aciklama": "-"
   },
   {
     "urun": "SWITCH 62.5 WG",
@@ -489,10 +405,7 @@ const BKU_DATA = [
     "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-30",
-    "verilisTarihi": "2026-04-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4083
+    "aciklama": "-"
   },
   {
     "urun": "AMPLİGO 150 ZC",
@@ -506,10 +419,7 @@ const BKU_DATA = [
     "mrl": "Chlorantraniliprole: 0,3 Lambda-cyhalothrin:0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-15",
-    "verilisTarihi": "2026-03-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4239
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -523,10 +433,7 @@ const BKU_DATA = [
     "mrl": "0.5 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
-    "verilisTarihi": "2026-03-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4063
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -540,10 +447,7 @@ const BKU_DATA = [
     "mrl": "0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-15",
-    "verilisTarihi": "2026-03-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4238
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
@@ -557,10 +461,7 @@ const BKU_DATA = [
     "mrl": "0,2",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-12",
-    "verilisTarihi": "2026-03-15",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4076
+    "aciklama": "-"
   },
   {
     "urun": "PLOCAFİR",
@@ -574,10 +475,7 @@ const BKU_DATA = [
     "mrl": "MRL uygulanmaz.",
     "grup": "İnsektisit",
     "gecerlilik": "2026-06-29",
-    "verilisTarihi": "2026-03-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3844
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -591,10 +489,7 @@ const BKU_DATA = [
     "mrl": "0,2",
     "grup": "İnsektisit",
     "gecerlilik": "2026-06-28",
-    "verilisTarihi": "2026-03-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4078
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -608,10 +503,7 @@ const BKU_DATA = [
     "mrl": "5 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-05-31",
-    "verilisTarihi": "2026-03-01",
-    "iller": "Aydın",
-    "aciklama": "Aydın ili için geçici kullanım izni verilmiştir.",
-    "bku_id": 3840
+    "aciklama": "Aydın ili için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "FORTENZA 600 FS",
@@ -625,10 +517,7 @@ const BKU_DATA = [
     "mrl": "0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-06-30",
-    "verilisTarihi": "2026-03-01",
-    "iller": "Afyonkarahisar",
-    "aciklama": "Afyonkarahisar ili için geçici kullanım izni verilmiştir.",
-    "bku_id": 3819
+    "aciklama": "Afyonkarahisar ili için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "PLOCAFİR",
@@ -642,10 +531,7 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-16",
-    "verilisTarihi": "2026-01-16",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3806
+    "aciklama": "-"
   },
   {
     "urun": "PLOCAFİR",
@@ -659,10 +545,7 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-05-16",
-    "verilisTarihi": "2026-01-16",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3807
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -676,10 +559,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3940
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -693,10 +573,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3956
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -710,10 +587,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3962
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -727,10 +601,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3966
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -744,10 +615,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3970
+    "aciklama": "-"
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -761,10 +629,7 @@ const BKU_DATA = [
     "mrl": "3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3974
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -778,10 +643,7 @@ const BKU_DATA = [
     "mrl": "10 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4058
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -795,10 +657,7 @@ const BKU_DATA = [
     "mrl": "10 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4059
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -812,10 +671,7 @@ const BKU_DATA = [
     "mrl": "15 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4060
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -829,10 +685,7 @@ const BKU_DATA = [
     "mrl": "10 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4052
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -846,10 +699,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4053
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -863,10 +713,7 @@ const BKU_DATA = [
     "mrl": "70 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4055
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -880,10 +727,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4056
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -897,10 +741,7 @@ const BKU_DATA = [
     "mrl": "10 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4057
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -914,10 +755,7 @@ const BKU_DATA = [
     "mrl": "10 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4010
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -931,10 +769,7 @@ const BKU_DATA = [
     "mrl": "70 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4011
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -948,10 +783,7 @@ const BKU_DATA = [
     "mrl": "15 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4035
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -965,10 +797,7 @@ const BKU_DATA = [
     "mrl": "70 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4038
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -982,10 +811,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4040
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -999,10 +825,7 @@ const BKU_DATA = [
     "mrl": "0.6 mg/kg",
     "grup": "İnsektisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "İzmir ve Manisa",
-    "aciklama": "İzmir ve Manisa illeri için geçici kullanım izni verilmiştir.",
-    "bku_id": 3770
+    "aciklama": "İzmir ve Manisa illeri için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -1016,10 +839,7 @@ const BKU_DATA = [
     "mrl": "10 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3991
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1033,10 +853,7 @@ const BKU_DATA = [
     "mrl": "10 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3992
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1050,10 +867,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3993
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1067,10 +881,7 @@ const BKU_DATA = [
     "mrl": "15 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3994
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1084,10 +895,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3995
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1101,10 +909,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3996
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1118,10 +923,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3997
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1135,10 +937,7 @@ const BKU_DATA = [
     "mrl": "15 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3998
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1152,10 +951,7 @@ const BKU_DATA = [
     "mrl": "10 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3999
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1169,10 +965,7 @@ const BKU_DATA = [
     "mrl": "15 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4008
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1186,10 +979,7 @@ const BKU_DATA = [
     "mrl": "15 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 4009
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -1203,9 +993,6 @@ const BKU_DATA = [
     "mrl": "15 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-04-30",
-    "verilisTarihi": "2026-01-01",
-    "iller": "Tum Turkiye",
-    "aciklama": "-",
-    "bku_id": 3775
+    "aciklama": "-"
   }
 ];
