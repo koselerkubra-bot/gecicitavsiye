@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
 <script src="data.js"></script>
+<script src="recurring.js"></script>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'Noto Sans',Arial,sans-serif; background:#f4f6f1; color:#1a1a1a; -webkit-font-smoothing:antialiased; }
@@ -387,6 +388,121 @@ function CropView({ search }) {
 }
 
 // ============================================================
+// RECURRING DATA
+// ============================================================
+const recurringData = (typeof BKU_RECURRING !== 'undefined') ? BKU_RECURRING : [];
+
+// ============================================================
+// TAB 3: TEKRARLAYAN TAVSİYELER
+// ============================================================
+function RecurringView({ search }) {
+  const mobile = useIsMobile();
+
+  const filtered = recurringData.filter(d => {
+    if (!search) return true;
+    const s = search.toLowerCase();
+    return (d.bitki||"").toLowerCase().includes(s) ||
+           (d.zararli||"").toLowerCase().includes(s) ||
+           (d.urun||"").toLowerCase().includes(s) ||
+           (d.aktif||"").toLowerCase().includes(s);
+  });
+
+  if (recurringData.length === 0) {
+    return (
+      <div style={{textAlign:"center",padding:60,color:"#aaa"}}>
+        <div style={{fontSize:48,marginBottom:16}}>📊</div>
+        <p>Tekrarlayan tavsiye verisi henüz oluşturulmamış.</p>
+        <p style={{fontSize:12,marginTop:8}}>GitHub Actions workflow çalıştırıldığında bu veri otomatik oluşacak.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div style={{background:"#EDE7F6",borderRadius:10,padding:mobile?"14px":"18px 20px",marginBottom:20,borderLeft:"4px solid #5E35B1"}}>
+        <div style={{fontSize:mobile?13:14,fontWeight:600,color:"#4A148C",marginBottom:6}}>Bu tablo ne gösteriyor?</div>
+        <div style={{fontSize:mobile?12:13,color:"#555",lineHeight:1.6}}>
+          Aşağıdaki listede, BKU geçici tavsiye listesine <strong>aynı bitki + zararlı/hastalık</strong> kombinasyonu için
+          <strong> 2 veya daha fazla kez</strong> giriş yapılmış Syngenta ürünleri yer almaktadır.
+          Tekrar eden geçici tavsiyeler, söz konusu kullanım alanında kalıcı bir ihtiyaç olduğuna işaret edebilir.
+        </div>
+      </div>
+
+      <div style={{fontSize:13,color:"#888",marginBottom:14}}>{filtered.length} tekrarlayan kombinasyon</div>
+
+      <div style={{display:"flex",flexDirection:"column",gap:mobile?10:8}}>
+        {filtered.map((d,i) => {
+          const color = getUrunColor(d.urun, d.grup);
+          return (
+            <div key={i} style={{
+              background:"#fff",borderRadius:10,border:"1px solid #e4e4e4",
+              boxShadow:"0 1px 4px rgba(0,0,0,0.04)",overflow:"hidden"
+            }}>
+              {/* Header */}
+              <div style={{
+                display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:8,
+                padding:mobile?"12px 14px":"12px 18px",borderBottom:"1px solid #f0f0f0",background:"#fafdf7"
+              }}>
+                <div style={{display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
+                  <span style={{fontSize:mobile?15:16,fontWeight:700,color:"#1a1a1a"}}>{d.bitki}</span>
+                  <span style={{fontSize:11,color:"#888"}}>→</span>
+                  <span style={{fontSize:mobile?13:14,fontWeight:500,color:"#444"}}>
+                    {d.zararli}
+                    {d.zararliLat && d.zararliLat !== "-" && d.zararliLat !== "" && (
+                      <span style={{fontStyle:"italic",color:"#888",fontWeight:400}}> ({d.zararliLat})</span>
+                    )}
+                  </span>
+                </div>
+                <div style={{display:"flex",gap:6,alignItems:"center"}}>
+                  <span style={{
+                    background:"#5E35B1",color:"#fff",padding:"3px 10px",borderRadius:12,
+                    fontSize:12,fontWeight:800
+                  }}>{d.tekrar}x</span>
+                  <GrupBadge urun={d.urun} grup={d.grup}/>
+                  <UrunBadge urun={d.urun} grup={d.grup}/>
+                </div>
+              </div>
+
+              {/* Donemler */}
+              <div style={{padding:mobile?"12px 14px":"12px 18px"}}>
+                <div style={{fontSize:11,color:"#888",textTransform:"uppercase",letterSpacing:0.5,marginBottom:8}}>
+                  Tavsiye Dönemleri
+                </div>
+                <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+                  {d.donemler.map((p,pi) => {
+                    const expired = p.durum && p.durum.toLowerCase().includes("geçmiş");
+                    const isActive = !expired && p.durum;
+                    return (
+                      <div key={pi} style={{
+                        display:"inline-flex",alignItems:"center",gap:6,
+                        padding:"5px 12px",borderRadius:6,fontSize:12,
+                        background: isActive ? "#E8F5E9" : "#f5f5f5",
+                        border: isActive ? "1px solid #A5D6A7" : "1px solid #e0e0e0",
+                        color: isActive ? "#2E7D32" : "#888"
+                      }}>
+                        <span style={{fontWeight:600}}>{p.tavsiye || "?"}</span>
+                        <span style={{color:"#bbb"}}>→</span>
+                        <span>{p.gecerlilik || "?"}</span>
+                        {isActive && <span style={{fontSize:10,fontWeight:700}}>✓ Aktif</span>}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div style={{fontSize:11,color:"#999",marginTop:8}}>{d.aktif} — {d.form}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {filtered.length === 0 && search && (
+        <div style={{textAlign:"center",padding:40,color:"#999"}}>Aramanızla eşleşen sonuç bulunamadı.</div>
+      )}
+    </div>
+  );
+}
+
+// ============================================================
 // APP
 // ============================================================
 function App() {
@@ -448,7 +564,7 @@ function App() {
         ) : (<>
           <div style={{display:"flex",flexDirection:mobile?"column":"row",flexWrap:"wrap",gap:mobile?10:12,alignItems:mobile?"stretch":"center",marginBottom:20}}>
             <div style={{display:"flex",background:"#e4e4e4",borderRadius:8,overflow:"hidden",padding:3}}>
-              {[{id:"liste",label:"📋 Liste"},{id:"crop",label:"🌱 Kültür Bitkisi"}].map(t=>(
+              {[{id:"liste",label:"📋 Liste"},{id:"crop",label:"🌱 Kültür Bitkisi"},{id:"recurring",label:"🔁 Tekrarlayan"}].map(t=>(
                 <button key={t.id} onClick={()=>{setTab(t.id);setSearch("");}}
                   style={{
                     padding:"8px 20px",fontSize:13,fontWeight:600,border:"none",cursor:"pointer",borderRadius:6,flex:mobile?1:"none",
@@ -464,7 +580,7 @@ function App() {
                 fontFamily:"'Noto Sans',Arial,sans-serif",outline:"none",background:"#fff",minWidth:mobile?0:220,transition:"all 0.2s"}}
             />
           </div>
-          {tab==="liste" ? <ListView search={search}/> : <CropView search={search}/>}
+          {tab==="liste" ? <ListView search={search}/> : tab==="crop" ? <CropView search={search}/> : <RecurringView search={search}/>}
         </>)}
       </div>
 
