@@ -23,14 +23,12 @@ jobs:
       - name: Dosyaları kontrol et
         run: |
           echo "=== Olusan dosyalar ==="
-          ls -la data.js syngenta_bku_live.xlsx 2>/dev/null || echo "DOSYALAR OLUSMADI"
-          echo "=== data.js ilk 5 satir ==="
-          head -5 data.js 2>/dev/null || echo "data.js yok"
+          ls -la data.js recurring.js syngenta_bku_live.xlsx 2>/dev/null || echo "Bazi dosyalar eksik"
       - name: Değişiklikleri commit et
         run: |
           git config user.name "BKU Bot"
           git config user.email "bot@syngenta.com"
-          git add data.js syngenta_bku_live.xlsx || true
+          git add data.js recurring.js syngenta_bku_live.xlsx || true
           git status
           git diff --cached --quiet || git commit -m "BKU update $(date +%Y-%m-%d)"
           git push || true
