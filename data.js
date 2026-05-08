@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-05-07 11:30
-// Toplam: 75 eslesme
+// Son guncelleme: 2026-05-08 06:57
+// Toplam: 76 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -509,12 +509,12 @@ const BKU_DATA = [
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "KİRAZ",
+    "bitki": "FINDIK",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
-    "phi": "14 gün",
-    "doz": "50 ml/100 l su",
-    "mrl": "Chlorantraniliprole:1 Lambda-cyhalothrin:0.3",
+    "phi": "7 gün",
+    "doz": "45 ml/100 L. su",
+    "mrl": "Chlorantraniliprole:0.03 Lambda-cyhalothrin:0.01",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
     "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
@@ -523,12 +523,12 @@ const BKU_DATA = [
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "FINDIK",
+    "bitki": "KİRAZ",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
-    "phi": "7 gün",
-    "doz": "45 ml/100 L. su",
-    "mrl": "Chlorantraniliprole:0.03 Lambda-cyhalothrin:0.01",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Chlorantraniliprole:1 Lambda-cyhalothrin:0.3",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
     "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
@@ -842,20 +842,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KARPUZ",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,06",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -881,6 +867,34 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "BAMYA",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,3 mg/kg",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-07-29",
+    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "KARPUZ",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,06",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-07-29",
     "aciklama": "-"
   },
   {
@@ -926,16 +940,16 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "HAŞHAŞ ",
-    "zararli": "Haşhaş mildiyösü",
-    "zararliLat": "Peronospora arborescens",
-    "phi": "35 gün",
-    "doz": "40-105 ml/da",
-    "mrl": "0.5 mg/kg",
-    "grup": "Fungisit",
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "AVOKADO",
+    "zararli": "İncir Teke Böceği",
+    "zararliLat": "Batocera rufomaculata",
+    "phi": "7 Gün",
+    "doz": "20 ml/100 L su",
+    "mrl": "0,15",
+    "grup": "İnsektisit",
     "gecerlilik": "2026-07-15",
     "aciklama": "-"
   },
@@ -954,16 +968,16 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "phi": "7 Gün",
-    "doz": "20 ml/100 L su",
-    "mrl": "0,15",
-    "grup": "İnsektisit",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "HAŞHAŞ ",
+    "zararli": "Haşhaş mildiyösü",
+    "zararliLat": "Peronospora arborescens",
+    "phi": "35 gün",
+    "doz": "40-105 ml/da",
+    "mrl": "0.5 mg/kg",
+    "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
     "aciklama": "-"
   },
