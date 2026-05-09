@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-05-08 06:57
-// Toplam: 76 eslesme
+// Son guncelleme: 2026-05-09 07:14
+// Toplam: 79 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -422,6 +422,48 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "BAMYA",
+    "zararli": "Kurşuni Küf",
+    "zararliLat": "Botrytis sp.",
+    "phi": "7 Gün",
+    "doz": "60 g/100 l su",
+    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "BAMYA",
+    "zararli": "KÜLLEME",
+    "zararliLat": "Erysiphe spp.",
+    "phi": "7 Gün",
+    "doz": "60 g/100 l su",
+    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "BAMYA",
+    "zararli": "Mildiyö",
+    "zararliLat": "Phytophthora infestans",
+    "phi": "7 Gün",
+    "doz": "60 g/100 l su",
+    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
     "urun": "APRIN XL 350 ES",
     "form": "ES",
     "aktif": "350 g/l Metalaxyl-m",
@@ -504,34 +546,6 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-08-31",
     "aciklama": "-"
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "FINDIK",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "7 gün",
-    "doz": "45 ml/100 L. su",
-    "mrl": "Chlorantraniliprole:0.03 Lambda-cyhalothrin:0.01",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-13",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "KİRAZ",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "14 gün",
-    "doz": "50 ml/100 l su",
-    "mrl": "Chlorantraniliprole:1 Lambda-cyhalothrin:0.3",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-13",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -672,6 +686,48 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "KİRAZ",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Chlorantraniliprole:1 Lambda-cyhalothrin:0.3",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-13",
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "FINDIK",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "7 gün",
+    "doz": "45 ml/100 L. su",
+    "mrl": "Chlorantraniliprole:0.03 Lambda-cyhalothrin:0.01",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-13",
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
+  },
+  {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "GÜL (Süs bitkisi)",
+    "zararli": "Kurşuni küf",
+    "zararliLat": "Botrytis cinerea",
+    "phi": "14 gün",
+    "doz": "80 g/100 l su",
+    "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-30",
+    "aciklama": "-"
   },
   {
     "urun": "CELEST MAX 100 FS",
@@ -909,20 +965,6 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "Kurşuni küf",
-    "zararliLat": "Botrytis cinerea",
-    "phi": "14 gün",
-    "doz": "80 g/100 l su",
-    "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
     "aciklama": "-"
   },
   {
