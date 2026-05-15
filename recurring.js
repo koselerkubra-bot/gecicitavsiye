@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-05-14 07:49
-// Tekrarlayan tavsiyeler: 98 kombinasyon
+// Son guncelleme: 2026-05-15 07:59
+// Tekrarlayan tavsiyeler: 103 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ROKA",
@@ -543,6 +543,248 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "FASULYE",
+    "zararli": "Yalancı Kelebek",
+    "zararliLat": "Ricania japonica",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-08-15",
+        "gecerlilik": "2025-09-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "HIYAR",
+    "zararli": "Yalancı Kelebek",
+    "zararliLat": "Ricania japonica",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-08-15",
+        "gecerlilik": "2025-09-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MISIR",
+    "zararli": "Yalancı Kelebek",
+    "zararliLat": "Ricania japonica",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-08-15",
+        "gecerlilik": "2025-09-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KİVİ",
+    "zararli": "Yalancı Kelebek",
+    "zararliLat": "Ricania japonica",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-09-15",
+        "gecerlilik": "2025-11-15",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "NARENCİYE",
+    "zararli": "Yalancı Kelebek",
+    "zararliLat": "Ricania japonica",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-08-15",
+        "gecerlilik": "2025-09-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MAYDANOZ",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "DEREOTU",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "NANE",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "ROKA",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "TERE",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "FESLEĞEN",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "FESLEĞEN",
     "zararli": "Sebzelerde septorya yaprak lekesi",
     "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
@@ -857,138 +1099,6 @@ const BKU_RECURRING = [
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "MAYDANOZ",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "DEREOTU",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "NANE",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "ROKA",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "TERE",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "FESLEĞEN",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
     "grup": "Fungisit",
     "tekrar": 2,
     "donemler": [
