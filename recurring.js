@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-05-15 07:59
+// Son guncelleme: 2026-05-16 07:22
 // Tekrarlayan tavsiyeler: 103 kombinasyon
 const BKU_RECURRING = [
   {
@@ -2370,8 +2370,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "KİRAZ",
-    "zararli": "Haziran böceği",
-    "zararliLat": "Polyphylla spp.",
+    "zararli": "Mayıs böceği",
+    "zararliLat": "Melolontha spp.",
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -2392,8 +2392,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "KİRAZ",
-    "zararli": "Mayıs böceği",
-    "zararliLat": "Melolontha spp.",
+    "zararli": "Haziran böceği",
+    "zararliLat": "Polyphylla spp.",
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
