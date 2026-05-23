@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-05-22 08:28
+// Son guncelleme: 2026-05-23 07:36
 // Toplam: 83 eslesme
 const BKU_DATA = [
   {
@@ -646,20 +646,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "-",
-    "doz": "25 ml/100 L  su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-13",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
-  },
-  {
     "urun": "NİNJA 5 EC",
     "form": "EC",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -772,6 +758,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "-",
+    "doz": "25 ml/100 L  su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-13",
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -809,6 +809,48 @@ const BKU_DATA = [
     "phi": "14 gün",
     "doz": "80 g/100 l su",
     "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-30",
+    "aciklama": "-"
+  },
+  {
+    "urun": "CELEST MAX 100 FS",
+    "form": "FS",
+    "aktif": "100 g/l Fludioxonil",
+    "bitki": "KİMYON",
+    "zararli": "Kök çürüklüğü hastalığı",
+    "zararliLat": "Macrophomina phaseolina, Fusarium oxysporium",
+    "phi": "-",
+    "doz": "10 ml/100 kg tohuma",
+    "mrl": "0.05* mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-29",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS MAXX",
+    "form": "SC",
+    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
+    "bitki": "GÜL (Süs bitkisi)",
+    "zararli": "Gülde karaleke",
+    "zararliLat": "Diplocarpon rosae",
+    "phi": "14 gün",
+    "doz": "100 ml/ 100 l su",
+    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-30",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS MAXX",
+    "form": "SC",
+    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
+    "bitki": "GÜL (Süs bitkisi)",
+    "zararli": "GÜL PASI",
+    "zararliLat": "Phragmidium mucronatum",
+    "phi": "14 gün",
+    "doz": "100 ml/ 100 l su",
+    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-30",
     "aciklama": "-"
@@ -898,6 +940,34 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "66 ml/100 kg tohuma",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "60 ml/da",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -968,76 +1038,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "CELEST MAX 100 FS",
-    "form": "FS",
-    "aktif": "100 g/l Fludioxonil",
-    "bitki": "KİMYON",
-    "zararli": "Kök çürüklüğü hastalığı",
-    "zararliLat": "Macrophomina phaseolina, Fusarium oxysporium",
-    "phi": "-",
-    "doz": "10 ml/100 kg tohuma",
-    "mrl": "0.05* mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS MAXX",
-    "form": "SC",
-    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "Gülde karaleke",
-    "zararliLat": "Diplocarpon rosae",
-    "phi": "14 gün",
-    "doz": "100 ml/ 100 l su",
-    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS MAXX",
-    "form": "SC",
-    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "GÜL PASI",
-    "zararliLat": "Phragmidium mucronatum",
-    "phi": "14 gün",
-    "doz": "100 ml/ 100 l su",
-    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "66 ml/100 kg tohuma",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "60 ml/da",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -1066,16 +1066,16 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "HAŞHAŞ ",
-    "zararli": "Haşhaş mildiyösü",
-    "zararliLat": "Peronospora arborescens",
-    "phi": "35 gün",
-    "doz": "40-105 ml/da",
-    "mrl": "0.5 mg/kg",
-    "grup": "Fungisit",
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "AVOKADO",
+    "zararli": "İncir Teke Böceği",
+    "zararliLat": "Batocera rufomaculata",
+    "phi": "7 Gün",
+    "doz": "20 ml/100 L su",
+    "mrl": "0,15",
+    "grup": "İnsektisit",
     "gecerlilik": "2026-07-15",
     "aciklama": "-"
   },
@@ -1094,16 +1094,16 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "phi": "7 Gün",
-    "doz": "20 ml/100 L su",
-    "mrl": "0,15",
-    "grup": "İnsektisit",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "HAŞHAŞ ",
+    "zararli": "Haşhaş mildiyösü",
+    "zararliLat": "Peronospora arborescens",
+    "phi": "35 gün",
+    "doz": "40-105 ml/da",
+    "mrl": "0.5 mg/kg",
+    "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
     "aciklama": "-"
   },
