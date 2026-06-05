@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-06-04 08:56
-// Toplam: 87 eslesme
+// Son guncelleme: 2026-06-05 08:50
+// Toplam: 88 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -236,6 +236,20 @@ const BKU_DATA = [
     "doz": "1500 ml/100 l su",
     "mrl": "-",
     "grup": "İnsektisit",
+    "gecerlilik": "2026-08-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ISPANAK",
+    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
+    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
+    "phi": "14 gün",
+    "doz": "45 ml / da",
+    "mrl": "15 mg / kg",
+    "grup": "Fungisit",
     "gecerlilik": "2026-08-31",
     "aciklama": "-"
   },
@@ -775,34 +789,6 @@ const BKU_DATA = [
     "urun": "NİNJA 5 EC",
     "form": "EC",
     "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "ARMUT",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "14 gün",
-    "doz": "20 ml/100 l su",
-    "mrl": "0.08",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-13",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "ELMA",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "14 gün",
-    "doz": "20 ml/100 l su",
-    "mrl": "0.08",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-13",
-    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
     "bitki": "FINDIK",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
@@ -826,6 +812,34 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "ARMUT",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "14 gün",
+    "doz": "20 ml/100 l su",
+    "mrl": "0.08",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-13",
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "ELMA",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "14 gün",
+    "doz": "20 ml/100 l su",
+    "mrl": "0.08",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-13",
+    "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
   },
   {
     "urun": "AMPLİGO 150 ZC",
@@ -895,20 +909,6 @@ const BKU_DATA = [
     "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "KİMYON",
-    "zararli": "Alternaria yaprak lekesi",
-    "zararliLat": "Alternaria spp.",
-    "phi": "35 gün",
-    "doz": "112,5 (yüz on iki buçuk) ml/dekar",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-29",
     "aciklama": "-"
   },
   {
@@ -1064,6 +1064,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
     "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "KİMYON",
+    "zararli": "Alternaria yaprak lekesi",
+    "zararliLat": "Alternaria spp.",
+    "phi": "35 gün",
+    "doz": "112,5 (yüz on iki buçuk) ml/dekar",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-29",
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS MAXX",
