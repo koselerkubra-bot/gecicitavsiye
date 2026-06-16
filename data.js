@@ -1,6 +1,48 @@
-// Son guncelleme: 2026-06-13 08:29
-// Toplam: 89 eslesme
+// Son guncelleme: 2026-06-16 10:17
+// Toplam: 92 eslesme
 const BKU_DATA = [
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "ERİK",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 Gün",
+    "doz": "30 ml/100 L su",
+    "mrl": "Chlorantraniliprole: 1; Lambda-cyhalothrin: 0,2",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "-"
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "ÇELTİK",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "28 gün",
+    "doz": "30 ml/da",
+    "mrl": "0,2 mg/kg",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "-"
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 gün",
+    "doz": "50 ml / da",
+    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
+  },
   {
     "urun": "IMPERATOR 25 EC",
     "form": "EC",
@@ -61,15 +103,15 @@ const BKU_DATA = [
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
-    "bitki": "BAMYA",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
+    "bitki": "ZEYTİN",
+    "zararli": "Zeytin pasakarları",
+    "zararliLat": "Aculus oleariu, Aceria oleae",
     "phi": "-",
-    "doz": "400 g/100 l su",
+    "doz": "400  g/100 L su",
     "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-28",
-    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
+    "grup": "Akarisit",
+    "gecerlilik": "2026-08-31",
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -103,15 +145,15 @@ const BKU_DATA = [
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
-    "bitki": "ZEYTİN",
-    "zararli": "Zeytin pasakarları",
-    "zararliLat": "Aculus oleariu, Aceria oleae",
+    "bitki": "BAMYA",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
     "phi": "-",
-    "doz": "400  g/100 L su",
+    "doz": "400 g/100 l su",
     "mrl": "-",
-    "grup": "Akarisit",
-    "gecerlilik": "2026-08-31",
-    "aciklama": "-"
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-28",
+    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
   },
   {
     "urun": "PLOCAFİR",
