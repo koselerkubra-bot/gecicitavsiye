@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-06-23 08:34
+// Son guncelleme: 2026-06-24 08:29
 // Toplam: 92 eslesme
 const BKU_DATA = [
   {
