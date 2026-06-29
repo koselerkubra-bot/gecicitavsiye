@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-06-28 08:27
-// Toplam: 92 eslesme
+// Son guncelleme: 2026-06-29 09:55
+// Toplam: 91 eslesme
 const BKU_DATA = [
   {
     "urun": "AMPLİGO 150 ZC",
@@ -1245,20 +1245,6 @@ const BKU_DATA = [
     "mrl": "0.5 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KANOLA",
-    "zararli": "Yaprakbiti",
-    "zararliLat": "Brevicoryne brassicae",
-    "phi": "21 gün",
-    "doz": "70 ml/da",
-    "mrl": "0,2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-06-28",
     "aciklama": "-"
   },
   {
