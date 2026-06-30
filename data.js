@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-06-29 09:55
-// Toplam: 91 eslesme
+// Son guncelleme: 2026-06-30 08:35
+// Toplam: 90 eslesme
 const BKU_DATA = [
   {
     "urun": "AMPLİGO 150 ZC",
@@ -268,18 +268,32 @@ const BKU_DATA = [
     "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
   },
   {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "KAYISI",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
+    "phi": "-",
+    "doz": "400 g/100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
+  },
+  {
     "urun": "PLOCAFİR",
     "form": "EW",
     "aktif": "700 g/l Mineral Yağ",
-    "bitki": "NAR",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
+    "bitki": "KAYISI",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
     "phi": "-",
-    "doz": "1500 ml/100 l su",
+    "doz": "1000 g/100 L su",
     "mrl": "-",
     "grup": "İnsektisit",
-    "gecerlilik": "2026-08-31",
-    "aciklama": "-"
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -716,6 +730,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "NAR",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "phi": "-",
+    "doz": "1500 ml/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-31",
+    "aciklama": "-"
+  },
+  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -786,34 +814,6 @@ const BKU_DATA = [
     "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
   },
   {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "1000 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
-  },
-  {
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -825,6 +825,20 @@ const BKU_DATA = [
     "mrl": "0.6 mg/kg",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "TRABZON HURMASI",
+    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
+    "zararliLat": "Mycosphaerella nawae",
+    "phi": "70 gün",
+    "doz": "80-100 l/da (Dekara 50-100 L su ile )",
+    "mrl": "0.01",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-15",
     "aciklama": "-"
   },
   {
@@ -926,17 +940,73 @@ const BKU_DATA = [
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
+    "urun": "CELEST MAX 100 FS",
+    "form": "FS",
+    "aktif": "100 g/l Fludioxonil",
+    "bitki": "KİMYON",
+    "zararli": "Kök çürüklüğü hastalığı",
+    "zararliLat": "Macrophomina phaseolina, Fusarium oxysporium",
+    "phi": "-",
+    "doz": "10 ml/100 kg tohuma",
+    "mrl": "0.05* mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-29",
+    "aciklama": "-"
+  },
+  {
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
-    "bitki": "TRABZON HURMASI",
-    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
-    "zararliLat": "Mycosphaerella nawae",
-    "phi": "70 gün",
-    "doz": "80-100 l/da (Dekara 50-100 L su ile )",
-    "mrl": "0.01",
+    "bitki": "KİMYON",
+    "zararli": "Alternaria yaprak lekesi",
+    "zararliLat": "Alternaria spp.",
+    "phi": "35 gün",
+    "doz": "112,5 (yüz on iki buçuk) ml/dekar",
+    "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
-    "gecerlilik": "2026-07-15",
+    "gecerlilik": "2026-07-29",
+    "aciklama": "-"
+  },
+  {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "GÜL (Süs bitkisi)",
+    "zararli": "Kurşuni küf",
+    "zararliLat": "Botrytis cinerea",
+    "phi": "14 gün",
+    "doz": "80 g/100 l su",
+    "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-30",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "66 ml/100 kg tohuma",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "60 ml/da",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
     "aciklama": "-"
   },
   {
@@ -1108,76 +1178,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "66 ml/100 kg tohuma",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "60 ml/da",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "CELEST MAX 100 FS",
-    "form": "FS",
-    "aktif": "100 g/l Fludioxonil",
-    "bitki": "KİMYON",
-    "zararli": "Kök çürüklüğü hastalığı",
-    "zararliLat": "Macrophomina phaseolina, Fusarium oxysporium",
-    "phi": "-",
-    "doz": "10 ml/100 kg tohuma",
-    "mrl": "0.05* mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "KİMYON",
-    "zararli": "Alternaria yaprak lekesi",
-    "zararliLat": "Alternaria spp.",
-    "phi": "35 gün",
-    "doz": "112,5 (yüz on iki buçuk) ml/dekar",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "Kurşuni küf",
-    "zararliLat": "Botrytis cinerea",
-    "phi": "14 gün",
-    "doz": "80 g/100 l su",
-    "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -1245,20 +1245,6 @@ const BKU_DATA = [
     "mrl": "0.5 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "ERİK",
-    "zararli": "ERİK KOŞNİLİ",
-    "zararliLat": "Sphaerolecanium prunastri",
-    "phi": "-",
-    "doz": "1500 ml/100 L su",
-    "mrl": "MRL uygulanmaz.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-06-29",
     "aciklama": "-"
   },
   {

@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-06-29 09:55
-// Tekrarlayan tavsiyeler: 107 kombinasyon
+// Son guncelleme: 2026-06-30 08:35
+// Tekrarlayan tavsiyeler: 106 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -1252,50 +1252,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KANOLA",
-    "zararli": "Yaprakbiti",
-    "zararliLat": "Brevicoryne brassicae",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-03-01",
-        "gecerlilik": "2026-06-28",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-04-15",
-        "gecerlilik": "2025-06-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "MAYDANOZ",
-    "zararli": "Sebzelerde septorya yaprak lekesi",
-    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "MAYDANOZ",
     "zararli": "Sebzelerde septorya yaprak lekesi",
     "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
@@ -1802,50 +1758,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "ISPANAK",
-    "zararli": "Mildiyö",
-    "zararliLat": "Plasmopara spp, Bremia lactucae",
-    "urun": "REGALIA",
-    "form": "SC",
-    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "ISPANAK",
-    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
-    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
-    "urun": "REGALIA",
-    "form": "SC",
-    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "DEREOTU",
     "zararli": "Külleme",
     "zararliLat": "Erysiphe heraclei",
@@ -1891,8 +1803,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "ISPANAK",
-    "zararli": "YAPRAK LEKESİ",
-    "zararliLat": "Cercospora sp.",
+    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
+    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
@@ -1913,8 +1825,30 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "ISPANAK",
-    "zararli": "Külleme",
-    "zararliLat": "Erysiphe cichoracearum",
+    "zararli": "Mildiyö",
+    "zararliLat": "Plasmopara spp, Bremia lactucae",
+    "urun": "REGALIA",
+    "form": "SC",
+    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "ISPANAK",
+    "zararli": "YAPRAK LEKESİ",
+    "zararliLat": "Cercospora sp.",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
@@ -2000,6 +1934,28 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "ISPANAK",
+    "zararli": "Külleme",
+    "zararliLat": "Erysiphe cichoracearum",
+    "urun": "REGALIA",
+    "form": "SC",
+    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "ROKA",
     "zararli": "Sebzelerde beyaz çürüklük",
     "zararliLat": "Sclerotinia sclerotiorum",
@@ -2072,6 +2028,50 @@ const BKU_RECURRING = [
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "TERE",
+    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
+    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
+    "urun": "REGALIA",
+    "form": "SC",
+    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "TERE",
+    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
+    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
     "grup": "Fungisit",
     "tekrar": 2,
     "donemler": [
@@ -2091,50 +2091,6 @@ const BKU_RECURRING = [
     "bitki": "ROKA",
     "zararli": "FİDE KÖK ÇÜRÜKLÜĞÜ",
     "zararliLat": "Rhizoctonia solani",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "TERE",
-    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
-    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
-    "urun": "REGALIA",
-    "form": "SC",
-    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "TERE",
-    "zararli": "Yaprağı Yenen Sebzelerde Beyaz Pas",
-    "zararliLat": "Albugo candida, Wilsoniana occidentalis, Wilsoniana portulacae",
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -2242,6 +2198,28 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "REYHAN",
+    "zararli": "MİLDİYÖ",
+    "zararliLat": "(Peronospora belbahrii)",
+    "urun": "REGALIA",
+    "form": "SC",
+    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "REZENE",
     "zararli": "YAPRAK LEKESİ",
     "zararliLat": "Cercospora sp.",
@@ -2352,28 +2330,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "REYHAN",
-    "zararli": "MİLDİYÖ",
-    "zararliLat": "(Peronospora belbahrii)",
-    "urun": "REGALIA",
-    "form": "SC",
-    "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2025-09-01",
-        "gecerlilik": "2025-12-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-01",
-        "gecerlilik": "2025-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "MAYDANOZ",
     "zararli": "Alternaria yaprak lekesi",
     "zararliLat": "Alternaria spp.",
@@ -2399,6 +2355,28 @@ const BKU_RECURRING = [
     "bitki": "MAYDANOZ",
     "zararli": "Alternaria yaprak lekesi",
     "zararliLat": "Alternaria spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2025-09-01",
+        "gecerlilik": "2025-12-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-05-01",
+        "gecerlilik": "2025-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MAYDANOZ",
+    "zararli": "Sebzelerde septorya yaprak lekesi",
+    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
