@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-06-30 08:35
-// Tekrarlayan tavsiyeler: 106 kombinasyon
+// Son guncelleme: 2026-07-01 08:53
+// Tekrarlayan tavsiyeler: 107 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -543,6 +543,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2025-05-01",
         "gecerlilik": "2025-07-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-16",
+        "gecerlilik": "2026-05-16",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
