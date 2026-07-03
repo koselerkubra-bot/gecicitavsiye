@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-07-02 08:17
+// Son guncelleme: 2026-07-03 08:16
 // Toplam: 91 eslesme
 const BKU_DATA = [
   {
@@ -23,11 +23,11 @@ const BKU_DATA = [
     "zararli": "PALMİYE KIRMIZIBÖCEĞİ",
     "zararliLat": "Rhynchophorus ferrugineus",
     "phi": "-",
-    "doz": "50 - 100 ml/ 1 L su",
+    "doz": "50 - 100 ml / 1 L su",
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-15",
-    "aciklama": "Sadece süs bitkileri amacıyla yetiştirilen bitkilere uygulanmalıdır, gıda olarak yetiştiriciliği yapılan bitkilere uygulanmamalıdır."
+    "aciklama": "Sadece süs bitkileri amacıyla yetiştirilen Palmiye, Hurma, Skas bitkilerinde uygulanmalıdır, gıda amacıyla yetiştiriciliği yapılan Palmiye ve Hurma bitkilerinde uygulanmamalıdır."
   },
   {
     "urun": "NİNJA 5 EC",
