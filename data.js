@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-04 07:53
-// Toplam: 103 eslesme
+// Son guncelleme: 2026-07-05 08:08
+// Toplam: 104 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -178,6 +178,20 @@ const BKU_DATA = [
     "zararliLat": "Peronospora spp., Phytophthora spp.",
     "phi": "-",
     "doz": "100 ml/100 L su",
+    "mrl": "-",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
+  },
+  {
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde fungal kök çürüklüğü ve solgunluk",
+    "zararliLat": "Fusarium spp., Rhizoctonia spp., Pythium spp., Sclerotonia sclerotiorum, Verticillium spp.",
+    "phi": "-",
+    "doz": "30 g/100 L su",
     "mrl": "-",
     "grup": "Fungisit",
     "gecerlilik": "2026-10-31",
