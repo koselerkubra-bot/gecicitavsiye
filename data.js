@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-07 08:30
-// Toplam: 104 eslesme
+// Son guncelleme: 2026-07-08 07:36
+// Toplam: 105 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -196,6 +196,20 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "İNCİR",
+    "zararli": "İki noktalı kırmızıörümcek",
+    "zararliLat": "Tetranychus urticae",
+    "phi": "-",
+    "doz": "400 g/ 100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-30",
+    "aciklama": "-"
   },
   {
     "urun": "AGRIMEC EC",

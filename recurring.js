@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-07 08:30
-// Tekrarlayan tavsiyeler: 107 kombinasyon
+// Son guncelleme: 2026-07-08 07:36
+// Tekrarlayan tavsiyeler: 108 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "MAYDANOZ",
@@ -560,6 +560,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-01-16",
         "gecerlilik": "2026-05-16",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "İNCİR",
+    "zararli": "İki noktalı kırmızıörümcek",
+    "zararliLat": "Tetranychus urticae",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-09-30",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-06-01",
+        "gecerlilik": "2025-09-28",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
