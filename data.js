@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-08 07:36
-// Toplam: 105 eslesme
+// Son guncelleme: 2026-07-09 08:35
+// Toplam: 106 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -503,6 +503,20 @@ const BKU_DATA = [
     "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-28",
+    "aciklama": "-"
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "SOYA",
+    "zararli": "Soya sap sineği",
+    "zararliLat": "Melanagromyza sojae",
+    "phi": "30 gün",
+    "doz": "30 ml/daLarva",
+    "mrl": "0,05 - 0,05",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-01",
     "aciklama": "-"
   },
   {
