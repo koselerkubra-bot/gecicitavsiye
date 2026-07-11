@@ -1,19 +1,47 @@
-// Son guncelleme: 2026-07-10 08:29
-// Toplam: 106 eslesme
+// Son guncelleme: 2026-07-11 07:18
+// Toplam: 109 eslesme
 const BKU_DATA = [
   {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "FASULYE",
+    "zararli": "KÜLLEME",
+    "zararliLat": "Erysiphe polygoni",
     "phi": "-",
-    "doz": "1000 ml/100 l su",
+    "doz": "300 g/100 L su",
     "mrl": "-",
     "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
+    "gecerlilik": "2026-11-10",
+    "aciklama": "*Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "FASULYE",
+    "zararli": "KÜLLEME",
+    "zararliLat": "Erysiphe polygoni",
+    "phi": "14 gün",
+    "doz": "80-100 ml/da",
+    "mrl": "0260010  Kabuklu: 3; 0260020 Kabuksuz: 3",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-10",
     "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "BİBER (tarla)",
+    "zararli": "İki noktalı kırmızıörümcek",
+    "zararliLat": "Tetranychus urticae",
+    "phi": "-",
+    "doz": "80-200 g/da",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-01",
+    "aciklama": "Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
   },
   {
     "urun": "PLOCAFİR",
@@ -209,6 +237,20 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-30",
+    "aciklama": "-"
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "phi": "-",
+    "doz": "1000 ml/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
     "aciklama": "-"
   },
   {

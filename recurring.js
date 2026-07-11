@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-07-10 08:29
+// Son guncelleme: 2026-07-11 07:18
 // Tekrarlayan tavsiyeler: 108 kombinasyon
 const BKU_RECURRING = [
   {
@@ -543,28 +543,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-01-16",
-        "gecerlilik": "2026-05-16",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "İNCİR",
     "zararli": "İki noktalı kırmızıörümcek",
     "zararliLat": "Tetranychus urticae",
@@ -582,6 +560,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2025-06-01",
         "gecerlilik": "2025-09-28",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-01-16",
+        "gecerlilik": "2026-05-16",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
