@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-12 07:34
-// Toplam: 109 eslesme
+// Son guncelleme: 2026-07-13 08:23
+// Toplam: 108 eslesme
 const BKU_DATA = [
   {
     "urun": "THIOVIT JET",
@@ -1469,20 +1469,6 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KANOLA",
-    "zararli": "Lahana yaprakgüvesi",
-    "zararliLat": "Plutella xylostella = Plutella maculipennis",
-    "phi": "21 gün",
-    "doz": "100 ml/da",
-    "mrl": "0,2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-07-12",
     "aciklama": "-"
   },
   {
