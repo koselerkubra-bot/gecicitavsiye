@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-07-14 07:16
+// Son guncelleme: 2026-07-15 07:21
 // Tekrarlayan tavsiyeler: 108 kombinasyon
 const BKU_RECURRING = [
   {
@@ -1259,7 +1259,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-03-15",
         "gecerlilik": "2026-07-15",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-05-30",
@@ -1281,7 +1281,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-03-15",
         "gecerlilik": "2026-07-15",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-05-30",
