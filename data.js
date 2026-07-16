@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-15 07:21
-// Toplam: 108 eslesme
+// Son guncelleme: 2026-07-16 07:28
+// Toplam: 104 eslesme
 const BKU_DATA = [
   {
     "urun": "THIOVIT JET",
@@ -1206,20 +1206,6 @@ const BKU_DATA = [
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "TRABZON HURMASI",
-    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
-    "zararliLat": "Mycosphaerella nawae",
-    "phi": "70 gün",
-    "doz": "80-100 l/da (Dekara 50-100 L su ile )",
-    "mrl": "0.01",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-15",
-    "aciklama": "-"
-  },
-  {
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -1469,48 +1455,6 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "phi": "7 Gün",
-    "doz": "20 ml/100 L su",
-    "mrl": "0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-07-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "phi": "14 Gün",
-    "doz": "50 ml/100 L su",
-    "mrl": "Chlorantraniliprole: 0,3 Lambda-cyhalothrin:0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-07-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "HAŞHAŞ ",
-    "zararli": "Haşhaş mildiyösü",
-    "zararliLat": "Peronospora arborescens",
-    "phi": "35 gün",
-    "doz": "40-105 ml/da",
-    "mrl": "0.5 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-15",
     "aciklama": "-"
   }
 ];
