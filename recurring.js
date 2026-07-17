@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-16 07:28
-// Tekrarlayan tavsiyeler: 108 kombinasyon
+// Son guncelleme: 2026-07-17 07:24
+// Tekrarlayan tavsiyeler: 109 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "MAYDANOZ",
@@ -538,6 +538,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2025-05-01",
         "gecerlilik": "2025-07-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "TRABZON HURMASI",
+    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
+    "zararliLat": "Mycosphaerella nawae",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-16",
+        "gecerlilik": "2026-10-16",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-07-15",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]

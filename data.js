@@ -1,6 +1,20 @@
-// Son guncelleme: 2026-07-16 07:28
-// Toplam: 104 eslesme
+// Son guncelleme: 2026-07-17 07:24
+// Toplam: 105 eslesme
 const BKU_DATA = [
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "TRABZON HURMASI",
+    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
+    "zararliLat": "Mycosphaerella nawae",
+    "phi": "70 gün",
+    "doz": "80-100 l/da (Dekara 50-100 L su ile )",
+    "mrl": "0.01",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-10-16",
+    "aciklama": "-"
+  },
   {
     "urun": "THIOVIT JET",
     "form": "WG",
