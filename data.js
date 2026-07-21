@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-20 08:12
-// Toplam: 105 eslesme
+// Son guncelleme: 2026-07-21 07:38
+// Toplam: 106 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -280,6 +280,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-15",
     "aciklama": "Sadece süs bitkileri amacıyla yetiştirilen Palmiye, Hurma, Skas bitkilerinde uygulanmalıdır, gıda amacıyla yetiştiriciliği yapılan Palmiye ve Hurma bitkilerinde uygulanmamalıdır."
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "CEVİZ",
+    "zararli": "Dut kabuklubiti",
+    "zararliLat": "Pseudaulacaspis pentagona",
+    "phi": "-",
+    "doz": "1000 ml/100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-16",
+    "aciklama": "-"
   },
   {
     "urun": "NİNJA 5 EC",
