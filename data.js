@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-21 07:38
-// Toplam: 106 eslesme
+// Son guncelleme: 2026-07-22 07:39
+// Toplam: 107 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -14,6 +14,20 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-10-16",
     "aciklama": "-"
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Batı Mısır Kök Kurdu",
+    "zararliLat": "Diabrotica virgifera",
+    "phi": "14 gün",
+    "doz": "30 ml/da",
+    "mrl": "0,02",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-15",
+    "aciklama": "Edirne, Kırklareli, Tekirdağ illeri için geçici tavsiye verilmiştir."
   },
   {
     "urun": "THIOVIT JET",

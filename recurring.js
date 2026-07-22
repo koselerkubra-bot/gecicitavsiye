@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-21 07:38
-// Tekrarlayan tavsiyeler: 109 kombinasyon
+// Son guncelleme: 2026-07-22 07:39
+// Tekrarlayan tavsiyeler: 110 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "MAYDANOZ",
@@ -560,6 +560,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-07-15",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MISIR",
+    "zararli": "Batı Mısır Kök Kurdu",
+    "zararliLat": "Diabrotica virgifera",
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-15",
+        "gecerlilik": "2026-09-15",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2025-08-15",
+        "gecerlilik": "2025-08-31",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
