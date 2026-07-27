@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-07-26 07:42
+// Son guncelleme: 2026-07-27 08:39
 // Toplam: 107 eslesme
 const BKU_DATA = [
   {
@@ -380,20 +380,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "BAMYA",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-28",
-    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
-  },
-  {
     "urun": "SCORE 250 EC",
     "form": "EC",
     "aktif": "250 g/l Difenoconazole",
@@ -406,6 +392,20 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-08-18",
     "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "BAMYA",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
+    "phi": "-",
+    "doz": "400 g/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-28",
+    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
   },
   {
     "urun": "NİNJA 5 EC",
@@ -579,20 +579,6 @@ const BKU_DATA = [
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "ŞEFTALİ - NEKTARİN",
-    "zararli": "Dipkurtları",
-    "zararliLat": "Capnodis spp.",
-    "phi": "14 gün",
-    "doz": "50 ml/100 l su",
-    "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "-"
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
     "bitki": "SOYA",
     "zararli": "Soya sap sineği",
     "zararliLat": "Melanagromyza sojae",
@@ -672,6 +658,20 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-08-28",
     "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "ŞEFTALİ - NEKTARİN",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "-"
   },
   {
     "urun": "THIOVIT JET",
@@ -1262,6 +1262,34 @@ const BKU_DATA = [
     "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
   },
   {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "66 ml/100 kg tohuma",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ANASON",
+    "zararli": "Anason yaprak lekesi",
+    "zararliLat": "Cercospora malkoffii",
+    "phi": "-",
+    "doz": "60 ml/da",
+    "mrl": "0.3 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-07-31",
+    "aciklama": "-"
+  },
+  {
     "urun": "CELEST MAX 100 FS",
     "form": "FS",
     "aktif": "100 g/l Fludioxonil",
@@ -1469,34 +1497,6 @@ const BKU_DATA = [
     "mrl": "0,06",
     "grup": "İnsektisit",
     "gecerlilik": "2026-07-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "66 ml/100 kg tohuma",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "60 ml/da",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
     "aciklama": "-"
   }
 ];

@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-07-26 07:42
+// Son guncelleme: 2026-07-27 08:39
 // Tekrarlayan tavsiyeler: 110 kombinasyon
 const BKU_RECURRING = [
   {
@@ -2480,8 +2480,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "MAYDANOZ",
-    "zararli": "Mildiyö",
-    "zararliLat": "Plasmopara spp, Bremia lactucae",
+    "zararli": "YAPRAK LEKESİ",
+    "zararliLat": "Cercospora sp.",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
@@ -2502,8 +2502,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "MAYDANOZ",
-    "zararli": "YAPRAK LEKESİ",
-    "zararliLat": "Cercospora sp.",
+    "zararli": "Mildiyö",
+    "zararliLat": "Plasmopara spp, Bremia lactucae",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
