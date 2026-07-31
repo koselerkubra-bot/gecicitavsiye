@@ -1,6 +1,20 @@
-// Son guncelleme: 2026-07-30 07:40
-// Toplam: 106 eslesme
+// Son guncelleme: 2026-07-31 07:57
+// Toplam: 103 eslesme
 const BKU_DATA = [
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "DOMATES",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,07",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
   {
     "urun": "KARATE ZEON",
     "form": "CS",
@@ -25,20 +39,6 @@ const BKU_DATA = [
     "phi": "21 gün",
     "doz": "40 ml/da",
     "mrl": "0,05",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "DOMATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,07",
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-26",
     "aciklama": "-"
@@ -548,20 +548,6 @@ const BKU_DATA = [
     "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "PAMUK ",
-    "zararli": "Pamuk unlubiti",
-    "zararliLat": "Phenacoccus solenopsis",
-    "phi": "7 gün",
-    "doz": "50 ml/da",
-    "mrl": "0.2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-29",
-    "aciklama": "-"
-  },
-  {
     "urun": "SCORE 250 EC",
     "form": "EC",
     "aktif": "250 g/l Difenoconazole",
@@ -573,6 +559,20 @@ const BKU_DATA = [
     "mrl": "0.8",
     "grup": "Fungisit",
     "gecerlilik": "2026-08-18",
+    "aciklama": "-"
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "PAMUK ",
+    "zararli": "Pamuk unlubiti",
+    "zararliLat": "Phenacoccus solenopsis",
+    "phi": "7 gün",
+    "doz": "50 ml/da",
+    "mrl": "0.2",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-29",
     "aciklama": "-"
   },
   {
@@ -747,6 +747,48 @@ const BKU_DATA = [
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "ŞEFTALİ - NEKTARİN",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "KAYISI",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
+    "phi": "-",
+    "doz": "400 g/100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "KAYISI",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
+    "phi": "-",
+    "doz": "1000 g/100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-08-28",
+    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
     "bitki": "SOYA",
     "zararli": "Soya sap sineği",
     "zararliLat": "Melanagromyza sojae",
@@ -826,48 +868,6 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-08-28",
     "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "ŞEFTALİ - NEKTARİN",
-    "zararli": "Dipkurtları",
-    "zararliLat": "Capnodis spp.",
-    "phi": "14 gün",
-    "doz": "50 ml/100 l su",
-    "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "1000 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
   },
   {
     "urun": "APRIN XL 350 ES",
@@ -1441,48 +1441,6 @@ const BKU_DATA = [
     "mrl": "0.3 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS MAXX",
-    "form": "SC",
-    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "Gülde karaleke",
-    "zararliLat": "Diplocarpon rosae",
-    "phi": "14 gün",
-    "doz": "100 ml/ 100 l su",
-    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS MAXX",
-    "form": "SC",
-    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "GÜL PASI",
-    "zararliLat": "Phragmidium mucronatum",
-    "phi": "14 gün",
-    "doz": "100 ml/ 100 l su",
-    "mrl": "Azoxystrobin:60 mg/kg, Difenoconazole:20 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "GÜL (Süs bitkisi)",
-    "zararli": "Kurşuni küf",
-    "zararliLat": "Botrytis cinerea",
-    "phi": "14 gün",
-    "doz": "80 g/100 l su",
-    "mrl": "Cyprodinil:0.1* Fludioxonil:0,05*",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-30",
     "aciklama": "-"
   }
 ];
