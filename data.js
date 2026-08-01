@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-07-31 07:57
-// Toplam: 103 eslesme
+// Son guncelleme: 2026-08-01 07:33
+// Toplam: 101 eslesme
 const BKU_DATA = [
   {
     "urun": "KARATE ZEON",
@@ -240,6 +240,20 @@ const BKU_DATA = [
     "aciklama": "Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
   },
   {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "İNCİR",
+    "zararli": "İki noktalı kırmızıörümcek",
+    "zararliLat": "Tetranychus urticae",
+    "phi": "-",
+    "doz": "400 g/ 100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-30",
+    "aciklama": "-"
+  },
+  {
     "urun": "PLOCAFİR",
     "form": "EW",
     "aktif": "700 g/l Mineral Yağ",
@@ -420,20 +434,6 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "İNCİR",
-    "zararli": "İki noktalı kırmızıörümcek",
-    "zararliLat": "Tetranychus urticae",
-    "phi": "-",
-    "doz": "400 g/ 100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-30",
-    "aciklama": "-"
   },
   {
     "urun": "PLOCAFİR",
@@ -758,6 +758,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "SOYA",
+    "zararli": "Soya sap sineği",
+    "zararliLat": "Melanagromyza sojae",
+    "phi": "30 gün",
+    "doz": "30 ml/daLarva",
+    "mrl": "0,05 - 0,05",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-01",
+    "aciklama": "-"
+  },
+  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -784,20 +798,6 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-28",
     "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "SOYA",
-    "zararli": "Soya sap sineği",
-    "zararliLat": "Melanagromyza sojae",
-    "phi": "30 gün",
-    "doz": "30 ml/daLarva",
-    "mrl": "0,05 - 0,05",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-01",
-    "aciklama": "-"
   },
   {
     "urun": "PLOCAFİR",
@@ -1414,33 +1414,5 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-13",
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "66 ml/100 kg tohuma",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "ANASON",
-    "zararli": "Anason yaprak lekesi",
-    "zararliLat": "Cercospora malkoffii",
-    "phi": "-",
-    "doz": "60 ml/da",
-    "mrl": "0.3 mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-07-31",
-    "aciklama": "-"
   }
 ];
