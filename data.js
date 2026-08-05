@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-08-04 07:45
-// Toplam: 101 eslesme
+// Son guncelleme: 2026-08-05 07:46
+// Toplam: 102 eslesme
 const BKU_DATA = [
   {
     "urun": "KARATE ZEON",
@@ -629,6 +629,20 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "Akarisit",
     "gecerlilik": "2026-08-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "KAVAK",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "-",
+    "doz": "50 ml/100 l su (Larva- Ergin)",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-30",
     "aciklama": "-"
   },
   {
