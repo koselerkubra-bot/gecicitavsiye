@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-08-12 06:22
+// Son guncelleme: 2026-08-13 06:22
 // Tekrarlayan tavsiyeler: 121 kombinasyon
 const BKU_RECURRING = [
   {
@@ -1356,7 +1356,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1378,7 +1378,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1400,7 +1400,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1422,7 +1422,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1444,7 +1444,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1466,7 +1466,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
@@ -1488,7 +1488,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-04-15",
         "gecerlilik": "2026-08-13",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2025-08-01",
