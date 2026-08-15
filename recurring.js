@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-08-14 06:21
+// Son guncelleme: 2026-08-15 05:32
 // Tekrarlayan tavsiyeler: 121 kombinasyon
 const BKU_RECURRING = [
   {
@@ -587,50 +587,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "MARUL",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "PATATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "KAVUN",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -764,6 +720,50 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "LAHANA ",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MARUL",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "PATATES",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",

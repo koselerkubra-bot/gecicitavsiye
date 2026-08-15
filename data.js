@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-08-14 06:21
+// Son guncelleme: 2026-08-15 05:32
 // Toplam: 102 eslesme
 const BKU_DATA = [
   {
@@ -131,34 +131,6 @@ const BKU_DATA = [
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MARUL",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "PATATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,01*",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
     "bitki": "KABAK",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -263,6 +235,34 @@ const BKU_DATA = [
     "phi": "21 gün",
     "doz": "40 ml/da",
     "mrl": "0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MARUL",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "PATATES",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,01*",
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-26",
     "aciklama": "-"
@@ -576,20 +576,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 gün",
-    "doz": "50 ml / da",
-    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
-  },
-  {
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -618,6 +604,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 gün",
+    "doz": "50 ml / da",
+    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
+  },
+  {
     "urun": "IMPERATOR 25 EC",
     "form": "EC",
     "aktif": "250 g/l Cypermethrin",
@@ -632,20 +632,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "TRABZON HURMASI",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
-    "phi": "-",
-    "doz": "1500 ml/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-30",
-    "aciklama": "-"
-  },
-  {
     "urun": "SCORE 250 EC",
     "form": "EC",
     "aktif": "250 g/l Difenoconazole",
@@ -657,6 +643,20 @@ const BKU_DATA = [
     "mrl": "0.8",
     "grup": "Fungisit",
     "gecerlilik": "2026-08-18",
+    "aciklama": "-"
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "TRABZON HURMASI",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "phi": "-",
+    "doz": "1500 ml/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-30",
     "aciklama": "-"
   },
   {
