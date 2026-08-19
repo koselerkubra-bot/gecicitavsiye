@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-08-18 05:37
-// Toplam: 102 eslesme
+// Son guncelleme: 2026-08-19 05:38
+// Toplam: 103 eslesme
 const BKU_DATA = [
   {
     "urun": "NİNJA 5 EC",
@@ -98,6 +98,34 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "KAYISI",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Chlorantraniliprole:1 Lambda cyhalothrin:0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "BADEM",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Chlorantraniliprole:0,03 Lambda cyhalothrin:0,01*",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "-"
   },
   {
     "urun": "KARATE ZEON",
@@ -632,20 +660,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "SCORE 250 EC",
-    "form": "EC",
-    "aktif": "250 g/l Difenoconazole",
-    "bitki": "TRABZON HURMASI",
-    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
-    "zararliLat": "Mycosphaerella nawae",
-    "phi": "14 gün",
-    "doz": "10 ml / 100 L su",
-    "mrl": "0.8",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-08-18",
-    "aciklama": "-"
-  },
-  {
     "urun": "PLOCAFİR",
     "form": "EW",
     "aktif": "700 g/l Mineral Yağ",
@@ -864,7 +878,7 @@ const BKU_DATA = [
     "zararliLat": "Capnodis spp.",
     "phi": "14 gün",
     "doz": "50 ml/100 l su",
-    "mrl": "Cyprodinil:1 Lambda cyhalothrin:0,15",
+    "mrl": "Chlorantraniliprole:1 Lambda cyhalothrin:0,15",
     "grup": "İnsektisit",
     "gecerlilik": "2026-08-28",
     "aciklama": "-"
