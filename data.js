@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-08-27 16:21
-// Toplam: 103 eslesme
+// Son guncelleme: 2026-08-28 17:18
+// Toplam: 104 eslesme
 const BKU_DATA = [
   {
     "urun": "NİNJA 5 EC",
@@ -123,6 +123,20 @@ const BKU_DATA = [
     "phi": "14 gün",
     "doz": "50 ml/100 l su",
     "mrl": "Chlorantraniliprole:0,03 Lambda cyhalothrin:0,01*",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "ALIÇ",
+    "zararli": "Elma içkurdu",
+    "zararliLat": "Cydia pomonella",
+    "phi": "14 gün",
+    "doz": "20 ml/100 L su",
+    "mrl": "0,2 (mg/kg)",
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "-"
