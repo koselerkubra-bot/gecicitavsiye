@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-08-28 17:18
-// Tekrarlayan tavsiyeler: 119 kombinasyon
+// Son guncelleme: 2026-08-29 11:34
+// Tekrarlayan tavsiyeler: 120 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "MAYDANOZ",
@@ -538,6 +538,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2025-08-01",
         "gecerlilik": "2025-10-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "ŞEFTALİ - NEKTARİN",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-29",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-28",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]

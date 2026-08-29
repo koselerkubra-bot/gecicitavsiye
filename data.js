@@ -1,6 +1,20 @@
-// Son guncelleme: 2026-08-28 17:18
-// Toplam: 104 eslesme
+// Son guncelleme: 2026-08-29 11:34
+// Toplam: 99 eslesme
 const BKU_DATA = [
+  {
+    "urun": "AMPLİGO 150 ZC",
+    "form": "ZC",
+    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
+    "bitki": "ŞEFTALİ - NEKTARİN",
+    "zararli": "Dipkurtları",
+    "zararliLat": "Capnodis spp.",
+    "phi": "14 gün",
+    "doz": "50 ml/100 l su",
+    "mrl": "Chlorantraniliprole:1 Lambda cyhalothrin:0,15",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "-"
+  },
   {
     "urun": "NİNJA 5 EC",
     "form": "EC",
@@ -618,20 +632,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 gün",
-    "doz": "50 ml / da",
-    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
-  },
-  {
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -658,6 +658,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-15",
     "aciklama": "-"
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 gün",
+    "doz": "50 ml / da",
+    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
   },
   {
     "urun": "IMPERATOR 25 EC",
@@ -688,20 +702,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "BAMYA",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-28",
-    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
-  },
-  {
     "urun": "NİNJA 5 EC",
     "form": "EC",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -714,6 +714,34 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-29",
     "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "ZEYTİN",
+    "zararli": "Zeytin pasakarları",
+    "zararliLat": "Aculus oleariu, Aceria oleae",
+    "phi": "-",
+    "doz": "400  g/100 L su",
+    "mrl": "-",
+    "grup": "Akarisit",
+    "gecerlilik": "2026-08-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "BAMYA",
+    "zararli": "Kırmızı örümcekler",
+    "zararliLat": "Tetranychus spp.",
+    "phi": "-",
+    "doz": "400 g/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-28",
+    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
   },
   {
     "urun": "QUADRİS",
@@ -741,20 +769,6 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "Fungisit",
     "gecerlilik": "2026-09-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "ZEYTİN",
-    "zararli": "Zeytin pasakarları",
-    "zararliLat": "Aculus oleariu, Aceria oleae",
-    "phi": "-",
-    "doz": "400  g/100 L su",
-    "mrl": "-",
-    "grup": "Akarisit",
-    "gecerlilik": "2026-08-31",
     "aciklama": "-"
   },
   {
@@ -924,90 +938,6 @@ const BKU_DATA = [
     "grup": "Fungisit + Akarisit",
     "gecerlilik": "2026-08-31",
     "aciklama": "-"
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "BAMYA",
-    "zararli": "Kurşuni Küf",
-    "zararliLat": "Botrytis sp.",
-    "phi": "7 Gün",
-    "doz": "60 g/100 l su",
-    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "BAMYA",
-    "zararli": "KÜLLEME",
-    "zararliLat": "Erysiphe spp.",
-    "phi": "7 Gün",
-    "doz": "60 g/100 l su",
-    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
-  },
-  {
-    "urun": "SWITCH 62.5 WG",
-    "form": "WG",
-    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
-    "bitki": "BAMYA",
-    "zararli": "Mildiyö",
-    "zararliLat": "Phytophthora infestans",
-    "phi": "7 Gün",
-    "doz": "60 g/100 l su",
-    "mrl": "Cyprodinil: 0,02 mg/kg Fludioxonil: 0,01* mg/kg",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Çiçek bamyasında PHI sürelerine dikkat edilerek hasat yapılmalıdır."
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "ŞEFTALİ - NEKTARİN",
-    "zararli": "Dipkurtları",
-    "zararliLat": "Capnodis spp.",
-    "phi": "14 gün",
-    "doz": "50 ml/100 l su",
-    "mrl": "Chlorantraniliprole:1 Lambda cyhalothrin:0,15",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "KAYISI",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "1000 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-08-28",
-    "aciklama": "Kükürt ve mineral yağ kullanımı ile ilgili bitki koruma ürünü etiketinde yer alan kullanım uyarılarına dikkat edilmelidi."
   },
   {
     "urun": "APRIN XL 350 ES",
