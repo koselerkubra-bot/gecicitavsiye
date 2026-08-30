@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-08-29 11:34
+// Son guncelleme: 2026-08-30 10:27
 // Toplam: 99 eslesme
 const BKU_DATA = [
   {
@@ -187,34 +187,6 @@ const BKU_DATA = [
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KARPUZ",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,06",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "DOMATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,07",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
     "bitki": "BİBER",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -235,6 +207,20 @@ const BKU_DATA = [
     "phi": "21 gün",
     "doz": "40 ml/da",
     "mrl": "0,05",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "DOMATES",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,07",
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-26",
     "aciklama": "-"
@@ -314,6 +300,20 @@ const BKU_DATA = [
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
     "bitki": "KAVUN",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,06",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "KARPUZ",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "phi": "21 gün",
@@ -632,6 +632,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 gün",
+    "doz": "50 ml / da",
+    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
+  },
+  {
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -658,20 +672,6 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-15",
     "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 gün",
-    "doz": "50 ml / da",
-    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
   },
   {
     "urun": "IMPERATOR 25 EC",
@@ -702,34 +702,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "PAMUK ",
-    "zararli": "Pamuk unlubiti",
-    "zararliLat": "Phenacoccus solenopsis",
-    "phi": "7 gün",
-    "doz": "50 ml/da",
-    "mrl": "0.2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-29",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "ZEYTİN",
-    "zararli": "Zeytin pasakarları",
-    "zararliLat": "Aculus oleariu, Aceria oleae",
-    "phi": "-",
-    "doz": "400  g/100 L su",
-    "mrl": "-",
-    "grup": "Akarisit",
-    "gecerlilik": "2026-08-31",
-    "aciklama": "-"
-  },
-  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -742,6 +714,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-28",
     "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
+  },
+  {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "PAMUK ",
+    "zararli": "Pamuk unlubiti",
+    "zararliLat": "Phenacoccus solenopsis",
+    "phi": "7 gün",
+    "doz": "50 ml/da",
+    "mrl": "0.2",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-09-29",
+    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -769,6 +755,20 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "Fungisit",
     "gecerlilik": "2026-09-30",
+    "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "ZEYTİN",
+    "zararli": "Zeytin pasakarları",
+    "zararliLat": "Aculus oleariu, Aceria oleae",
+    "phi": "-",
+    "doz": "400  g/100 L su",
+    "mrl": "-",
+    "grup": "Akarisit",
+    "gecerlilik": "2026-08-31",
     "aciklama": "-"
   },
   {

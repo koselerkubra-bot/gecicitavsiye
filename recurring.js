@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-08-29 11:34
-// Tekrarlayan tavsiyeler: 120 kombinasyon
+// Son guncelleme: 2026-08-30 10:27
+// Tekrarlayan tavsiyeler: 118 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "MAYDANOZ",
@@ -609,50 +609,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KARPUZ",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "DOMATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "BİBER",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -676,6 +632,28 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "HIYAR",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "DOMATES",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -786,6 +764,28 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "KAVUN",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KARPUZ",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1555,53 +1555,9 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-03-15",
-        "gecerlilik": "2026-07-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-30",
-        "gecerlilik": "2025-08-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "AVOKADO",
-    "zararli": "İncir Teke Böceği",
-    "zararliLat": "Batocera rufomaculata",
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-03-15",
-        "gecerlilik": "2026-07-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-05-30",
-        "gecerlilik": "2025-08-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "MAYDANOZ",
-    "zararli": "YAPRAK LEKESİ",
-    "zararliLat": "Cercospora sp.",
+    "zararli": "Mildiyö",
+    "zararliLat": "Plasmopara spp, Bremia lactucae",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
@@ -1622,8 +1578,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "MAYDANOZ",
-    "zararli": "Mildiyö",
-    "zararliLat": "Plasmopara spp, Bremia lactucae",
+    "zararli": "YAPRAK LEKESİ",
+    "zararliLat": "Cercospora sp.",
     "urun": "REGALIA",
     "form": "SC",
     "aktif": "224,6 g/l Reynoutria spp. ekstraktı",
