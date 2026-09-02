@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-01 09:55
-// Toplam: 96 eslesme
+// Son guncelleme: 2026-09-02 09:26
+// Toplam: 97 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -462,6 +462,34 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "CEVİZ",
+    "zararli": "İki noktalı kırmızıörümcek",
+    "zararliLat": "Tetranychus urticae",
+    "phi": "-",
+    "doz": "400 ml/100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-24",
+    "aciklama": "-"
+  },
+  {
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "bitki": "AYÇİÇEĞİ",
+    "zararli": "Külleme",
+    "zararliLat": "Erysiphe cichoracearum",
+    "phi": "-",
+    "doz": "500 g/da",
+    "mrl": "-",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-10-30",
+    "aciklama": "Ege Bölgesi illeri için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "KARATE ZEON",
@@ -1330,19 +1358,5 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-15",
     "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "SOYA",
-    "zararli": "Soya sap sineği",
-    "zararliLat": "Melanagromyza sojae",
-    "phi": "30 gün",
-    "doz": "30 ml/daLarva",
-    "mrl": "0,05 - 0,05",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-01",
-    "aciklama": "-"
   }
 ];
