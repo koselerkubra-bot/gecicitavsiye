@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-02 09:26
-// Toplam: 97 eslesme
+// Son guncelleme: 2026-09-03 09:36
+// Toplam: 98 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -476,6 +476,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-24",
     "aciklama": "-"
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "TURUNÇGİLLER",
+    "zararli": "Topak unlubiti",
+    "zararliLat": "Nipaecoccus viridis",
+    "phi": "-",
+    "doz": "1500 ml/ 100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit+Akarisit",
+    "gecerlilik": "2026-11-15",
+    "aciklama": "* Mineral yağ uygulamalarında sıcaklığın 32°C’nin altında olduğu serin saatleri (sabah erken veya akşamüzeri) tercih edilmesi gerekmektedir."
   },
   {
     "urun": "THIOVIT JET",
