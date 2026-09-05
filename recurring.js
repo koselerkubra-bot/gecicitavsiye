@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-04 09:28
-// Tekrarlayan tavsiyeler: 63 kombinasyon
+// Son guncelleme: 2026-09-05 08:57
+// Tekrarlayan tavsiyeler: 62 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -926,33 +926,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-08-14",
-        "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
-      },
-      {
-        "tavsiye": "2026-04-15",
-        "gecerlilik": "2026-08-13",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-01",
-        "gecerlilik": "2025-10-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "FINDIK",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
@@ -1091,6 +1064,33 @@ const BKU_RECURRING = [
     "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-14",
+        "gecerlilik": "2026-10-31",
+        "durum": "İl/İlçe bazında Geçici Tavsiye"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-08-13",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-08-01",
+        "gecerlilik": "2025-10-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
     "urun": "IMPERATOR 25 EC",
     "form": "EC",
     "aktif": "250 g/l Cypermethrin",
@@ -1181,7 +1181,29 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "DOMATES",
+    "bitki": "KAVUN",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KARPUZ",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1226,6 +1248,28 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "HIYAR",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "DOMATES",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1335,50 +1379,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KAVUN",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KARPUZ",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "TRABZON HURMASI",
     "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
     "zararliLat": "Mycosphaerella nawae",
@@ -1440,28 +1440,6 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-01-16",
         "gecerlilik": "2026-05-16",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KAVUN",
-    "zararli": "KAVUN SİNEĞİ",
-    "zararliLat": "Myiopardalis pardalina",
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-06-10",
-        "gecerlilik": "2026-10-10",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2025-05-05",
-        "gecerlilik": "2025-09-05",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
