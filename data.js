@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-09 09:34
-// Toplam: 98 eslesme
+// Son guncelleme: 2026-09-10 09:33
+// Toplam: 102 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -445,6 +445,62 @@ const BKU_DATA = [
     "phi": "14 gün",
     "doz": "45 ml/da",
     "mrl": "15 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-12-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "LATİN ÇİÇEĞİ",
+    "zararli": "SÜS BİTKİLERİNDE KÜLLEME",
+    "zararliLat": "Erysiphe spp., Podosphaera spp., Phyllactinia spp., Uncinula spp., Sphaerotheca spp., Microsphaera spp., Oidium spp. ve Leveillula spp.",
+    "phi": "14 Gün",
+    "doz": "45 ml/da",
+    "mrl": "70 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-12-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "ELEKTRİK ÇİÇEĞİ",
+    "zararli": "SÜS BİTKİLERİNDE KÜLLEME",
+    "zararliLat": "Erysiphe spp., Podosphaera spp., Phyllactinia spp., Uncinula spp., Sphaerotheca spp., Microsphaera spp., Oidium spp. ve Leveillula spp.",
+    "phi": "14 Gün",
+    "doz": "45ml/da",
+    "mrl": "70 mg/kg",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-12-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "MENEKŞE",
+    "zararli": "SÜS BİTKİLERİNDE KÜLLEME",
+    "zararliLat": "Erysiphe spp., Podosphaera spp., Phyllactinia spp., Uncinula spp., Sphaerotheca spp., Microsphaera spp., Oidium spp. ve Leveillula spp.",
+    "phi": "14 Gün",
+    "doz": "45 ml/da",
+    "mrl": "60",
+    "grup": "Fungisit",
+    "gecerlilik": "2026-12-31",
+    "aciklama": "-"
+  },
+  {
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "bitki": "SAP KEREVİZİ",
+    "zararli": "YAPRAK LEKESİ",
+    "zararliLat": "Cercospora sp.",
+    "phi": "14 Gün",
+    "doz": "45 ml/da",
+    "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
     "aciklama": "-"
