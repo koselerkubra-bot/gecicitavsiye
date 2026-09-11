@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-09-10 09:33
+// Son guncelleme: 2026-09-11 09:30
 // Toplam: 102 eslesme
 const BKU_DATA = [
   {
@@ -461,7 +461,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "-"
+    "aciklama": "Bu geçici kullanım izni yenilebilir Latin Çiçeği için düzenlenmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -489,7 +489,7 @@ const BKU_DATA = [
     "mrl": "60",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "-"
+    "aciklama": "Bu geçici kullanım izni yenilebilir Menekşe için düzenlenmiştir."
   },
   {
     "urun": "QUADRİS",
