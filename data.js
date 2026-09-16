@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-15 09:59
-// Toplam: 102 eslesme
+// Son guncelleme: 2026-09-16 09:49
+// Toplam: 96 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -884,20 +884,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Batı Mısır Kök Kurdu",
-    "zararliLat": "Diabrotica virgifera",
-    "phi": "14 gün",
-    "doz": "30 ml/da",
-    "mrl": "0,02",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Edirne, Kırklareli, Tekirdağ illeri için geçici tavsiye verilmiştir."
-  },
-  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -1358,75 +1344,5 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-17",
     "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "NARENCİYE",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "phi": "7 gün",
-    "doz": "250 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "FASULYE",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "phi": "7 gün",
-    "doz": "250 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "HIYAR",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "phi": "7 gün",
-    "doz": "250 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "MISIR",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "phi": "7 gün",
-    "doz": "250 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "KİVİ",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "phi": "7 gün",
-    "doz": "250 g /100 L",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-15",
-    "aciklama": "Ordu, Giresun,Trabzon ve Rize illeri için geçerlidir."
   }
 ];
