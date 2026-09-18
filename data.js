@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-17 09:56
-// Toplam: 96 eslesme
+// Son guncelleme: 2026-09-18 09:35
+// Toplam: 95 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -1329,20 +1329,6 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "Fungisit + Akarisit",
     "gecerlilik": "2026-09-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "YABAN MERSİNİ",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
-    "phi": "-",
-    "doz": "1000 ml/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-17",
     "aciklama": "-"
   }
 ];
