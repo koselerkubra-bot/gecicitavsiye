@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-09-21 10:36
+// Son guncelleme: 2026-09-22 09:48
 // Toplam: 95 eslesme
 const BKU_DATA = [
   {
@@ -461,7 +461,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "Bu geçici kullanım izni yenilebilir Latin Çiçeği için düzenlenmiştir."
+    "aciklama": "Bu geçici kullanım izni yenilebilir Latin Çiçeği için Antalya ve Burdur illerinde geçerli olacak şekilde düzenlenmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -486,10 +486,10 @@ const BKU_DATA = [
     "zararliLat": "Erysiphe spp., Podosphaera spp., Phyllactinia spp., Uncinula spp., Sphaerotheca spp., Microsphaera spp., Oidium spp. ve Leveillula spp.",
     "phi": "14 Gün",
     "doz": "45 ml/da",
-    "mrl": "60",
+    "mrl": "70",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "Bu geçici kullanım izni yenilebilir Menekşe için düzenlenmiştir."
+    "aciklama": "Bu geçici kullanım izni yenilebilir Menekşe için Antalya ve Burdur illerinde geçerli olacak şekilde düzenlenmiştir."
   },
   {
     "urun": "QUADRİS",
@@ -503,7 +503,7 @@ const BKU_DATA = [
     "mrl": "70 mg/kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "-"
+    "aciklama": "Bu geçici kullanım izni Sap Kereviz için Antalya ve Burdur illerinde geçerli olacak şekilde düzenlenmiştir."
   },
   {
     "urun": "AMPLİGO 150 ZC",
