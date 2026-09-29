@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-28 11:37
-// Toplam: 95 eslesme
+// Son guncelleme: 2026-09-29 11:16
+// Toplam: 94 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -1232,20 +1232,6 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-30",
     "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "BAMYA",
-    "zararli": "Kırmızı örümcekler",
-    "zararliLat": "Tetranychus spp.",
-    "phi": "-",
-    "doz": "400 g/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-28",
-    "aciklama": "Kükürt içeren bitki koruma ürünlerinin kullanımında ürün etiketinde yer alan uyarılara dikkat edilmelidir."
   },
   {
     "urun": "NİNJA 5 EC",
