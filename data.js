@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-29 11:16
-// Toplam: 94 eslesme
+// Son guncelleme: 2026-09-30 11:04
+// Toplam: 93 eslesme
 const BKU_DATA = [
   {
     "urun": "QUADRİS",
@@ -534,6 +534,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "TURUNÇGİLLER",
+    "zararli": "Topak unlubiti",
+    "zararliLat": "Nipaecoccus viridis",
+    "phi": "-",
+    "doz": "1500 ml/ 100 L su",
+    "mrl": "-",
+    "grup": "İnsektisit+Akarisit",
+    "gecerlilik": "2026-11-15",
+    "aciklama": "* Mineral yağ uygulamalarında sıcaklığın 32°C’nin altında olduğu serin saatleri (sabah erken veya akşamüzeri) tercih edilmesi gerekmektedir."
+  },
+  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -548,18 +562,32 @@ const BKU_DATA = [
     "aciklama": "Ege Bölgesi illeri için geçici kullanım izni verilmiştir."
   },
   {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "TURUNÇGİLLER",
-    "zararli": "Topak unlubiti",
-    "zararliLat": "Nipaecoccus viridis",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
     "phi": "-",
-    "doz": "1500 ml/ 100 L su",
+    "doz": "30 ml/100 L  su",
     "mrl": "-",
-    "grup": "İnsektisit+Akarisit",
-    "gecerlilik": "2026-11-15",
-    "aciklama": "* Mineral yağ uygulamalarında sıcaklığın 32°C’nin altında olduğu serin saatleri (sabah erken veya akşamüzeri) tercih edilmesi gerekmektedir."
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "-",
+    "doz": "25 ml/100 L  su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "NİNJA 5 EC",
@@ -630,34 +658,6 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "-",
-    "doz": "30 ml/100 L  su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
-  },
-  {
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "-",
-    "doz": "25 ml/100 L  su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "AMPLİGO 150 ZC",
@@ -1164,20 +1164,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 gün",
-    "doz": "50 ml / da",
-    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
-  },
-  {
     "urun": "AMPLİGO 150 ZC",
     "form": "ZC",
     "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
@@ -1206,6 +1192,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "NİNJA 5 EC",
+    "form": "EC",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "MISIR",
+    "zararli": "Kahverengi kokarca",
+    "zararliLat": "Halyomorpha halys",
+    "phi": "14 gün",
+    "doz": "50 ml / da",
+    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-15",
+    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
+  },
+  {
     "urun": "IMPERATOR 25 EC",
     "form": "EC",
     "aktif": "250 g/l Cypermethrin",
@@ -1231,20 +1231,6 @@ const BKU_DATA = [
     "mrl": "-",
     "grup": "İnsektisit",
     "gecerlilik": "2026-09-30",
-    "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "PAMUK ",
-    "zararli": "Pamuk unlubiti",
-    "zararliLat": "Phenacoccus solenopsis",
-    "phi": "7 gün",
-    "doz": "50 ml/da",
-    "mrl": "0.2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-09-29",
     "aciklama": "-"
   },
   {

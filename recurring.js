@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-09-29 11:16
-// Tekrarlayan tavsiyeler: 61 kombinasyon
+// Son guncelleme: 2026-09-30 11:04
+// Tekrarlayan tavsiyeler: 55 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -926,6 +926,60 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-14",
+        "gecerlilik": "2026-10-31",
+        "durum": "İl/İlçe bazında Geçici Tavsiye"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-08-13",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-08-01",
+        "gecerlilik": "2025-10-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "grup": "İnsektisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-14",
+        "gecerlilik": "2026-10-31",
+        "durum": "İl/İlçe bazında Geçici Tavsiye"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-08-13",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2025-08-01",
+        "gecerlilik": "2025-10-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "FINDIK",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
@@ -1040,60 +1094,6 @@ const BKU_RECURRING = [
     "urun": "NİNJA 5 EC",
     "form": "EC",
     "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-08-14",
-        "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
-      },
-      {
-        "tavsiye": "2026-04-15",
-        "gecerlilik": "2026-08-13",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-01",
-        "gecerlilik": "2025-10-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-08-14",
-        "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
-      },
-      {
-        "tavsiye": "2026-04-15",
-        "gecerlilik": "2026-08-13",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-01",
-        "gecerlilik": "2025-10-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
     "grup": "İnsektisit",
     "tekrar": 3,
     "donemler": [
@@ -1423,50 +1423,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "PAMUK ",
-    "zararli": "Pamuk unlubiti",
-    "zararliLat": "Phenacoccus solenopsis",
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-06-01",
-        "gecerlilik": "2026-09-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-06-01",
-        "gecerlilik": "2025-09-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "NAR",
-    "zararli": "Kırmızıörümcekler",
-    "zararliLat": "Tetranychus spp., Panonychus spp.",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "Fungisit + Akarisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-30",
-        "gecerlilik": "2026-09-30",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2025-05-30",
-        "gecerlilik": "2025-09-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "YABAN MERSİNİ",
     "zararli": "Turunçgil unlubiti",
     "zararliLat": "Planococcus citri",
@@ -1484,94 +1440,6 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-01-16",
         "gecerlilik": "2026-05-16",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "NARENCİYE",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-15",
-        "gecerlilik": "2026-09-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-15",
-        "gecerlilik": "2025-09-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "FASULYE",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-15",
-        "gecerlilik": "2026-09-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-15",
-        "gecerlilik": "2025-09-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "HIYAR",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-15",
-        "gecerlilik": "2026-09-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-15",
-        "gecerlilik": "2025-09-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "MISIR",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-15",
-        "gecerlilik": "2026-09-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-08-15",
-        "gecerlilik": "2025-09-30",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
