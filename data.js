@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-10-04 11:03
+// Son guncelleme: 2026-10-05 12:11
 // Toplam: 87 eslesme
 const BKU_DATA = [
   {
@@ -14,20 +14,6 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-11-30",
     "aciklama": "Kışlık ekim"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "ISPANAK",
-    "zararli": "Pamuk yaprakkurdu",
-    "zararliLat": "Spodoptera littoralis",
-    "phi": "7 Gün",
-    "doz": "15 ml/da",
-    "mrl": "0.6 mg/kg",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-12-31",
-    "aciklama": "-"
   },
   {
     "urun": "QUADRİS",
@@ -464,6 +450,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "ISPANAK",
+    "zararli": "Pamuk yaprakkurdu",
+    "zararliLat": "Spodoptera littoralis",
+    "phi": "7 Gün",
+    "doz": "15 ml/da",
+    "mrl": "0.6 mg/kg",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-12-31",
+    "aciklama": "-"
+  },
+  {
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -576,34 +576,6 @@ const BKU_DATA = [
     "aciklama": "Ege Bölgesi illeri için geçici kullanım izni verilmiştir."
   },
   {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "-",
-    "doz": "30 ml/100 L  su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
-  },
-  {
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "phi": "-",
-    "doz": "25 ml/100 L  su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
-    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
-  },
-  {
     "urun": "NİNJA 5 EC",
     "form": "EC",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -672,6 +644,34 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "Muğla-Kocaeli-İstanbul- Trabzon-Sakarya-Antalya-Diyarbakır- Rize İlleri için verilmiştir."
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "-",
+    "doz": "30 ml/100 L  su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
+  },
+  {
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "phi": "-",
+    "doz": "25 ml/100 L  su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "Muğla- Kocaeli-İstanbul-Trabzon-Sakarya-Antalya-Diyarbakır-Rize illerindeki karantina amaçlı kullanılacak mücadele için geçici kullanım izni verilmiştir."
   },
   {
     "urun": "AMPLİGO 150 ZC",
@@ -747,34 +747,6 @@ const BKU_DATA = [
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "KARPUZ",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,06",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "DOMATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "phi": "21 gün",
-    "doz": "40 ml/da",
-    "mrl": "0,07",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
     "bitki": "BİBER",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -795,6 +767,20 @@ const BKU_DATA = [
     "phi": "21 gün",
     "doz": "40 ml/da",
     "mrl": "0,05",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "DOMATES",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,07",
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-26",
     "aciklama": "-"
@@ -884,6 +870,20 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "bitki": "KARPUZ",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "phi": "21 gün",
+    "doz": "40 ml/da",
+    "mrl": "0,06",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-11-26",
+    "aciklama": "-"
+  },
+  {
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -938,6 +938,20 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-01",
     "aciklama": "Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
+  },
+  {
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
+    "zararli": "Turunçgil unlubiti",
+    "zararliLat": "Planococcus citri",
+    "phi": "-",
+    "doz": "1000 ml/100 l su",
+    "mrl": "-",
+    "grup": "İnsektisit",
+    "gecerlilik": "2026-10-31",
+    "aciklama": "-"
   },
   {
     "urun": "PLOCAFİR",
@@ -1120,20 +1134,6 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "AHUDUDU VE BÖĞÜRTLEN",
-    "zararli": "Turunçgil unlubiti",
-    "zararliLat": "Planococcus citri",
-    "phi": "-",
-    "doz": "1000 ml/100 l su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-31",
-    "aciklama": "-"
   },
   {
     "urun": "AGRIMEC EC",
