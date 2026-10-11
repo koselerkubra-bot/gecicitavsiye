@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-10-10 11:04
-// Toplam: 87 eslesme
+// Son guncelleme: 2026-10-11 11:21
+// Toplam: 86 eslesme
 const BKU_DATA = [
   {
     "urun": "MAXİM XL 035 FS",
@@ -1203,20 +1203,6 @@ const BKU_DATA = [
     "mrl": "0,2 mg/kg",
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "bitki": "KAVUN",
-    "zararli": "KAVUN SİNEĞİ",
-    "zararliLat": "Myiopardalis pardalina",
-    "phi": "35 gün",
-    "doz": "30 ml/da Ergin",
-    "mrl": "0.2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-10",
     "aciklama": "-"
   }
 ];
