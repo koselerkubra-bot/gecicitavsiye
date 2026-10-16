@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-10-15 09:44
-// Toplam: 86 eslesme
+// Son guncelleme: 2026-10-16 09:38
+// Toplam: 82 eslesme
 const BKU_DATA = [
   {
     "urun": "MAXİM XL 035 FS",
@@ -1136,20 +1136,6 @@ const BKU_DATA = [
     "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
   },
   {
-    "urun": "AGRIMEC EC",
-    "form": "EC",
-    "aktif": "18 g/l Abamectin",
-    "bitki": "PALMİYE, HURMA, SKAS",
-    "zararli": "PALMİYE KIRMIZIBÖCEĞİ",
-    "zararliLat": "Rhynchophorus ferrugineus",
-    "phi": "-",
-    "doz": "50 - 100 ml / 1 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "Sadece süs bitkileri amacıyla yetiştirilen Palmiye, Hurma, Skas bitkilerinde uygulanmalıdır, gıda amacıyla yetiştiriciliği yapılan Palmiye ve Hurma bitkilerinde uygulanmamalıdır."
-  },
-  {
     "urun": "PLOCAFİR",
     "form": "EW",
     "aktif": "700 g/l Mineral Yağ",
@@ -1162,47 +1148,5 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-10-16",
     "aciklama": "-"
-  },
-  {
-    "urun": "AMPLİGO 150 ZC",
-    "form": "ZC",
-    "aktif": "100 g/l Chlorantraniliprole + 50 g/l Lambda-cyhalothrin",
-    "bitki": "ERİK",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 Gün",
-    "doz": "30 ml/100 L su",
-    "mrl": "Chlorantraniliprole: 1; Lambda-cyhalothrin: 0,2",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "ÇELTİK",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "28 gün",
-    "doz": "30 ml/da",
-    "mrl": "0,2 mg/kg",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "-"
-  },
-  {
-    "urun": "NİNJA 5 EC",
-    "form": "EC",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "bitki": "MISIR",
-    "zararli": "Kahverengi kokarca",
-    "zararliLat": "Halyomorpha halys",
-    "phi": "14 gün",
-    "doz": "50 ml / da",
-    "mrl": "MRL bilgisi açıklamada yer almaktadır.",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-15",
-    "aciklama": "MRL mg/kg : (0234000 Taze mısır: 0.05) (0500030 Tohumluk mısır: 0.02)"
   }
 ];
