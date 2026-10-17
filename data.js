@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-10-16 09:38
-// Toplam: 82 eslesme
+// Son guncelleme: 2026-10-17 09:09
+// Toplam: 80 eslesme
 const BKU_DATA = [
   {
     "urun": "MAXİM XL 035 FS",
@@ -884,20 +884,6 @@ const BKU_DATA = [
     "aciklama": "-"
   },
   {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "TRABZON HURMASI",
-    "zararli": "TRABZON HURMASINDA YAPRAK LEKESİ",
-    "zararliLat": "Mycosphaerella nawae",
-    "phi": "70 gün",
-    "doz": "80-100 l/da (Dekara 50-100 L su ile )",
-    "mrl": "0.01",
-    "grup": "Fungisit",
-    "gecerlilik": "2026-10-16",
-    "aciklama": "-"
-  },
-  {
     "urun": "THIOVIT JET",
     "form": "WG",
     "aktif": "%80 Kükürt",
@@ -1134,19 +1120,5 @@ const BKU_DATA = [
     "grup": "Fungisit",
     "gecerlilik": "2026-10-31",
     "aciklama": "*Fitotoksik etkilerin gözlemlenmesi için öncelikle küçük bir alanda veya az sayıda bitki üzerinde deneyiniz! **Süs bitkileri yetiştiriciliği amacı dışında yapılan her türlü yetiştiricilik faaliyeti için (Gıda, Kozmetik, Eczacılık vb.) çizelgede önerilen aktif maddeleri içeren bitki koruma ürünleri kesinlikle kullanılmamalıdır. Bu nedenle PHI ve MRL belirlenmemiştir. Ancak, uygulayıcı maruziyeti açısından etikette yer alan güvenlik önlemlerine uyulmalıdır."
-  },
-  {
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "bitki": "CEVİZ",
-    "zararli": "Dut kabuklubiti",
-    "zararliLat": "Pseudaulacaspis pentagona",
-    "phi": "-",
-    "doz": "1000 ml/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-10-16",
-    "aciklama": "-"
   }
 ];
