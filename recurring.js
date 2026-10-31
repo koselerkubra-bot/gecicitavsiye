@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-10-30 11:17
+// Son guncelleme: 2026-10-31 10:50
 // Tekrarlayan tavsiyeler: 55 kombinasyon
 const BKU_RECURRING = [
   {
@@ -933,7 +933,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-29",
         "gecerlilik": "2026-10-31",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-05-01",
@@ -955,7 +955,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -977,7 +977,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -999,7 +999,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -1021,7 +1021,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -1043,7 +1043,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -1065,7 +1065,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -1087,7 +1087,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-08-14",
         "gecerlilik": "2026-10-31",
-        "durum": "İl/İlçe bazında Geçici Tavsiye"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-15",
@@ -1098,28 +1098,6 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "KABAK",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "BAMYA",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1317,6 +1295,28 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "BAMYA",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "PATLICAN",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -1373,7 +1373,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-01",
         "gecerlilik": "2026-10-31",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-01-16",
