@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-10-31 10:50
-// Tekrarlayan tavsiyeler: 55 kombinasyon
+// Son guncelleme: 2026-11-01 11:46
+// Tekrarlayan tavsiyeler: 68 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -354,147 +354,39 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "FESLEĞEN",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "MAYDANOZ",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "ROKA",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "TERE",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "NANE",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "DEREOTU",
-    "zararli": "Toprak kökenli patojenler",
-    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
-    "urun": "APRIN XL 350 ES",
-    "form": "ES",
-    "aktif": "350 g/l Metalaxyl-m",
+    "zararli": "Sebzelerde septorya yaprak lekesi",
+    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SEMİZOTU",
+    "zararli": "Sebzelerde septorya yaprak lekesi",
+    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
     "grup": "Fungisit",
     "tekrar": 3,
     "donemler": [
@@ -600,60 +492,6 @@ const BKU_RECURRING = [
     "bitki": "MARUL",
     "zararli": "Alternaria yaprak lekesi",
     "zararliLat": "Alternaria spp.",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "DEREOTU",
-    "zararli": "Sebzelerde septorya yaprak lekesi",
-    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SEMİZOTU",
-    "zararli": "Sebzelerde septorya yaprak lekesi",
-    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -921,6 +759,454 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "FESLEĞEN",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Pythium spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "MAYDANOZ",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "ROKA",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "TERE",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "NANE",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "DEREOTU",
+    "zararli": "Toprak kökenli patojenler",
+    "zararliLat": "Fusarium spp., Macrophomina spp., Phytophthora spp., Rhizoctonia spp.",
+    "urun": "APRIN XL 350 ES",
+    "form": "ES",
+    "aktif": "350 g/l Metalaxyl-m",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde kabuklu bit ve koşniller",
+    "zararliLat": "Coccoidea",
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Pamuk yaprakkurdu",
+    "zararliLat": "Spodoptera littoralis",
+    "urun": "PROCLAIM 05 SG",
+    "form": "SG",
+    "aktif": "%5 Emamectin benzoate",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde mildiyö",
+    "zararliLat": "Peronospora spp., Phytophthora spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Yeşilkurt",
+    "zararliLat": "Helicoverpa armigera",
+    "urun": "PROCLAIM 05 SG",
+    "form": "SG",
+    "aktif": "%5 Emamectin benzoate",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde yaprak leke hastalığı",
+    "zararliLat": "Alternaria spp., Septoria spp., Cercospora spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Bağ maymuncukları",
+    "zararliLat": "Otiorhynchus spp.",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Pamuk yaprakkurdu",
+    "zararliLat": "Spodoptera littoralis",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Telkurtları",
+    "zararliLat": "Agriotes spp.",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Bozkurt",
+    "zararliLat": "Agrotis spp.",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde pas",
+    "zararliLat": "Phragmadium mucronatum, Uromyces spp., Puccinia spp.",
+    "urun": "QUADRİS MAXX",
+    "form": "SC",
+    "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "ÇEKİRGELER",
+    "zararliLat": "Acrididae, Catantopidae, Tettigoniidae, Grylidae",
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "SÜS BİTKİLERİNDE KÜLLEME",
+    "zararliLat": "Erysiphe spp., Podosphaera spp., Phyllactinia spp., Uncinula spp., Sphaerotheca spp., Microsphaera spp., Oidium spp. ve Leveillula spp.",
+    "urun": "THIOVIT JET",
+    "form": "WG",
+    "aktif": "%80 Kükürt",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde fungal kök çürüklüğü ve solgunluk",
+    "zararliLat": "Fusarium spp., Rhizoctonia spp., Pythium spp., Sclerotonia sclerotiorum, Verticillium spp.",
+    "urun": "SWITCH 62.5 WG",
+    "form": "WG",
+    "aktif": "%37,5 Cyprodinil + %25 Fludioxonil",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "ŞEFTALİ - NEKTARİN",
     "zararli": "Dipkurtları",
     "zararliLat": "Capnodis spp.",
@@ -938,6 +1224,28 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-05-01",
         "gecerlilik": "2026-08-28",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-14",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-08-13",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
@@ -1009,50 +1317,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-08-14",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-04-15",
-        "gecerlilik": "2026-08-13",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
-    "zararli": "Turunçgil uzun antenli böceği",
-    "zararliLat": "Anoplophora chinensis",
-    "urun": "IMPERATOR 25 EC",
-    "form": "EC",
-    "aktif": "250 g/l Cypermethrin",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-08-14",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-04-15",
-        "gecerlilik": "2026-08-13",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "FINDIK",
     "zararli": "Turunçgil uzun antenli böceği",
     "zararliLat": "Anoplophora chinensis",
@@ -1097,7 +1361,51 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "KAVAK, ÇINAR, HUŞ, AT KESTANESİ, KARAAĞAÇ, KIZILAĞAÇ, AKÇAAĞAÇ, GÜRGEN",
+    "zararli": "Turunçgil uzun antenli böceği",
+    "zararliLat": "Anoplophora chinensis",
+    "urun": "IMPERATOR 25 EC",
+    "form": "EC",
+    "aktif": "250 g/l Cypermethrin",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-08-14",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-04-15",
+        "gecerlilik": "2026-08-13",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "KABAK",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "BAMYA",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1274,28 +1582,6 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "HIYAR",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "BAMYA",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
