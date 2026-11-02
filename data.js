@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-11-01 11:46
-// Toplam: 67 eslesme
+// Son guncelleme: 2026-11-02 13:19
+// Toplam: 66 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -924,19 +924,5 @@ const BKU_DATA = [
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-10",
     "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "BİBER (tarla)",
-    "zararli": "İki noktalı kırmızıörümcek",
-    "zararliLat": "Tetranychus urticae",
-    "phi": "-",
-    "doz": "80-200 g/da",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-01",
-    "aciklama": "Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
   }
 ];
