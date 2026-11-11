@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-11-10 13:23
-// Toplam: 66 eslesme
+// Son guncelleme: 2026-11-11 12:34
+// Toplam: 64 eslesme
 const BKU_DATA = [
   {
     "urun": "PLOCAFİR",
@@ -895,34 +895,6 @@ const BKU_DATA = [
     "mrl": "0,3",
     "grup": "İnsektisit",
     "gecerlilik": "2026-11-26",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "FASULYE",
-    "zararli": "KÜLLEME",
-    "zararliLat": "Erysiphe polygoni",
-    "phi": "-",
-    "doz": "300 g/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-10",
-    "aciklama": "*Etikette yer alan kullanım uyarılarına dikkat edilmelidir. Akşam serininde 30 C altı sıcaklıklarda uygulama yapılmalıdır."
-  },
-  {
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "bitki": "FASULYE",
-    "zararli": "KÜLLEME",
-    "zararliLat": "Erysiphe polygoni",
-    "phi": "14 gün",
-    "doz": "80-100 ml/da",
-    "mrl": "0260010  Kabuklu: 3; 0260020 Kabuksuz: 3",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-10",
     "aciklama": "-"
   }
 ];
