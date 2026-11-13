@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-11-12 13:40
+// Son guncelleme: 2026-11-13 12:57
 // Tekrarlayan tavsiyeler: 68 kombinasyon
 const BKU_RECURRING = [
   {
