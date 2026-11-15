@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-11-14 12:01
-// Tekrarlayan tavsiyeler: 68 kombinasyon
+// Son guncelleme: 2026-11-15 12:37
+// Tekrarlayan tavsiyeler: 67 kombinasyon
 const BKU_RECURRING = [
   {
     "bitki": "ISPANAK",
@@ -354,60 +354,6 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "DEREOTU",
-    "zararli": "Sebzelerde septorya yaprak lekesi",
-    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SEMİZOTU",
-    "zararli": "Sebzelerde septorya yaprak lekesi",
-    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 3,
-    "donemler": [
-      {
-        "tavsiye": "2026-09-01",
-        "gecerlilik": "2026-12-31",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-05-01",
-        "gecerlilik": "2026-08-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2026-01-01",
-        "gecerlilik": "2026-04-30",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
     "bitki": "SEMİZOTU",
     "zararli": "KÜLLEME",
     "zararliLat": "Erysiphe spp.",
@@ -465,6 +411,60 @@ const BKU_RECURRING = [
     "bitki": "FESLEĞEN",
     "zararli": "KÜLLEME",
     "zararliLat": "Erysiphe spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "DEREOTU",
+    "zararli": "Sebzelerde septorya yaprak lekesi",
+    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 3,
+    "donemler": [
+      {
+        "tavsiye": "2026-09-01",
+        "gecerlilik": "2026-12-31",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-05-01",
+        "gecerlilik": "2026-08-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      },
+      {
+        "tavsiye": "2026-01-01",
+        "gecerlilik": "2026-04-30",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SEMİZOTU",
+    "zararli": "Sebzelerde septorya yaprak lekesi",
+    "zararliLat": "Septoria apiicola, S.lycopersici, S.petroselini",
     "urun": "QUADRİS",
     "form": "SC",
     "aktif": "250 g/l Azoxystrobin",
@@ -966,12 +966,12 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Süs bitkilerinde mildiyö",
-    "zararliLat": "Peronospora spp., Phytophthora spp.",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
+    "zararli": "Yeşilkurt",
+    "zararliLat": "Helicoverpa armigera",
+    "urun": "PROCLAIM 05 SG",
+    "form": "SG",
+    "aktif": "%5 Emamectin benzoate",
+    "grup": "İnsektisit",
     "tekrar": 2,
     "donemler": [
       {
@@ -988,12 +988,12 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Yeşilkurt",
-    "zararliLat": "Helicoverpa armigera",
-    "urun": "PROCLAIM 05 SG",
-    "form": "SG",
-    "aktif": "%5 Emamectin benzoate",
-    "grup": "İnsektisit",
+    "zararli": "Süs bitkilerinde mildiyö",
+    "zararliLat": "Peronospora spp., Phytophthora spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
     "tekrar": 2,
     "donemler": [
       {
@@ -1032,30 +1032,8 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Bağ maymuncukları",
-    "zararliLat": "Otiorhynchus spp.",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Pamuk yaprakkurdu",
-    "zararliLat": "Spodoptera littoralis",
+    "zararli": "Bozkurt",
+    "zararliLat": "Agrotis spp.",
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -1098,8 +1076,30 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Bozkurt",
-    "zararliLat": "Agrotis spp.",
+    "zararli": "Bağ maymuncukları",
+    "zararliLat": "Otiorhynchus spp.",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Pamuk yaprakkurdu",
+    "zararliLat": "Spodoptera littoralis",
     "urun": "KARATE ZEON",
     "form": "CS",
     "aktif": "50 g/l Lambda-cyhalothrin ",
@@ -1383,7 +1383,7 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "KABAK",
+    "bitki": "DOMATES",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1405,7 +1405,7 @@ const BKU_RECURRING = [
     ]
   },
   {
-    "bitki": "BAMYA",
+    "bitki": "KABAK",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1493,6 +1493,28 @@ const BKU_RECURRING = [
     ]
   },
   {
+    "bitki": "BAMYA",
+    "zararli": "Danaburnu",
+    "zararliLat": "Gryllotalpa gryllotalpa",
+    "urun": "KARATE ZEON",
+    "form": "CS",
+    "aktif": "50 g/l Lambda-cyhalothrin ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-07-30",
+        "gecerlilik": "2026-11-26",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-04-01",
+        "gecerlilik": "2026-07-29",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
     "bitki": "MARUL",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
@@ -1516,28 +1538,6 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "PATATES",
-    "zararli": "Danaburnu",
-    "zararliLat": "Gryllotalpa gryllotalpa",
-    "urun": "KARATE ZEON",
-    "form": "CS",
-    "aktif": "50 g/l Lambda-cyhalothrin ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-07-30",
-        "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-04-01",
-        "gecerlilik": "2026-07-29",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "DOMATES",
     "zararli": "Danaburnu",
     "zararliLat": "Gryllotalpa gryllotalpa",
     "urun": "KARATE ZEON",
@@ -1686,28 +1686,6 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-01-16",
         "gecerlilik": "2026-05-16",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "KİVİ",
-    "zararli": "Yalancı Kelebek",
-    "zararliLat": "Ricania japonica",
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-05-15",
-        "gecerlilik": "2026-09-15",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      },
-      {
-        "tavsiye": "2025-09-15",
-        "gecerlilik": "2025-11-15",
         "durum": "Geçerlilik Süresi Geçmiştir"
       }
     ]
