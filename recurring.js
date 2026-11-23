@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-11-22 13:12
+// Son guncelleme: 2026-11-23 15:49
 // Tekrarlayan tavsiyeler: 67 kombinasyon
 const BKU_RECURRING = [
   {
@@ -988,116 +988,6 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Süs bitkilerinde kabuklu bit ve koşniller",
-    "zararliLat": "Coccoidea",
-    "urun": "PLOCAFİR",
-    "form": "EW",
-    "aktif": "700 g/l Mineral Yağ",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Pamuk yaprakkurdu",
-    "zararliLat": "Spodoptera littoralis",
-    "urun": "PROCLAIM 05 SG",
-    "form": "SG",
-    "aktif": "%5 Emamectin benzoate",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Yeşilkurt",
-    "zararliLat": "Helicoverpa armigera",
-    "urun": "PROCLAIM 05 SG",
-    "form": "SG",
-    "aktif": "%5 Emamectin benzoate",
-    "grup": "İnsektisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Süs bitkilerinde mildiyö",
-    "zararliLat": "Peronospora spp., Phytophthora spp.",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
-    "zararli": "Süs bitkilerinde yaprak leke hastalığı",
-    "zararliLat": "Alternaria spp., Septoria spp., Cercospora spp.",
-    "urun": "QUADRİS",
-    "form": "SC",
-    "aktif": "250 g/l Azoxystrobin",
-    "grup": "Fungisit",
-    "tekrar": 2,
-    "donemler": [
-      {
-        "tavsiye": "2026-11-01",
-        "gecerlilik": "2027-02-28",
-        "durum": "Geçerli"
-      },
-      {
-        "tavsiye": "2026-07-01",
-        "gecerlilik": "2026-10-31",
-        "durum": "Geçerlilik Süresi Geçmiştir"
-      }
-    ]
-  },
-  {
-    "bitki": "SÜS BİTKİLERİ",
     "zararli": "Bozkurt",
     "zararliLat": "Agrotis spp.",
     "urun": "KARATE ZEON",
@@ -1186,11 +1076,121 @@ const BKU_RECURRING = [
   },
   {
     "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde yaprak leke hastalığı",
+    "zararliLat": "Alternaria spp., Septoria spp., Cercospora spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
     "zararli": "Süs bitkilerinde pas",
     "zararliLat": "Phragmadium mucronatum, Uromyces spp., Puccinia spp.",
     "urun": "QUADRİS MAXX",
     "form": "SC",
     "aktif": "200 g/l Azoxystrobin + 125 g/l Difenoconazole",
+    "grup": "Fungisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde kabuklu bit ve koşniller",
+    "zararliLat": "Coccoidea",
+    "urun": "PLOCAFİR",
+    "form": "EW",
+    "aktif": "700 g/l Mineral Yağ",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Pamuk yaprakkurdu",
+    "zararliLat": "Spodoptera littoralis",
+    "urun": "PROCLAIM 05 SG",
+    "form": "SG",
+    "aktif": "%5 Emamectin benzoate",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Yeşilkurt",
+    "zararliLat": "Helicoverpa armigera",
+    "urun": "PROCLAIM 05 SG",
+    "form": "SG",
+    "aktif": "%5 Emamectin benzoate",
+    "grup": "İnsektisit",
+    "tekrar": 2,
+    "donemler": [
+      {
+        "tavsiye": "2026-11-01",
+        "gecerlilik": "2027-02-28",
+        "durum": "Geçerli"
+      },
+      {
+        "tavsiye": "2026-07-01",
+        "gecerlilik": "2026-10-31",
+        "durum": "Geçerlilik Süresi Geçmiştir"
+      }
+    ]
+  },
+  {
+    "bitki": "SÜS BİTKİLERİ",
+    "zararli": "Süs bitkilerinde mildiyö",
+    "zararliLat": "Peronospora spp., Phytophthora spp.",
+    "urun": "QUADRİS",
+    "form": "SC",
+    "aktif": "250 g/l Azoxystrobin",
     "grup": "Fungisit",
     "tekrar": 2,
     "donemler": [
