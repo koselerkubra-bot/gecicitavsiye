@@ -1,5 +1,5 @@
-// Son guncelleme: 2026-11-24 15:41
-// Toplam: 63 eslesme
+// Son guncelleme: 2026-11-25 15:25
+// Toplam: 62 eslesme
 const BKU_DATA = [
   {
     "urun": "IMPERATOR 25 EC",
@@ -699,20 +699,6 @@ const BKU_DATA = [
     "mrl": "70 mg / kg",
     "grup": "Fungisit",
     "gecerlilik": "2026-12-31",
-    "aciklama": "-"
-  },
-  {
-    "urun": "THIOVIT JET",
-    "form": "WG",
-    "aktif": "%80 Kükürt",
-    "bitki": "CEVİZ",
-    "zararli": "İki noktalı kırmızıörümcek",
-    "zararliLat": "Tetranychus urticae",
-    "phi": "-",
-    "doz": "400 ml/100 L su",
-    "mrl": "-",
-    "grup": "İnsektisit",
-    "gecerlilik": "2026-11-24",
     "aciklama": "-"
   },
   {
