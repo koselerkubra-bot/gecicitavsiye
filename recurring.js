@@ -1,4 +1,4 @@
-// Son guncelleme: 2026-11-25 15:25
+// Son guncelleme: 2026-11-26 14:55
 // Tekrarlayan tavsiyeler: 67 kombinasyon
 const BKU_RECURRING = [
   {
@@ -1395,7 +1395,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1417,7 +1417,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1439,7 +1439,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1461,7 +1461,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1483,7 +1483,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1505,7 +1505,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1527,7 +1527,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1549,7 +1549,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1571,7 +1571,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1593,7 +1593,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
@@ -1615,7 +1615,7 @@ const BKU_RECURRING = [
       {
         "tavsiye": "2026-07-30",
         "gecerlilik": "2026-11-26",
-        "durum": "Geçerli"
+        "durum": "Geçerlilik Süresi Geçmiştir"
       },
       {
         "tavsiye": "2026-04-01",
